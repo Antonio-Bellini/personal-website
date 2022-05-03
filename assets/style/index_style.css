@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Header della pagina*/
+.header {
+    width: 100%;
+    border-bottom: 2px solid rgb(137, 136, 136);
+}
+
+
+/*Titolo della pagina*/
+.header h1 {
+    padding-left: 10px;
+    background-color: rgb(255, 252, 252);
+    font-style: italic;
+    color:rgb(78, 78, 231);
+}
+
+/*Corpo principale della pagina*/
+.block {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/*Blocco in sovrapposizione*/
+.sub_block {
+    height: 70vh;
+    width: 70%;
+    background-color: #fff;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    box-shadow: 15px 15px 15px 4px rgb(116, 115, 115);
+}
+
+/*Testo dentro al sub_block*/
+.sub_block h2 {
+    font-size: 35px;
+    font-style: italic;
+    padding: 1%;
+    color:darkgoldenrod;
+}
+.sub_block p {
+    font-size: 20px;
+    font-style: italic;
+    padding: 0 1%;
+    color: #000;
+}
