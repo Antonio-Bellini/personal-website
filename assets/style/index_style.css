@@ -9,48 +9,66 @@
 /*Header della pagina*/
 .header {
     width: 100%;
-    border-bottom: 2px solid rgb(137, 136, 136);
 }
 
 
 /*Titolo della pagina*/
 .header h1 {
+    font-size: 25px;
     padding-left: 10px;
-    background-color: rgb(255, 252, 252);
+    background-color: #5D8AA8;
     font-style: italic;
-    color:rgb(78, 78, 231);
+    color: #000000;
 }
 
 /*Corpo principale della pagina*/
 .block {
     height: 100vh;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: #5D8AA8;
     background-position: center;
     background-size: cover;
     position: relative;
 }
+
 /*Blocco in sovrapposizione*/
 .sub_block {
-    height: 70vh;
-    width: 70%;
+    height: 80vh;
+    width: 80%;
     background-color: #fff;
-    position: absolute;
-    left: 15%;
-    top: 10%;
-    box-shadow: 15px 15px 15px 4px rgb(116, 115, 115);
+    position: relative;
+    left: 10%;
+    top: 7%;
+    border-radius: 20px;
 }
-
 /*Testo dentro al sub_block*/
+/*Primo titolo del sub_block*/
 .sub_block h2 {
-    font-size: 35px;
+    font-size: 50px;
     font-style: italic;
-    padding: 1%;
+    padding: 5%;
+    padding-bottom: 0;
     color:darkgoldenrod;
 }
+/*Stile delle scritte nei paragrafi*/
 .sub_block p {
-    font-size: 20px;
+    font-size: 25px;
     font-style: italic;
-    padding: 0 1%;
+    padding: 2% 5%;
     color: #000;
+}
+
+/*Bottoni*/
+.button {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 12px 28px;
+    margin: 10% 5%;
+    border-radius: 15px;
+    font-size: 25px;
+    font-style: italic;
+    background: #0095B6;
+    color: #fff;
+    cursor: pointer;
 }
