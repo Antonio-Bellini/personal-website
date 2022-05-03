@@ -10,6 +10,29 @@
 .header {
     width: 100%;
 }
+
+/*Bottoni superiori*/
+nav {
+    background: #5D8AA8;
+    padding: 0 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+.links {
+    flex: 1;
+    text-align: right;
+}
+.links > ul > li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.links > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
 /*Titolo della pagina*/
 .header h1 {
     font-size: 25px;
@@ -23,7 +46,7 @@
 .block {
     height: 100vh;
     width: 100%;
-    background-color: #5D8AA8;
+    background: #5D8AA8;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -36,7 +59,7 @@
     background-color: #fff;
     position: relative;
     left: 10%;
-    top: 7%;
+    top: 3%;
     border-radius: 20px;
 }
 /*Testo dentro al sub_block*/
@@ -57,6 +80,7 @@
 }
 /*Immagine profilo*/
 .sub_block > img {
+    width: 800px;
     float: right;
     border-radius: 20px;
     margin: 200px 15px;
@@ -76,26 +100,8 @@
     color: #fff;
     cursor: pointer;
 }
-
-.footer {
-    text-align: center;
-    padding: 30px 0;
-}
-
-.icons {
-
-} 
-
-/*Icone dei social*/
-.icons .fa {
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-    text-decoration: none;
-}
-.fa--ig {
-    color: red;
-}
-.fa--github {
+.button:hover {
     color: #000;
+    background: #5D8AA8;
+    transition: 0.3s;
 }
