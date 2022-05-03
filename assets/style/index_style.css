@@ -10,8 +10,6 @@
 .header {
     width: 100%;
 }
-
-
 /*Titolo della pagina*/
 .header h1 {
     font-size: 25px;
@@ -57,6 +55,12 @@
     padding: 2% 5%;
     color: #000;
 }
+/*Immagine profilo*/
+.sub_block > img {
+    float: right;
+    border-radius: 20px;
+    margin: 200px 15px;
+}
 
 /*Bottoni*/
 .button {
@@ -71,4 +75,18 @@
     background: #0095B6;
     color: #fff;
     cursor: pointer;
+}
+
+/*Icone dei social*/
+.icons .fa {
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    text-decoration: none;
+}
+.fa--ig {
+    color: red;
+}
+.fa--github {
+    color: #000;
 }
