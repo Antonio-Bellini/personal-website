@@ -6,12 +6,7 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-/*Header della pagina*/
-.header {
-    width: 100%;
-}
-
-/*Bottoni superiori*/
+/*Bottoni superiori della pagina*/
 nav {
     background: #5D8AA8;
     padding: 0 1%;
@@ -19,73 +14,18 @@ nav {
     align-items: center;
 }
 .links {
-    flex: 1;
     text-align: right;
 }
-.links > ul > li{
+.links ul li {
     list-style: none;
     display: inline-block;
     padding: 5px 10px;
 }
-.links > ul > li > a{
+.links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 15px;
 }
-
-/*Titolo della pagina*/
-.header h1 {
-    font-size: 25px;
-    padding-left: 10px;
-    background-color: #5D8AA8;
-    font-style: italic;
-    color: #000000;
-}
-
-/*Corpo principale della pagina*/
-.block {
-    height: 100vh;
-    width: 100%;
-    background: #5D8AA8;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-/*Blocco in sovrapposizione*/
-.sub_block {
-    height: 80vh;
-    width: 80%;
-    background-color: #fff;
-    position: relative;
-    left: 10%;
-    top: 3%;
-    border-radius: 20px;
-}
-/*Testo dentro al sub_block*/
-/*Primo titolo del sub_block*/
-.sub_block h2 {
-    font-size: 50px;
-    font-style: italic;
-    padding: 5%;
-    padding-bottom: 0;
-    color:darkgoldenrod;
-}
-/*Stile delle scritte nei paragrafi*/
-.sub_block p {
-    font-size: 25px;
-    font-style: italic;
-    padding: 2% 5%;
-    color: #000;
-}
-/*Immagine profilo*/
-.sub_block > img {
-    width: 800px;
-    float: right;
-    border-radius: 20px;
-    margin: 200px 15px;
-}
-
 /*Bottoni*/
 .button {
     display: inline-block;
@@ -104,4 +44,49 @@ nav {
     color: #000;
     background: #5D8AA8;
     transition: 0.3s;
+}
+
+/*Corpo principale della pagina*/
+.block {
+    height: 100vh;
+    width: 100%;
+    background: #5D8AA8;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*Blocco in sovrimpressione*/
+.sub_block {
+    height: 80vh;
+    width: 80%;
+    background-color: #fff;
+    position: relative;
+    left: 10%;
+    top: 3%;
+    border-radius: 20px;
+}
+
+/*Testo dentro al sub_block*/
+/*Primo titolo del sub_block*/
+.sub_block h2 {
+    font-size: 50px;
+    font-style: italic;
+    padding: 5%;
+    padding-bottom: 0;
+    color:darkgoldenrod;
+}
+/*Stile delle scritte nei paragrafi*/
+.sub_block p {
+    font-size: 25px;
+    font-style: italic;
+    padding: 2% 5%;
+    color: #000;
+}
+/*Immagine profilo*/
+.sub_block img {
+    float: right;
+    width: 800px;
+    border-radius: 20px;
+    margin: 200px 15px;
 }
