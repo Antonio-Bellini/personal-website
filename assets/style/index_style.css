@@ -6,12 +6,16 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+body  {
+    background: #5D8AA8;
+}
+
 /*Bottoni superiori della pagina*/
 nav {
-    background: #5D8AA8;
-    padding: 0 1%;
+    padding: 0;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #fff;
 }
 .links {
     text-align: right;
@@ -46,6 +50,11 @@ nav {
     transition: 0.3s;
 }
 
+/*Bottone colorato che indica in quale pagina ci si trova*/
+.button--sel {
+    border: 1px solid blue;
+}
+
 /*Corpo principale della pagina*/
 .block {
     height: 100vh;
@@ -60,27 +69,24 @@ nav {
 .sub_block {
     height: 80vh;
     width: 80%;
+    margin: auto;
     background-color: #fff;
-    position: relative;
-    left: 10%;
-    top: 3%;
     border-radius: 20px;
 }
 
 /*Testo dentro al sub_block*/
 /*Primo titolo del sub_block*/
 .sub_block h2 {
-    font-size: 50px;
-    font-style: italic;
     padding: 5%;
-    padding-bottom: 0;
+    font-size: 45px;
+    font-style: italic;
     color:darkgoldenrod;
 }
 /*Stile delle scritte nei paragrafi*/
 .sub_block p {
     font-size: 25px;
     font-style: italic;
-    padding: 2% 5%;
+    padding: 1% 5%;
     color: #000;
 }
 /*Immagine profilo*/
@@ -88,5 +94,5 @@ nav {
     float: right;
     width: 800px;
     border-radius: 20px;
-    margin: 200px 15px;
+    margin-top: 11%;
 }
