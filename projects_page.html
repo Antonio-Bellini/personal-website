@@ -14,6 +14,7 @@
     <div class="header">
         <nav>
             <div class="links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="./index.html"         class="button">            HOME    </a></li>
                     <li><a href="./projects_page.html" class="button button--sel">PROJECTS</a></li>
@@ -21,7 +22,48 @@
                     <li><a href="./contact_page.html"  class="button">            CONTACT </a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </div>
+
+    <!--Sezione principale della pagina-->
+    <section class="block">
+        <h2>My projects</h2>
+        <div class="project_row">
+            <a href="#" class="fa fa-github" target="_blank"></a>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="project_row">
+            <a href="#" class="fa fa-github" target="_blank"></a>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="project_row">
+            <a href="#" class="fa fa-github" target="_blank"></a>
+        </div>
+    </section>
+
+
+    <!--Javascript per il menu da mobile-->
+    <script>
+        var links = document.getElementById("navLinks");
+
+        function hideMenu() {
+            links.style.right = "-200px";
+        }
+
+        function showMenu() {
+            links.style.right = "0";
+        }
+    </script>
 </body>
 </html>

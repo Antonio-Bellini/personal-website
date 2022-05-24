@@ -8,7 +8,7 @@
 
 /*Colore principale del body*/
 body  {
-    background: #fff;
+    background: rgb(233, 233, 233);
 }
 
 /*Bottoni superiori della pagina*/
@@ -36,6 +36,40 @@ nav .fa {
     font-size: 15px;
 }
 
+/*Corpo principale della pagina*/
+.block {
+    height: 100%;
+    width: 100%;
+}
+/*Titolo*/
+h2 {
+    font-size: 45px;
+    font-style: italic;
+    padding: 5%;
+    color:darkgoldenrod;
+}
+/*Sottotitolo*/
+h4 {
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 10%;
+}
+/*Paragrafo*/
+p {
+    font-size: 25px;
+    padding: 1% 5%;
+    color: #000;
+}
+
+/*Riga di informazioni*/
+.project_row {
+    border: 1px solid rgb(222, 222, 222);
+    height: 100px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 10px  10px 15px #ccc;
+}
+
 /*Bottoni secondari*/
 .button {
     display: inline-block;
@@ -55,17 +89,11 @@ nav .fa {
     color: #000;
     transition: 0.3s;
 }
-
 /*Bottone colorato che indica in quale pagina ci si trova*/
 .button--sel {
     border: 2px solid black;
 }
 
-/*Corpo principale della pagina*/
-.block {
-    height: 100%;
-    width: 100%;
-}
 /*Blocco in sovrimpressione*/
 .sub_block {
     height: 80vh;
@@ -78,24 +106,15 @@ nav .fa {
                 10px -10px 15px #ccc,
                -10px  10px 15px #ccc;
 }
-
-/*Testo dentro al sub_block*/
-/*Primo titolo del sub_block*/
-.sub_block h2 {
-    font-size: 45px;
+/*Grandezza del sottotitolo nella home*/
+.sub_block > h4 {
+    text-align: center;
+    font-size: 15px;
     font-style: italic;
-    padding: 5%;
-    color:darkgoldenrod;
-}
-/*Stile delle scritte nei paragrafi*/
-.sub_block p {
-    font-size: 25px;
-    font-style: italic;
-    padding: 1% 5%;
-    color: #000;
+    padding: 2%;
 }
 /*Immagine profilo*/
-.sub_block img {
+.sub_block > img {
     float: right;
     width: 600px;
     height: 400px;
@@ -103,6 +122,17 @@ nav .fa {
     margin-top: 11%;
 }
 
+/*Loghi*/
+.block .fa {
+    font-size: 50px;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    text-decoration: none;
+    color: black;
+}
+.block .fa:hover {
+    color: red;
+}
 
 /*Style per la visualizzazione da mobile*/
 @media(max-width: 700px) {
@@ -138,16 +168,16 @@ nav .fa {
 
     /*Grandezza delle immagini nella home*/
     .sub_block > img {
-        max-width: 35vh;
+        height: 20vh;
+        width: 40vh;
     }
-
-    /*Titolo nelle pagine*/
-    .sub_block h2 {
+    /*Grandezza del titolo*/
+    .sub_block > h2 {
         text-align: center;
         font-size: 35px;
     }
-    /*paragrafo nelle pagine*/
-    .sub_block p {
+    /*Grandezza del testo nei paragrafi*/
+    .sub_block > p {
         text-align: center;
         font-size: 20px;
     }
