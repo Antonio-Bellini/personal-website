@@ -15,25 +15,46 @@
     <div class="header">
         <nav>
             <div class="links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="./index.html"         class="button button--sel">HOME    </a></li>
-                    <li><a href="./projects_page.html" class="button">            PROJECTS</a></li>
-                    <li><a href="./about_page.html"    class="button">            ABOUT   </a></li>
-                    <li><a href="./contact_page.html"  class="button">            CONTACT </a></li>
+                    <li><a href="index.html"         class="button button--sel">HOME    </a></li>
+                    <li><a href="projects_page.html" class="button">            PROJECTS</a></li>
+                    <li><a href="about_page.html"    class="button">            ABOUT   </a></li>
+                    <li><a href="contact_page.html"  class="button">            CONTACT </a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </div>
 
+    <br/>
     <br/>
 
     <!--Sezione principale della pagina-->
     <section class="block">
         <div class="sub_block">
             <img src="./assets/img/banner.png"/>
-            <h2>Antonio Bellini personal website</h2>
+            <h2>Antonio Bellini</h2>
             <p>I'm a 17 years old Student at IIS A. Avogadro in Turin</p>
+            <br/>
+            <br/>
+            <br/>
+            <a href="projects_page.html" class="button">More about me</a>
         </div>
     </section>
+
+
+    <!--Javascript per il menu da mobile-->
+    <script>
+        var links = document.getElementById("navLinks");
+
+        function hideMenu() {
+            links.style.right = "-200px";
+        }
+
+        function showMenu() {
+            links.style.right = "0";
+        }
+    </script>
 </body>
 </html>

@@ -6,31 +6,37 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/*Colore principale del body*/
 body  {
-    background: #5D8AA8;
+    background: #fff;
 }
 
 /*Bottoni superiori della pagina*/
 nav {
-    padding: 0;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #fff;
+    padding: 0 1%;
+    border-bottom: 1px solid #ccc;
+}
+nav .fa {
+    display: none;
 }
 .links {
     text-align: right;
+    flex: 1;
 }
 .links ul li {
     list-style: none;
     display: inline-block;
     padding: 5px 10px;
+    position: relative;
 }
 .links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 15px;
 }
-/*Bottoni*/
+
+/*Bottoni secondari*/
 .button {
     display: inline-block;
     text-decoration: none;
@@ -40,46 +46,45 @@ nav {
     border-radius: 15px;
     font-size: 25px;
     font-style: italic;
-    background: #0095B6;
+    background: #ccc;
     color: #fff;
     cursor: pointer;
 }
 .button:hover {
-    color: #000;
     background: #5D8AA8;
+    color: #000;
     transition: 0.3s;
 }
 
 /*Bottone colorato che indica in quale pagina ci si trova*/
 .button--sel {
-    border: 1px solid blue;
+    border: 2px solid black;
 }
 
 /*Corpo principale della pagina*/
 .block {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background: #5D8AA8;
-    background-position: center;
-    background-size: cover;
-    position: relative;
 }
-
 /*Blocco in sovrimpressione*/
 .sub_block {
     height: 80vh;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     background-color: #fff;
     border-radius: 20px;
+    box-shadow: 10px  10px 15px #ccc,
+               -10px -10px 15px #ccc,
+                10px -10px 15px #ccc,
+               -10px  10px 15px #ccc;
 }
 
 /*Testo dentro al sub_block*/
 /*Primo titolo del sub_block*/
 .sub_block h2 {
-    padding: 5%;
     font-size: 45px;
     font-style: italic;
+    padding: 5%;
     color:darkgoldenrod;
 }
 /*Stile delle scritte nei paragrafi*/
@@ -92,7 +97,58 @@ nav {
 /*Immagine profilo*/
 .sub_block img {
     float: right;
-    width: 800px;
+    width: 600px;
+    height: 400px;
     border-radius: 20px;
     margin-top: 11%;
+}
+
+
+/*Style per la visualizzazione da mobile*/
+@media(max-width: 700px) {
+    /*Bottoni superiori*/
+    nav .fa {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 10px;
+        color: black;
+    }
+    .links {
+        height: 100vh;
+        width: 200px;
+        background: #0095B6;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 0.5s
+    }
+    .links ul li {
+        display: block;
+    }
+
+    /*Blocco in sovrimpressione*/
+    .sub_block {
+        margin-top: 20%;
+        height: 65vh;
+        width: 40vh;
+    }
+
+    /*Grandezza delle immagini nella home*/
+    .sub_block > img {
+        max-width: 35vh;
+    }
+
+    /*Titolo nelle pagine*/
+    .sub_block h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+    /*paragrafo nelle pagine*/
+    .sub_block p {
+        text-align: center;
+        font-size: 20px;
+    }
 }
