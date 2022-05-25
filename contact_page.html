@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/style/index_style.css">
+    <link rel="stylesheet" href="./assets/style/contact_style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="icon"       href="./assets/img/contact_page.png" type="x-icon">
     <title>Contact page</title>
 </head>
@@ -14,6 +15,7 @@
     <div class="header">
         <nav>
             <div class="links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="./index.html"         class="button">            HOME    </a></li>
                     <li><a href="./projects_page.html" class="button">            PROJECTS</a></li>
@@ -21,7 +23,73 @@
                     <li><a href="./contact_page.html"  class="button button--sel">CONTACT </a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </div>
+
+    <!--Sezione principale delle pagina-->
+    <section class="block">
+        <div class="row">
+            <h2>Contact me</h2>
+            <!--Sezione del form da compilare per l'invio di email-->
+            <form id="form">
+                <div class="field">
+                    <label for="from_name">Come ti chiami?</label>
+                    <input type="text" name="from_name" id="from_name">
+                </div>
+
+                <div class="field">
+                    <label for="message">Messaggio:</label>
+                    <input type="text" name="message" id="message">
+                </div>
+      
+                <input type="submit" id="button" value="Invia">
+            </form>
+
+            <script 
+                type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+            <script 
+                type="text/javascript">
+                emailjs.init('jvGoTYpkj0UZmUsFi')
+            </script>
+        </div>
+    </section>
+
+
+    <!--Script per l'invio di email e per il menu da mobile-->
+    <script>
+        var links = document.getElementById("navLinks");
+        // Funzione per nascondere il menu
+        function hideMenu() {
+            links.style.right = "-200px";
+        }
+        // Funzione per mostrare il menu
+        function showMenu() {
+            links.style.right = "0";
+        }
+
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                btn.value = 'Invio in corso...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_ss3t5tb';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Invia';
+                        alert('Email inviata con successo!');
+                    }, (err) => {
+                        btn.value = 'Invia';
+                        alert(JSON.stringify(err));
+                    });
+        });
+    </script>
 </body>
 </html>

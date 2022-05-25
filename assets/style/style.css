@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Colore principale del body*/
+body  {
+    background:  url(../img/Torino.jpg) ;
+}
+
+/*Bottoni superiori della pagina*/
+nav {
+    align-items: center;
+    padding: 0 1%;
+    border-bottom: 1px solid #ccc;
+}
+nav .fa {
+    display: none;
+}
+.links {
+    text-align: right;
+    flex: 1;
+}
+.links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+    position: relative;
+}
+.links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/*Corpo principale della pagina*/
+.block {
+    height: 100%;
+    width: 100%;
+}
+/*Titolo*/
+h2 {
+    font-size: 45px;
+    font-style: italic;
+    padding: 5%;
+    color:darkgoldenrod;
+}
+/*Sottotitolo*/
+h4 {
+    font-size: 20px;
+    font-style: italic;
+    padding-left: 5%;
+}
+
+/*Bottoni secondari*/
+.button {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 12px 28px;
+    margin: 10% 5%;
+    border-radius: 15px;
+    font-size: 25px;
+    font-style: italic;
+    background: #ccc;
+    color: #fff;
+    cursor: pointer;
+}
+.button:hover {
+    background: #5D8AA8;
+    color: #000;
+    transition: 0.3s;
+}
+/*Bottone colorato che indica in quale pagina ci si trova*/
+.button--sel {
+    border: 2px solid black;
+}
+
+/*Blocco in sovrimpressione*/
+.sub_block {
+    height: 80vh;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 10px  10px 15px #fff,
+               -10px -10px 15px #fff,
+                10px -10px 15px #fff,
+               -10px  10px 15px #fff;
+}
+/*Grandezza del sottotitolo nella home*/
+.sub_block > h4 {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    padding: 2%;
+}
+/*Immagine profilo*/
+.sub_block > img {
+    float: right;
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    margin-top: 11%;
+}
+
+/*Loghi*/
+.block .fa {
+    font-size: 50px;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    text-decoration: none;
+    color: black;
+}
+.block .fa:hover {
+    color: red;
+}
+
+/*Style per la visualizzazione da mobile*/
+@media(max-width: 700px) {
+    /*Bottoni superiori*/
+    nav .fa {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 10px;
+        color: black;
+    }
+    .links {
+        height: 100vh;
+        width: 200px;
+        background: #0095B6;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 0.5s
+    }
+    .links ul li {
+        display: block;
+    }
+
+    /*Blocco in sovrimpressione*/
+    .sub_block {
+        margin-top: 20%;
+        height: 70vh;
+        width: 40vh;
+    }
+
+    /*Sottotitolo delle pagine*/
+    h4 {
+        font-size: 20px;
+        font-style: italic;
+
+        padding-left: 20%;
+    }
+
+    /*Grandezza delle immagini nella home*/
+    .sub_block > img {
+        height: 20vh;
+        width: 40vh;
+    }
+    /*Grandezza del titolo*/
+    .sub_block > h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+    /*Grandezza del testo nei paragrafi*/
+    .sub_block > p {
+        text-align: center;
+        font-size: 20px;
+    }
+}

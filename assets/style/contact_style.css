@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Campo del form da compilare*/
+#form {
+    margin-top: 2%;
+}
+
+/*Template per l'invio delle email*/
+.field {
+    padding-left: 35%;
+    padding-bottom: 2%;
+}
+.field label {
+    display: block;
+    padding: 1% 0;
+    font-size: 20px;
+    color: greenyellow;
+} 
+.field input {
+    display: block;
+    width: 500px;
+    font-size: 20px;
+    box-shadow: 10px  10px 15px #ccc;
+    border: none;
+}
+#message {
+    height: 200px;
+}
+
+/*Bottone per l'invio del messaggio*/
+input[type="submit"] {
+    display: block;
+    margin-left: 46%;
+    padding: 5px 20px;
+    font-size: 20px;
+    background-color: #ccc;
+    border: 1px solid #fff;
+    color: #fff;
+}
+#button:hover {
+    background: #5D8AA8;
+    color: #000;
+    transition: 0.3s;
+}
+
+/*Paragrafo*/
+p {
+    font-size: 25px;
+    padding-left: 5%;
+    font-style: italic;
+    display: inline;
+    color: #000;
+}
+
+/*Riga di informazioni*/
+.row {
+    width: 90%;
+    height: 800px;
+    margin-top: 1%;
+    margin-left: 5%;
+    border: 1px solid rgb(222, 222, 222);
+    box-shadow: 10px  10px 15px #ccc;
+}
+
+
+/*Style per la visualizzazione da mobile*/
+@media(max-width: 700px) {
+    /*Bottoni superiori*/
+    nav .fa {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 10px;
+        color: black;
+    }
+    .links {
+        height: 100vh;
+        width: 200px;
+        background: #0095B6;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 0.5s
+    }
+    .links ul li {
+        display: block;
+    }
+
+    /*Riga di informazioni*/
+    .row {
+        margin-top: 20%;
+        height: 600px;
+    }
+
+    /*Campo per l'invio delle email*/
+    
+}
