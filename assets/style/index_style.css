@@ -6,11 +6,58 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/*Blocco in sovrimpressione*/
+.sub_block {
+    height: 82vh;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 10px  10px 15px #ccc,
+               -10px -10px 15px #ccc,
+                10px -10px 15px #ccc,
+               -10px  10px 15px #ccc;
+}
+/*Grandezza del titolo nella home*/
+.sub_block > h2 {
+    font-size: 45px;
+    font-style: italic;
+    padding: 1% 5%;
+    color:darkgoldenrod;
+}
 /*Paragrafo*/
-p {
+.sub_block > p {
     font-size: 25px;
-    padding-left: 5%;
     font-style: italic;
     display: inline;
+    padding: 5% 5%;
     color: #000;
+}
+/*Immagine profilo*/
+.sub_block > img {
+    float: right;
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    margin-top: 11%;
+}
+/*Loghi*/
+.sub_block .uit {
+    font-size: 25px;
+    margin: 5% 5%;
+    text-decoration: none;
+}
+/*Logo Twitter*/
+.sub_block .uit-twitter-alt {
+    color: #00ACEE;
+}
+.sub_block .uit-twitter-alt:hover {
+    color: red;
+}
+/*Logo github*/
+.sub_block .uit-github-alt {
+    color: black;
+}
+.sub_block .uit-github-alt:hover {
+    color: red;
 }

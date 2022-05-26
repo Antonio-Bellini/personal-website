@@ -30,7 +30,7 @@ p {
 /*Style per la visualizzazione da mobile*/
 @media(max-width: 700px) {
     /*Bottoni superiori*/
-    nav .fa {
+    nav .uit {
         display: block;
         font-size: 20px;
         cursor: pointer;
