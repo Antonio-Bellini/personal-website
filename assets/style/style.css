@@ -17,7 +17,7 @@ nav {
     padding: 0 1%;
     border-bottom: 1px solid #ccc;
 }
-nav .uit {
+nav .fa {
     display: none;
 }
 .links {
@@ -60,11 +60,18 @@ nav .uit {
     width: 100%;
 }
 
+h2{
+    font-size: 45px;
+    font-style: italic;
+    padding: 1% 5%;
+    color:darkgoldenrod;
+}
+
 
 /*Style per la visualizzazione da mobile*/
 @media(max-width: 700px) {
     /*Bottoni superiori*/
-    nav .uit {
+    nav .fa {
         display: block;
         font-size: 20px;
         cursor: pointer;

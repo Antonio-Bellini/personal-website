@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
-    <link rel="stylesheet" href="./assets/style/index_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/style/skills_style.css">
     <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="icon"       href="./assets/img/skills_page.png" type="x-icon">
     <title>Skills</title>
 </head>
 <body>
@@ -14,17 +15,85 @@
     <div class="header">
         <nav>
             <div class="links" id="navLinks">
-                <i class="" onclick="hideMenu()"></i>
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html"         class="button">             HOME    </a></li>
-                    <li><a href="about_page.html"    class="button">             ABOUT   </a></li>
-                    <li><a href="projects_page.html" class="button">             PROJECTS</a></li>
-                    <li><a href="skills_page.html"   class="button  button--sel">SKILLS</a></li>
-                    <li><a href="contact_page.html"  class="button">             CONTACT </a></li>
+                    <li><a href="index.html"         class="button">            HOME    </a></li>
+                    <li><a href="about_page.html"    class="button">            ABOUT   </a></li>
+                    <li><a href="projects_page.html" class="button">            PROJECTS</a></li>
+                    <li><a href="skills_page.html"   class="button button--sel">SKILLS  </a></li>
+                    <li><a href="contact_page.html"  class="button">            CONTACT </a></li>
                 </ul>
             </div>
-            <i class="uit uit-grip-horizontal-line" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </div>
+
+    <!--Sezione principale della pagina-->
+    <section class="block">
+        <h2>My skills</h2>
+        <div class="row">
+            <img src="./assets/img/logo_c.png" alt="logo C language"/>
+            <div class="skills_row">
+                <span class="skills_percentage skills_c"></span>
+            </div>
+
+            <img src="./assets/img/logo_html.png" alt="logo HTML"/>
+            <div class="skills_row">
+                <span class="skills_percentage skills_html"></span>
+            </div>
+
+            <img src="./assets/img/logo_css.png" alt="logo CSS"/>
+            <div class="skills_row">
+                <span class="skills_percentage skills_css"></span>
+            </div>
+
+            <img src="./assets/img/logo_js.png" alt="logo JS"/>
+            <div class="skills_row">
+                <span class="skills_percentage skills_js"></span>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <h2>What I want to learn</h2>
+        <div class="row">
+            <img src="./assets/img/logo_scss.png" alt="logo SCSS"/>
+            <div class="skills_row">
+                <span class="skills_percentage skills_scss"></span>
+            </div>
+
+            <img src="./assets/img/logo_react.png" alt="logo REACT JS"/>
+            <div class="skills_row">
+                <span class="skills_percentage skills_react"></span>
+            </div>
+
+            <img src="./assets/img/logo_vue.png" alt="logo VUE JS"/>
+            <div class="skills_row">
+                <span class="skills_percentage skills_vue"></span>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </section>
+
+    <!--Javascript per il menu da mobile-->
+    <script>
+        var links = document.getElementById("navLinks");
+
+        // Funzione per nascondere il menu
+        function hideMenu() {
+            links.style.right = "-200px";
+        }
+
+        // Funzione per mostrare il menu
+        function showMenu() {
+            links.style.right = "0";
+        }
+    </script>
 </body>
 </html>

@@ -27,10 +27,11 @@
     width: 500px;
     font-size: 20px;
     box-shadow: 10px  10px 15px #ccc;
-    border: none;
+    border: 1px solid black;
 }
 #message {
     height: 200px;
+    border: 1px solid black;
 }
 
 /*Bottone per l'invio del messaggio*/
@@ -60,10 +61,11 @@ p {
 
 /*Riga di informazioni*/
 .row {
-    width: 90%;
-    height: 800px;
+    width: 80%;
+    height: 700px;
     margin-top: 1%;
-    margin-left: 5%;
+    margin-left: 10%;
+    background: #fff;
     border: 1px solid rgb(222, 222, 222);
     box-shadow: 10px  10px 15px #ccc;
 }
@@ -101,5 +103,7 @@ p {
     }
 
     /*Campo per l'invio delle email*/
-    
+    .field input {
+        width: 200px;
+    }
 }

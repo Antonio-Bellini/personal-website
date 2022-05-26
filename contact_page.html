@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/style/contact_style.css">
     <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="icon"       href="./assets/img/contact_page.png" type="x-icon">
@@ -15,12 +15,13 @@
     <div class="header">
         <nav>
             <div class="links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="./index.html"         class="button">            HOME    </a></li>
-                    <li><a href="./projects_page.html" class="button">            PROJECTS</a></li>
-                    <li><a href="./about_page.html"    class="button">            ABOUT   </a></li>
-                    <li><a href="./contact_page.html"  class="button button--sel">CONTACT </a></li>
+                    <li><a href="index.html"         class="button ">           HOME    </a></li>
+                    <li><a href="about_page.html"    class="button ">           ABOUT   </a></li>
+                    <li><a href="projects_page.html" class="button">            PROJECTS</a></li>
+                    <li><a href="skills_page.html"   class="button">            SKILLS  </a></li>
+                    <li><a href="contact_page.html"  class="button button--sel">CONTACT </a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -29,17 +30,17 @@
 
     <!--Sezione principale delle pagina-->
     <section class="block">
+        <h2>Contact me</h2>
         <div class="row">
-            <h2>Contact me</h2>
             <!--Sezione del form da compilare per l'invio di email-->
             <form id="form">
                 <div class="field">
-                    <label for="from_name">Come ti chiami?</label>
+                    <label for="from_name">What's your name?</label>
                     <input type="text" name="from_name" id="from_name">
                 </div>
 
                 <div class="field">
-                    <label for="message">Messaggio:</label>
+                    <label for="message">Message:</label>
                     <input type="text" name="message" id="message">
                 </div>
       

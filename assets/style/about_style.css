@@ -6,6 +6,11 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/*Separazione del titolo dalla blocco sotto*/
+.block > h2 {
+    margin-bottom: 5%;
+}
+
 /*Riga di informazioni*/
 .row {
     width: 90%;
@@ -30,7 +35,7 @@ p {
 /*Style per la visualizzazione da mobile*/
 @media(max-width: 700px) {
     /*Bottoni superiori*/
-    nav .uit {
+    nav .fa {
         display: block;
         font-size: 20px;
         cursor: pointer;

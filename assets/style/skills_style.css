@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*blocco di informazioni*/
+.row {
+    width: 90%;
+    height: 700px;
+    margin-top: 2%;
+    margin-left: 5%;
+    background: #fff;
+    border: 1px solid rgb(222, 222, 222);
+    box-shadow: 10px  10px 15px #ccc;
+}
+
+/*Immagine dei loghi*/
+.row > img {
+    width: 40px;
+    padding: 1%;
+}
+
+/*Riga delle skills*/
+.skills_row, 
+.skills_percentage {
+    height: 20px;
+    border-radius: 30px;
+}
+.skills_row {
+    margin-top: 0;
+    margin-bottom: 5%;
+    background-color: rgb(236, 236, 236);
+}
+.skills_percentage {
+    display: block;
+}
+/*Stile per C*/
+.skills_c {
+    width: 25%;
+    background-color: rgb(99, 99, 255);
+}
+/*Stile per HTML*/
+.skills_html {
+    width: 35%;
+    background-color: rgb(227, 76, 38);
+}
+/*Stile per CSS*/
+.skills_css {
+    width: 38%;
+    background-color: rgb(38, 77, 228);
+}
+/*Stile per JS*/
+.skills_js {
+    width: 15%;
+    background-color: rgb(240, 219, 79);
+}
+/*Stile per SCSS*/
+.skills_scss {
+    width: 0;
+    background-color: #f97ba4;
+}
+/*Stile per React*/
+.skills_react {
+    width: 0;
+    background-color: #61dbfb;
+}
+/*Stile per Vue*/
+.skills_vue {
+    width: 0;
+    background-color: #34495e;
+}
+
+
+/*Style per la visualizzazione da mobile*/
+@media(max-width: 700px) {
+    /*Bottoni superiori*/
+    nav .fa {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 10px;
+        color: black;
+    }
+    .links {
+        height: 100vh;
+        width: 200px;
+        background: #0095B6;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 0.5s
+    }
+    .links ul li {
+        display: block;
+    }
+
+    .skills_row {
+        margin-top: 0;
+        margin-bottom: 30%;
+    }
+}

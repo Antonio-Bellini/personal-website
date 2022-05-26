@@ -42,22 +42,95 @@
     margin-top: 11%;
 }
 /*Loghi*/
-.sub_block .uit {
+.sub_block .fa {
     font-size: 25px;
     margin: 5% 5%;
     text-decoration: none;
 }
 /*Logo Twitter*/
-.sub_block .uit-twitter-alt {
+.sub_block .fa-twitter {
     color: #00ACEE;
 }
-.sub_block .uit-twitter-alt:hover {
+.sub_block .fa-twitter:hover {
     color: red;
 }
 /*Logo github*/
-.sub_block .uit-github-alt {
+.sub_block .fa-github {
     color: black;
 }
-.sub_block .uit-github-alt:hover {
+.sub_block .fa-github:hover {
     color: red;
+}
+
+/*Bottone contact me*/
+.button--contact {
+    display: inline-block;
+    text-decoration: none;
+    margin: 10% 5%;
+    padding: 15px 15px;
+    font-size: 25px;
+    font-style: italic;
+    color: black;
+    background: #00ACEE;
+    cursor: pointer;
+    border: 1px solid #00ACEE;
+    border-radius: 15px;
+}
+
+
+/*Style per la visualizzazione da mobile*/
+@media(max-width: 700px) {
+    /*Bottoni superiori*/
+    nav .fa {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 10px;
+        color: black;
+    }
+    .links {
+        height: 100vh;
+        width: 200px;
+        background: #0095B6;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 0.5s
+    }
+    .links ul li {
+        display: block;
+    }
+
+    /*Blocco in sovrimpressione*/
+    .sub_block {
+        margin-top: 20%;
+        height: 70vh;
+        width: 40vh;
+    }
+
+    /*Sottotitolo delle pagine*/
+    h4 {
+        font-size: 20px;
+        font-style: italic;
+
+        padding-left: 20%;
+    }
+
+    /*Grandezza delle immagini nella home*/
+    .sub_block > img {
+        height: 10vh;
+        width: 20vh;
+    }
+    /*Grandezza del titolo*/
+    .sub_block > h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+    /*Grandezza del testo nei paragrafi*/
+    .sub_block > p {
+        text-align: center;
+        font-size: 20px;
+    }
 }

@@ -6,6 +6,22 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/*Separazioen del titolo dalle celle*/
+.block > h2 {
+    margin-bottom: 5%;
+}
+
+/*Style per le icone nella pagina*/
+.fa {
+    text-decoration: none;
+    font-size: 40px;
+    padding: 2% 2%;
+    color: black;
+}
+.fa:hover {
+    color: red;
+}
+
 /*Riga di informazioni*/
 .project_row {
     width: 90%;
@@ -24,10 +40,11 @@ p {
     color: #000;
 }
 
+
 /*Style per la visualizzazione da mobile*/
 @media(max-width: 700px) {
     /*Bottoni superiori*/
-    nav .uit {
+    nav .fa {
         display: block;
         font-size: 20px;
         cursor: pointer;
