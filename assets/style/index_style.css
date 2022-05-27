@@ -10,55 +10,46 @@
 .sub_block {
     height: 82vh;
     width: 80%;
-    margin: 0 auto;
+    margin-left: 10%;
     background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 10px  10px 15px #ccc,
-               -10px -10px 15px #ccc,
-                10px -10px 15px #ccc,
-               -10px  10px 15px #ccc;
+    border-radius: 10px;
+    box-shadow: 10px  10px 15px #ccc;
+    align-items: center;
 }
 /*Grandezza del titolo nella home*/
 .sub_block > h2 {
-    font-size: 45px;
+    font-size: 70px;
     font-style: italic;
-    padding: 1% 5%;
+    padding: 5% 15%;
     color:darkgoldenrod;
 }
 /*Paragrafo*/
 .sub_block > p {
-    font-size: 25px;
+    font-size: 20px;
     font-style: italic;
     display: inline;
-    padding: 5% 5%;
+    padding: 5% 15%;
     color: #000;
 }
 /*Immagine profilo*/
-.sub_block > img {
+.img_home {
+    width: 500px;
     float: right;
-    width: 600px;
-    height: 400px;
-    border-radius: 20px;
-    margin-top: 11%;
+    margin-top: 5%;
+    fill: red;
+    clip-path: circle();
 }
-/*Loghi*/
-.sub_block .fa {
+
+/*Social*/
+.social {
+    display: inline-flex;
+    padding-left: 5%;
+}
+.social-icon {
     font-size: 25px;
-    margin: 5% 5%;
-    text-decoration: none;
-}
-/*Logo Twitter*/
-.sub_block .fa-twitter {
-    color: #00ACEE;
-}
-.sub_block .fa-twitter:hover {
-    color: red;
-}
-/*Logo github*/
-.sub_block .fa-github {
     color: black;
 }
-.sub_block .fa-github:hover {
+.sub_block > .social > a > .fa:hover {
     color: red;
 }
 
@@ -66,7 +57,7 @@
 .button--contact {
     display: inline-block;
     text-decoration: none;
-    margin: 10% 5%;
+    margin: 5% 15%;
     padding: 15px 15px;
     font-size: 25px;
     font-style: italic;
@@ -75,6 +66,10 @@
     cursor: pointer;
     border: 1px solid #00ACEE;
     border-radius: 15px;
+}
+.button--contact:hover {
+    color: red;
+    transition: 0.3s;
 }
 
 
@@ -105,23 +100,20 @@
 
     /*Blocco in sovrimpressione*/
     .sub_block {
-        margin-top: 20%;
-        height: 70vh;
-        width: 40vh;
+        height: 85vh;
     }
 
     /*Sottotitolo delle pagine*/
     h4 {
         font-size: 20px;
         font-style: italic;
-
         padding-left: 20%;
     }
 
     /*Grandezza delle immagini nella home*/
-    .sub_block > img {
-        height: 10vh;
-        width: 20vh;
+    .img_home {
+        float: left;
+        width: 280px;
     }
     /*Grandezza del titolo*/
     .sub_block > h2 {
@@ -132,5 +124,15 @@
     .sub_block > p {
         text-align: center;
         font-size: 20px;
+    }
+
+    /*Social*/
+    .social {
+        display: inline-block;
+        margin-left: 10%;
+    }
+    .social-icon {
+        font-size: 25px;
+        color: black;
     }
 }

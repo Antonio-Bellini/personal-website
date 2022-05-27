@@ -95,23 +95,20 @@ h2{
 
     /*Blocco in sovrimpressione*/
     .sub_block {
-        margin-top: 20%;
-        height: 70vh;
-        width: 40vh;
+        height: 85vh;
     }
 
     /*Sottotitolo delle pagine*/
     h4 {
         font-size: 20px;
         font-style: italic;
-
         padding-left: 20%;
     }
 
     /*Grandezza delle immagini nella home*/
-    .sub_block > img {
-        height: 20vh;
-        width: 40vh;
+    .img_home {
+        float: left;
+        width: 280px;
     }
     /*Grandezza del titolo*/
     .sub_block > h2 {
