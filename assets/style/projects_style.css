@@ -1,3 +1,8 @@
+/*******************************************************************
+FOGLIO DI STILE PER LE PROPRIETA' USATE NELLA PAGINA "PROJECTS" SIA 
+PER DESKTOP CHE PER MOBILE
+*******************************************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
 
 * {
@@ -16,19 +21,18 @@
     text-decoration: none;
     font-size: 40px;
     padding: 2% 2%;
-    color: black;
+    color: var(--body-text-color);
 }
 .fa:hover {
-    color: red;
+    color: var(--body-button-hov);
 }
 
 /*Riga di informazioni*/
 .project_row {
     width: 90%;
     margin-left: 5%;
-    background: #fff;
-    border: 1px solid rgb(222, 222, 222);
-    box-shadow: 10px  10px 15px #ccc;
+    background: var(--row-bg-color);
+    box-shadow: 10px  10px 25px var(--opacity);
 }
 
 /*Paragrafo*/
@@ -37,7 +41,7 @@ p {
     padding-left: 5%;
     font-style: italic;
     display: inline;
-    color: #000;
+    color: var(--body-text-color);
 }
 
 
@@ -49,12 +53,12 @@ p {
         font-size: 20px;
         cursor: pointer;
         margin: 10px;
-        color: black;
+        color: var(--body-text-color);
     }
     .links {
         height: 100vh;
         width: 200px;
-        background: #0095B6;
+        background: var(--menu-bg-color);
         position: fixed;
         top: 0;
         right: -200px;
@@ -70,20 +74,6 @@ p {
     .sub_block {
         margin-top: 20%;
         height: 70vh;
-        width: 40vh;
-    }
-
-    /*Sottotitolo delle pagine*/
-    h4 {
-        font-size: 20px;
-        font-style: italic;
-
-        padding-left: 20%;
-    }
-
-    /*Grandezza delle immagini nella home*/
-    .sub_block > img {
-        height: 20vh;
         width: 40vh;
     }
     /*Grandezza del titolo*/

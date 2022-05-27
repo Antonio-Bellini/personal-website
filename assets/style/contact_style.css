@@ -1,3 +1,8 @@
+/*******************************************************************
+FOGLIO DI STILE PER LE PROPRIETA' USATE NELLA PAGINA "CONTACT" SIA 
+PER DESKTOP CHE PER MOBILE
+*******************************************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
 
 * {
@@ -10,7 +15,6 @@
 #form {
     margin-top: 2%;
 }
-
 /*Template per l'invio delle email*/
 .field {
     padding-left: 35%;
@@ -20,33 +24,32 @@
     display: block;
     padding: 1% 0;
     font-size: 20px;
-    color: black;
+    color: var(--body-text-color);
 } 
 .field input {
     display: block;
     width: 500px;
     font-size: 20px;
-    box-shadow: 10px  10px 15px #ccc;
-    border: 1px solid black;
+    box-shadow: 10px  10px 25px var(--opacity);
+    border: 1px solid var(--body-text-color);
 }
+/*Stile per lo spazio del messaggio*/
 #message {
     height: 200px;
-    border: 1px solid black;
+    border: 1px solid var(--body-text-color);
 }
 
 /*Bottone per l'invio del messaggio*/
 input[type="submit"] {
     display: block;
-    margin-left: 46%;
+    margin-left: 49%;
     padding: 5px 20px;
     font-size: 20px;
-    background-color: #ccc;
-    border: 1px solid #fff;
-    color: #fff;
+    background-color: var(--button-contact);
+    color: var(--row-bg-color);
 }
 #button:hover {
-    background: #5D8AA8;
-    color: #000;
+    color: var(--body-button-hov);
     transition: 0.3s;
 }
 
@@ -56,7 +59,7 @@ p {
     padding-left: 5%;
     font-style: italic;
     display: inline;
-    color: #000;
+    color: var(--body-text-color);
 }
 
 /*Riga di informazioni*/
@@ -65,9 +68,8 @@ p {
     height: 700px;
     margin-top: 1%;
     margin-left: 10%;
-    background: #fff;
-    border: 1px solid rgb(222, 222, 222);
-    box-shadow: 10px  10px 15px #ccc;
+    background: var(--row-bg-color);
+    box-shadow: 10px  10px 25px var(--opacity);
 }
 
 
@@ -79,12 +81,12 @@ p {
         font-size: 20px;
         cursor: pointer;
         margin: 10px;
-        color: black;
+        color: var(--body-text-color);
     }
     .links {
         height: 100vh;
         width: 200px;
-        background: #0095B6;
+        background: var(--menu-bg-color);
         position: fixed;
         top: 0;
         right: -200px;

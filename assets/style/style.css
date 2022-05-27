@@ -1,3 +1,8 @@
+/******************************************************************
+FOGLIO DI STILE PER ALCUNE DELLE PROPRIETA' USATE IN TUTTO IL SITO
+SIA DESKTOP CHE PER MOBILE
+******************************************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
 
 * {
@@ -6,16 +11,31 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-/*Colore principale del body*/
-body  {
-    background: rgb(233, 242, 246);
+/*COLORI NELLE PAGINE*/
+/*Light*/
+:root {
+    --body-bg-color :   #D9E2EC;
+    --body-title:       darkgoldenrod;
+    --body-text-color:  black;
+    --row-bg-color:     #FFF;
+    --body-button-hov:  red;
+    --body-button-sec:  #00ACEE;
+    --menu-bg-color:    #0095B6;
+    --skillsRow-bg:     rgb(236, 236, 236);
+    --opacity:          #E4E7EB;
+    --button-contact:   #0D897B;
+}
+/*Dark*/
+
+body {
+    background-color: var(--body-bg-color);
 }
 
-/*Bottoni superiori della pagina*/
+
+/*Proprietò dei bottoni superiori*/
 nav {
     align-items: center;
     padding: 0 1%;
-    border-bottom: 1px solid #ccc;
 }
 nav .fa {
     display: none;
@@ -34,24 +54,23 @@ nav .fa {
     text-decoration: none;
     font-size: 17px;
 }
-
-/*Bottoni secondari*/
+/*Stile dei bottoni*/
 .button {
     display: inline-block;
     text-decoration: none;
     margin: 10% 5%;
     font-size: 25px;
     font-style: italic;
-    color: black;
+    color: var(--body-text-color);
     cursor: pointer;
 }
 .button:hover {
-    color: red;
+    color: var(--body-button-hov);
     transition: 0.3s;
 }
 /*Bottone colorato che indica in quale pagina ci si trova*/
 .button--sel {
-    color: red;
+    color: var(--body-button-hov);
 }
 
 /*Corpo principale della pagina*/
@@ -60,11 +79,12 @@ nav .fa {
     width: 100%;
 }
 
+/*Titolo*/
 h2{
     font-size: 45px;
     font-style: italic;
     padding: 1% 5%;
-    color:darkgoldenrod;
+    color: var(--body-title);
 }
 
 
@@ -76,12 +96,12 @@ h2{
         font-size: 20px;
         cursor: pointer;
         margin: 10px;
-        color: black;
+        color: var(--body-button-hov);
     }
     .links {
         height: 100vh;
         width: 200px;
-        background: #0095B6;
+        background: var(--menu-bg-color);
         position: fixed;
         top: 0;
         right: -200px;
@@ -96,13 +116,6 @@ h2{
     /*Blocco in sovrimpressione*/
     .sub_block {
         height: 85vh;
-    }
-
-    /*Sottotitolo delle pagine*/
-    h4 {
-        font-size: 20px;
-        font-style: italic;
-        padding-left: 20%;
     }
 
     /*Grandezza delle immagini nella home*/

@@ -1,3 +1,8 @@
+/*******************************************************************
+FOGLIO DI STILE PER LE PROPRIETA' USATE NELLA PAGINA "HOME" (INDEX) 
+SIA PER DESKTOP CHE PER MOBILE
+*******************************************************************/
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
 
 * {
@@ -11,9 +16,9 @@
     height: 82vh;
     width: 80%;
     margin-left: 10%;
-    background-color: #fff;
+    background-color: var(--row-bg-color);
     border-radius: 10px;
-    box-shadow: 10px  10px 15px #ccc;
+    box-shadow: 10px  10px 25px var(--opacity);
     align-items: center;
 }
 /*Grandezza del titolo nella home*/
@@ -21,7 +26,7 @@
     font-size: 70px;
     font-style: italic;
     padding: 8% 13%;
-    color:darkgoldenrod;
+    color:var(--body-title);
 }
 /*Paragrafo*/
 .sub_block > p {
@@ -29,7 +34,7 @@
     font-style: italic;
     display: inline;
     padding: 8% 13%;
-    color: #000;
+    color: var(--body-text-color);
 }
 /*Immagine profilo*/
 .img_home {
@@ -37,7 +42,7 @@
     float: right;
     margin-top: 9%;
     margin-right: 1%;
-    fill: red;
+    fill: var(--body-button-hov);
     clip-path: circle();
 }
 
@@ -48,10 +53,10 @@
 }
 .social-icon {
     font-size: 25px;
-    color: black;
+    color: var(--body-text-color);
 }
 .sub_block > .social > a > .fa:hover {
-    color: red;
+    color: var(--body-button-hov);
 }
 
 /*Bottone contact me*/
@@ -62,14 +67,13 @@
     padding: 15px 15px;
     font-size: 25px;
     font-style: italic;
-    color: black;
-    background: #00ACEE;
+    color: var(--body-text-color);
+    background: var(--body-button-sec);
     cursor: pointer;
-    border: 1px solid #00ACEE;
     border-radius: 15px;
 }
 .button--contact:hover {
-    color: red;
+    color: var(--body-button-hov);
     transition: 0.3s;
 }
 
@@ -82,12 +86,12 @@
         font-size: 20px;
         cursor: pointer;
         margin: 10px;
-        color: black;
+        color: var(--body-text-color);
     }
     .links {
         height: 100vh;
         width: 200px;
-        background: #0095B6;
+        background: var(--menu-bg-color);
         position: fixed;
         top: 0;
         right: -200px;
@@ -103,19 +107,6 @@
     .sub_block {
         height: 85vh;
     }
-
-    /*Sottotitolo delle pagine*/
-    h4 {
-        font-size: 20px;
-        font-style: italic;
-        padding-left: 20%;
-    }
-
-    /*Grandezza delle immagini nella home*/
-    .img_home {
-        float: left;
-        width: 280px;
-    }
     /*Grandezza del titolo*/
     .sub_block > h2 {
         text-align: center;
@@ -126,6 +117,11 @@
         text-align: center;
         font-size: 20px;
     }
+    /*Grandezza delle immagini nella home*/
+    .img_home {
+        float: left;
+        width: 280px;
+    }
 
     /*Social*/
     .social {
@@ -134,6 +130,6 @@
     }
     .social-icon {
         font-size: 25px;
-        color: black;
+        color: var(--body-text-color);
     }
 }
