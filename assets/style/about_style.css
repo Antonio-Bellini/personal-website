@@ -21,7 +21,7 @@ DESKTOP CHE PER MOBILE
     width: 90%;
     height: 500px;
     margin-left: 5%;
-    background: var(--row-bg-color);
+    background: var(--secondary-bg-color);
     box-shadow: 10px  10px 25px var(--opacity);
 }
 
@@ -31,7 +31,7 @@ p {
     font-size: 25px;
     padding-left: 5%;
     font-style: italic;
-    color: var(--body-text-color);
+    color: var(--main-text);
 }
 
 
@@ -43,7 +43,7 @@ p {
         font-size: 20px;
         cursor: pointer;
         margin: 10px;
-        color: var(--body-text-color);
+        color: var(--main-text);
     }
     .links {
         height: 100vh;

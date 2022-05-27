@@ -14,16 +14,16 @@ SIA DESKTOP CHE PER MOBILE
 /*COLORI NELLE PAGINE*/
 /*Light*/
 :root {
-    --body-bg-color :   #D9E2EC;
-    --body-title:       darkgoldenrod;
-    --body-text-color:  black;
-    --row-bg-color:     #FFF;
-    --body-button-hov:  red;
-    --body-button-sec:  #00ACEE;
-    --menu-bg-color:    #0095B6;
-    --skillsRow-bg:     rgb(236, 236, 236);
-    --opacity:          #E4E7EB;
-    --button-contact:   #0D897B;
+    --body-bg-color :    #D9E2EC;
+    --secondary-bg-color:#FFF;
+    --menu-bg-color:     #0095B6;
+    --title:             darkgoldenrod;
+    --main-text:         black;
+    --button-hov:        red;
+    --button-contact:    #0D897B;
+    --secondary-button:  #00ACEE;
+    --skillsRow-bg:      rgb(236, 236, 236);
+    --opacity:           #E4E7EB;
 }
 /*Dark*/
 
@@ -65,12 +65,12 @@ nav .fa {
     cursor: pointer;
 }
 .button:hover {
-    color: var(--body-button-hov);
+    color: var(--button-hov);
     transition: 0.3s;
 }
 /*Bottone colorato che indica in quale pagina ci si trova*/
 .button--sel {
-    color: var(--body-button-hov);
+    color: var(--button-hov);
 }
 
 /*Corpo principale della pagina*/
@@ -84,7 +84,7 @@ h2{
     font-size: 45px;
     font-style: italic;
     padding: 1% 5%;
-    color: var(--body-title);
+    color: var(--title);
 }
 
 

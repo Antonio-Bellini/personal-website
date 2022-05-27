@@ -21,17 +21,17 @@ PER DESKTOP CHE PER MOBILE
     text-decoration: none;
     font-size: 40px;
     padding: 2% 2%;
-    color: var(--body-text-color);
+    color: var(--main-text);
 }
 .fa:hover {
-    color: var(--body-button-hov);
+    color: var(--button-hov);
 }
 
 /*Riga di informazioni*/
 .project_row {
     width: 90%;
     margin-left: 5%;
-    background: var(--row-bg-color);
+    background: var(--secondary-bg-color);
     box-shadow: 10px  10px 25px var(--opacity);
 }
 
@@ -41,7 +41,7 @@ p {
     padding-left: 5%;
     font-style: italic;
     display: inline;
-    color: var(--body-text-color);
+    color: var(--main-text);
 }
 
 
@@ -53,7 +53,7 @@ p {
         font-size: 20px;
         cursor: pointer;
         margin: 10px;
-        color: var(--body-text-color);
+        color: var(--main-text);
     }
     .links {
         height: 100vh;

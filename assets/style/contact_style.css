@@ -24,19 +24,19 @@ PER DESKTOP CHE PER MOBILE
     display: block;
     padding: 1% 0;
     font-size: 20px;
-    color: var(--body-text-color);
+    color: var(--main-text);
 } 
 .field input {
     display: block;
     width: 500px;
     font-size: 20px;
     box-shadow: 10px  10px 25px var(--opacity);
-    border: 1px solid var(--body-text-color);
+    border: 1px solid var(--main-text);
 }
 /*Stile per lo spazio del messaggio*/
 #message {
     height: 200px;
-    border: 1px solid var(--body-text-color);
+    border: 1px solid var(--main-text);
 }
 
 /*Bottone per l'invio del messaggio*/
@@ -46,10 +46,10 @@ input[type="submit"] {
     padding: 5px 20px;
     font-size: 20px;
     background-color: var(--button-contact);
-    color: var(--row-bg-color);
+    color: var(--secondary-bg-color);
 }
 #button:hover {
-    color: var(--body-button-hov);
+    color: var(--button-hov);
     transition: 0.3s;
 }
 
@@ -59,7 +59,7 @@ p {
     padding-left: 5%;
     font-style: italic;
     display: inline;
-    color: var(--body-text-color);
+    color: var(--main-text);
 }
 
 /*Riga di informazioni*/
@@ -68,7 +68,7 @@ p {
     height: 700px;
     margin-top: 1%;
     margin-left: 10%;
-    background: var(--row-bg-color);
+    background: var(--secondary-bg-color);
     box-shadow: 10px  10px 25px var(--opacity);
 }
 
@@ -81,7 +81,7 @@ p {
         font-size: 20px;
         cursor: pointer;
         margin: 10px;
-        color: var(--body-text-color);
+        color: var(--main-text);
     }
     .links {
         height: 100vh;

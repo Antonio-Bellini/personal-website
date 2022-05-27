@@ -17,7 +17,7 @@ PER DESKTOP CHE PER MOBILE
     height: 700px;
     margin-top: 2%;
     margin-left: 5%;
-    background: var(--row-bg-color);
+    background: var(--secondary-bg-color);
     box-shadow: 10px  10px 25px var(--opacity);
 }
 /*Immagine dei loghi*/
@@ -85,7 +85,7 @@ PER DESKTOP CHE PER MOBILE
         font-size: 20px;
         cursor: pointer;
         margin: 10px;
-        color: var(--body-text-color);
+        color: var(--main-text);
     }
     .links {
         height: 100vh;

@@ -16,7 +16,7 @@ SIA PER DESKTOP CHE PER MOBILE
     height: 82vh;
     width: 80%;
     margin-left: 10%;
-    background-color: var(--row-bg-color);
+    background-color: var(--secondary-bg-color);
     border-radius: 10px;
     box-shadow: 10px  10px 25px var(--opacity);
     align-items: center;
@@ -26,7 +26,7 @@ SIA PER DESKTOP CHE PER MOBILE
     font-size: 70px;
     font-style: italic;
     padding: 8% 13%;
-    color:var(--body-title);
+    color:var(--title);
 }
 /*Paragrafo*/
 .sub_block > p {
@@ -34,7 +34,7 @@ SIA PER DESKTOP CHE PER MOBILE
     font-style: italic;
     display: inline;
     padding: 8% 13%;
-    color: var(--body-text-color);
+    color: var(--main-text);
 }
 /*Immagine profilo*/
 .img_home {
@@ -42,7 +42,7 @@ SIA PER DESKTOP CHE PER MOBILE
     float: right;
     margin-top: 9%;
     margin-right: 1%;
-    fill: var(--body-button-hov);
+    fill: var(--button-hov);
     clip-path: circle();
 }
 
@@ -53,10 +53,10 @@ SIA PER DESKTOP CHE PER MOBILE
 }
 .social-icon {
     font-size: 25px;
-    color: var(--body-text-color);
+    color: var(--main-text);
 }
 .sub_block > .social > a > .fa:hover {
-    color: var(--body-button-hov);
+    color: var(--button-hov);
 }
 
 /*Bottone contact me*/
@@ -67,13 +67,13 @@ SIA PER DESKTOP CHE PER MOBILE
     padding: 15px 15px;
     font-size: 25px;
     font-style: italic;
-    color: var(--body-text-color);
-    background: var(--body-button-sec);
+    color: var(--main-text);
+    background: var(--secondary-button);
     cursor: pointer;
     border-radius: 15px;
 }
 .button--contact:hover {
-    color: var(--body-button-hov);
+    color: var(--button-hov);
     transition: 0.3s;
 }
 
@@ -86,7 +86,7 @@ SIA PER DESKTOP CHE PER MOBILE
         font-size: 20px;
         cursor: pointer;
         margin: 10px;
-        color: var(--body-text-color);
+        color: var(--main-text);
     }
     .links {
         height: 100vh;
@@ -130,6 +130,6 @@ SIA PER DESKTOP CHE PER MOBILE
     }
     .social-icon {
         font-size: 25px;
-        color: var(--body-text-color);
+        color: var(--main-text);
     }
 }
