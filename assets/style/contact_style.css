@@ -104,8 +104,16 @@ p {
         height: 600px;
     }
 
-    /*Campo per l'invio delle email*/
+    /*Template per l'invio delle email*/
+    .field {
+        padding-top: 15%;
+        padding-left: 18%;
+        padding-bottom: 15%;
+    }
     .field input {
         width: 200px;
+    }
+    input[type="submit"] {
+        margin-left: 36%;    
     }
 }
