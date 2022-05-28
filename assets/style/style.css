@@ -13,19 +13,17 @@ SIA DESKTOP CHE PER MOBILE
 
 /*COLORI NELLE PAGINE*/
 :root {
-    scroll-behavior: smooth;
-
     /*Light theme*/
-    --body-bg-color :    #D9E2EC;
-    --secondary-bg-color:#FFF;
-    --menu-bg-color:     #0095B6;
-    --title:             darkgoldenrod;
-    --main-text:         black;
-    --button-hov:        red;
-    --button-contact:    #0D897B;
-    --secondary-button:  #00ACEE;
-    --skillsRow-bg:      rgb(236, 236, 236);
-    --opacity:           #E4E7EB;
+    --body-bg-color-light :    #D9E2EC;
+    --secondary-bg-color-light:#FFF;
+    --menu-bg-color-light:     #0095B6;
+    --title-light:             darkgoldenrod;
+    --main-text-light:         black;
+    --button-hov-light:        red;
+    --button-contact-light:    #0D897B;
+    --secondary-button-light:  #00ACEE;
+    --skillsRow-bg-light:      rgb(236, 236, 236);
+    --opacity-light:           #E4E7EB;
 
     /*Dark theme*/
     --body-bg-color-dark :    #656565;
@@ -40,6 +38,24 @@ SIA DESKTOP CHE PER MOBILE
     --opacity-dark:           #E4E7EB;
 }
 
+/*Bottone cambio tema*/
+.theme {
+    float: right;
+    background-color: var(--secondary-button);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--main-text);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+.theme:is(:hover, :focus) {
+    background-color: var(--button-hov);
+    opacity: .8;
+}
+
+/*Colore dello sfondo*/
 body {
     background-color: var(--body-bg-color);
 }
@@ -113,6 +129,48 @@ h2{
         --secondary-button:     var(--secondary-button-dark);
         --skillsRow-bg:         var(--skillsRow-bg-dark);
         --opacity:              var(--opacity-dark);
+    }
+    /*Dark*/
+    [color-scheme = "dark"] {
+        --body-bg-color-dark :    #656565;
+        --secondary-bg-color-dark:rgb(171, 171, 171);
+        --menu-bg-color-dark:     #0095B6;
+        --title-dark:             darkgoldenrod;
+        --main-text-dark:         rgb(255, 255, 255);
+        --button-hov-dark:        red;
+        --button-contact-dark:    #18b9a6;
+        --secondary-button-dark:  #00ACEE;
+        --skillsRow-bg-dark:      rgb(236, 236, 236);
+        --opacity-dark:           #E4E7EB;
+    }
+}
+
+/*Style per la light mode*/
+@media(prefers-color-scheme: light) {
+    :root {
+        --body-bg-color:        var(--body-bg-color-light);
+        --secondary-bg-color:   var(--secondary-bg-color-light);
+        --menu-bg-color:        var(--menu-bg-color-light);
+        --title:                var(--title-light);
+        --main-text:            var(--main-text-light);
+        --button-hov:           var(--button-hov-light);
+        --button-contact:       var(--button-contact-light);
+        --secondary-button:     var(--secondary-button-light);
+        --skillsRow-bg:         var(--skillsRow-bg-light);
+        --opacity:              var(--opacity-light);
+    }
+    /*Light*/
+    [color-scheme = "light"] {
+        --body-bg-color :    #D9E2EC;
+        --secondary-bg-color:#FFF;
+        --menu-bg-color:     #0095B6;
+        --title:             darkgoldenrod;
+        --main-text:         black;
+        --button-hov:        red;
+        --button-contact:    #0D897B;
+        --secondary-button:  #00ACEE;
+        --skillsRow-bg:      rgb(236, 236, 236);
+        --opacity:           #E4E7EB;
     }
 }
 
