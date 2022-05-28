@@ -12,8 +12,10 @@ SIA DESKTOP CHE PER MOBILE
 }
 
 /*COLORI NELLE PAGINE*/
-/*Light*/
 :root {
+    scroll-behavior: smooth;
+
+    /*Light theme*/
     --body-bg-color :    #D9E2EC;
     --secondary-bg-color:#FFF;
     --menu-bg-color:     #0095B6;
@@ -24,13 +26,23 @@ SIA DESKTOP CHE PER MOBILE
     --secondary-button:  #00ACEE;
     --skillsRow-bg:      rgb(236, 236, 236);
     --opacity:           #E4E7EB;
+
+    /*Dark theme*/
+    --body-bg-color-dark :    #656565;
+    --secondary-bg-color-dark:rgb(171, 171, 171);
+    --menu-bg-color-dark:     #0095B6;
+    --title-dark:             darkgoldenrod;
+    --main-text-dark:         rgb(255, 255, 255);
+    --button-hov-dark:        red;
+    --button-contact-dark:    #18b9a6;
+    --secondary-button-dark:  #00ACEE;
+    --skillsRow-bg-dark:      rgb(236, 236, 236);
+    --opacity-dark:           #E4E7EB;
 }
-/*Dark*/
 
 body {
     background-color: var(--body-bg-color);
 }
-
 
 /*Proprietò dei bottoni superiori*/
 nav {
@@ -61,7 +73,7 @@ nav .fa {
     margin: 10% 5%;
     font-size: 25px;
     font-style: italic;
-    color: var(--body-text-color);
+    color: var(--main-text);
     cursor: pointer;
 }
 .button:hover {
@@ -87,6 +99,22 @@ h2{
     color: var(--title);
 }
 
+
+/*Style per la dark mode*/
+@media(prefers-color-scheme: dark) {
+    :root {
+        --body-bg-color:        var(--body-bg-color-dark);
+        --secondary-bg-color:   var(--secondary-bg-color-dark);
+        --menu-bg-color:        var(--menu-bg-color-dark);
+        --title:                var(--title-dark);
+        --main-text:            var(--main-text-dark);
+        --button-hov:           var(--button-hov-dark);
+        --button-contact:       var(--button-contact-dark);
+        --secondary-button:     var(--secondary-button-dark);
+        --skillsRow-bg:         var(--skillsRow-bg-dark);
+        --opacity:              var(--opacity-dark);
+    }
+}
 
 /*Style per la visualizzazione da mobile*/
 @media(max-width: 700px) {
