@@ -14,7 +14,7 @@ PER DESKTOP CHE PER MOBILE
 /*blocco di informazioni*/
 .row {
     width: 90%;
-    height: 700px;
+    height: 900px;
     margin-top: 2%;
     margin-left: 5%;
     background: var(--secondary-bg-color);
@@ -62,18 +62,24 @@ PER DESKTOP CHE PER MOBILE
 }
 /*Stile per SCSS*/
 .skills_scss {
-    width: 0;
+    width: 1%;
     background-color: #f97ba4;
 }
 /*Stile per React*/
 .skills_react {
-    width: 0;
+    width: 1%;
     background-color: #61dbfb;
 }
 /*Stile per Vue*/
 .skills_vue {
-    width: 0;
+    width: 1%;
     background-color: #34495e;
+}
+
+h3 {
+    color: var(--main-text);
+    margin-left: 95%;
+    margin-bottom: 1%;
 }
 
 

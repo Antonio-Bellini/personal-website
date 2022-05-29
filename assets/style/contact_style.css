@@ -30,8 +30,8 @@ PER DESKTOP CHE PER MOBILE
     display: block;
     width: 500px;
     font-size: 20px;
-    box-shadow: 10px  10px 25px var(--opacity);
     border: 1px solid var(--main-text);
+    background-color: var(--opacity);
 }
 /*Stile per lo spazio del messaggio*/
 #message {
@@ -46,7 +46,7 @@ input[type="submit"] {
     padding: 5px 20px;
     font-size: 20px;
     background-color: var(--button-contact);
-    color: var(--secondary-bg-color);
+    color: var(--main-text);
 }
 #button:hover {
     color: var(--button-hov);
