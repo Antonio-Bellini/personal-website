@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* COLORE DI SFONDO */
+body {
+  background-color: var(--bodyColor);
+}
+
+/* CORPO PRINCIPALE DELLA PAGINA */
+.block {
+  height: 100%;
+  width: 100%;
+}
+
+/* BLOCCO IN SOVRIMPRESSIONE */
+.sub_block {
+  height: 82vh;
+  width: 80%;
+  margin-top: 4%;
+  margin-left: 10%;
+  background-color: var(--secondaryColor);
+  border-radius: var(--radius);
+  -webkit-box-shadow: 10px 10px 25px var(--opacity);
+          box-shadow: 10px 10px 25px var(--opacity);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub_block span {
+  color: var(--title);
+}
+
+.sub_block h1 {
+  font-size: var(--mainTitle);
+  padding: 5%;
+}
+
+.sub_block p {
+  font-size: var(--secondaryTextSize);
+  padding-left: 5%;
+}
+
+/* IMMAGINE DEL PROFILO */
+.img_profile {
+  width: 400px;
+  position: fixed;
+  left: 65%;
+  top: 28%;
+  border-radius: 50%;
+}
+
+/* SOCIAL */
+.social {
+  text-decoration: none;
+  font-size: var(--mainTextSize);
+  margin-left: 5%;
+}
+
+.social:hover {
+  color: var(--button-hov);
+}
+
+.social--ig {
+  color: #833AB4;
+}
+
+.social--github {
+  color: black;
+}
+
+/* FORM DA COMPILARE */
+#form {
+  margin-top: 2%;
+}
+
+/* Template per l'invio delle email */
+.field {
+  padding-left: 35%;
+  padding-bottom: 2%;
+}
+
+.field label {
+  display: block;
+  padding: 1% 0;
+  font-size: var(--secondaryTextSize);
+  color: var(--mainText);
+}
+
+.field input {
+  display: block;
+  width: 500px;
+  font-size: var(--secondaryTextSize);
+  border: 1px solid var(--mainText);
+  background-color: var(--opacity);
+}
+
+#message {
+  height: 200px;
+  border: 1px solid var(--mainText);
+}
+
+/* Bottone per l'invio del messaggio */
+input[type="submit"] {
+  display: block;
+  margin-left: 49%;
+  padding: 5px 20px;
+  font-size: var(--secondaryTextSize);
+  background-color: var(--button-contact);
+  color: var(--mainText);
+}
+
+#button:hover {
+  color: var(--button-hov);
+  -webkit-transition: var(--secondaryTransition);
+  transition: var(--secondaryTransition);
+}
+
+/* STYLE DEI BOTTONI PER LA SCELTA DELLE PAGINE */
+nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3%;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+.links {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.links ul li a {
+  text-decoration: none;
+  font-size: var(--thirdTextSize);
+}
+
+/* STYLE DEGLI ALTRI BOTTONI PRESENTI NELLA PAGINA */
+.button {
+  display: inline-block;
+  text-decoration: none;
+  margin: 10% 5%;
+  font-size: var(--mainTextSize);
+  font-style: italic;
+  color: var(--mainText);
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--button-hov);
+  -webkit-transition: var(--secondaryTransition);
+  transition: var(--secondaryTransition);
+}
+
+.button--sel {
+  color: var(--button-hov);
+}
+
+.button--contact {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 15px;
+  margin: 5%;
+  font-size: var(--mainTextSize);
+  font-style: italic;
+  color: var(--mainText);
+  background: var(--secondary-button);
+  cursor: pointer;
+  border-radius: var(--secondaryRadius);
+}
+
+.button--contact:hover {
+  color: var(--button-hov);
+  -webkit-transition: var(--secondaryTransition);
+  transition: var(--secondaryTransition);
+}
+
+/* COLOR PALETTE */
+:root {
+  /* Light theme */
+  --bodyColor-light:        #fff;
+  --secondaryColor-light:    #ccc;
+  --menuBar-light:           #aaa;
+  --title-light:             darkgoldenrod;
+  --mainText-light:          black;
+  --button-hov-light:        red;
+  --button-contact-light:    #0D897B;
+  --secondary-button-light:  #00ACEE;
+  --opacity-light:           #E4E7EB;
+  /* Dark theme */
+  --bodyColor-dark:        #656565;
+  --secondaryColor-dark:    rgb(171, 171, 171);
+  --menuBar-dark:           #0095B6;
+  --title-dark:             darkgoldenrod;
+  --main-text-dark:         rgb(255, 255, 255);
+  --button-hov-dark:        red;
+  --button-contact-dark:    #18b9a6;
+  --secondary-button-dark:  #00ACEE;
+  --opacity-dark:           #E4E7EB;
+}
+
+/* GRANDEZZE DEI TESTI */
+:root {
+  --mainTitle: 50px;
+  --mobileTitle: 35px;
+  --mainTextSize: 25px;
+  --secondaryTextSize: 20px;
+  --thirdTextSize: 17px;
+  --radius: 10px;
+  --secondaryRadius: 15px;
+  --transition: 0.5s;
+  --secondaryTransition: 0.3s;
+}
+
+/* STYLE DEL SITO VISTO DA MOBILE */
+@media (max-width: 700px) {
+  /* BOTTONI SCELTA PAGINE */
+  nav .fa-solid {
+    display: block;
+    font-size: var(--secondaryTextSize);
+    cursor: pointer;
+    margin: 10px;
+    color: var(--mainText);
+  }
+  .links {
+    height: 100vh;
+    width: 200px;
+    background: var(--menuBar);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 1;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+  }
+  .links ul li {
+    display: block;
+  }
+  /* BLOCCO IN SOVRIMPRESSIONE */
+  .sub_block {
+    height: 85vh;
+    position: fixed;
+    top: 5%;
+  }
+  .sub_block h1 {
+    margin-top: 60%;
+    text-align: center;
+    font-size: var(--mobileTitle);
+  }
+  .sub_block p {
+    text-align: center;
+    font-size: var(--secondaryTextSize);
+  }
+  /* IMMAGINE DEL PROFILO */
+  .img_profile {
+    width: 200px;
+    position: fixed;
+    left: 25%;
+    top: 10%;
+    border-radius: 50%;
+  }
+  /* BOTTONE CONTACT ME */
+  .button--contact {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  /* SOCIAL */
+  .social {
+    margin-top: 20%;
+    margin-left: 27%;
+  }
+}
+
+/* STYLE PER LA DARK O LIGHT MODE IN BASE ALLE IMPOSTAZIONI DI SISTEMA */
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bodyColor:        var(--bodyColor-dark);
+    --secondaryColor:   var(--secondaryColor-dark);
+    --menuBar:          var(--menuBar-dark);
+    --title:            var(--title-dark);
+    --mainText:         var(--mainText-dark);
+    --button-hov:       var(--button-hov-dark);
+    --button-contact:   var(--button-contact-dark);
+    --secondary-button: var(--secondary-button-dark);
+    --opacity:          var(--opacity-dark);
+  }
+}
+
+/* LIGHT */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bodyColor:        var(--bodyColor-light);
+    --secondaryColor:   var(--secondaryColor-light);
+    --menuBar:          var(--menuBar-light);
+    --title:            var(--title-light);
+    --mainText:         var(--mainText-light);
+    --button-hov:       var(--button-hov-light);
+    --button-contact:   var(--button-contact-light);
+    --secondary-button: var(--secondary-button-light);
+    --opacity:          var(--opacity-light);
+  }
+}

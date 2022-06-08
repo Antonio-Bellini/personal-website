@@ -4,65 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/style/index_style.css">
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <script src="./assets/js/theme.js"></script>
+    <script src="https://kit.fontawesome.com/af19d86422.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/style/css/main.css">
     <link rel="icon"       href="./assets/img/home_page.png" type="x-icon">
     <title>Homepage</title>
 </head>
 
 <body>
-    <!--Titolo della pagina-->
-    <div class="header">
-        <nav>
-            <div class="links" id="navLinks">
-                <i class="fa fa-close" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html"         class="button button--sel">HOME    </a></li>
-                    <li><a href="about_page.html"    class="button">            ABOUT   </a></li>
-                    <li><a href="projects_page.html" class="button">            PROJECTS</a></li>
-                    <li><a href="skills_page.html"   class="button">            SKILLS  </a></li>
-                    <li><a href="contact_page.html"  class="button">            CONTACT </a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-    </div>
-
-    <br/>
-    <br/>
-
     <!--Sezione principale della pagina-->
     <section class="block">
         <div class="sub_block">
-            <button class="theme" onclick="test()"></button>
-            <div class="social">
-                <a href="" class="social-icon" target="_blank">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="" class="social-icon" target="_blank">
-                    <i class="fa fa-github"></i>
-                </a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="" class="social-icon" target="_blank">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </div>
-            <img src="./assets/img/profile_.png" class="img_home" alt="immagine profilo"/>
-            <h2>Hi,<br/> I'm Antonio</h2>
-            <br/>
-            <p>
-                Student at IIS A. Avogadro and...
-            </p>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            <nav>
+                <div class="links" id="navLinks">
+                    <i class="fa-solid fa-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html"         class="button button--sel">HOME    </a></li>
+                        <li><a href="about_page.html"    class="button">            ABOUT   </a></li>
+                        <li><a href="projects_page.html" class="button">            PROJECTS</a></li>
+                        <li><a href="skills_page.html"   class="button">            SKILLS  </a></li>
+                        <li><a href="contact_page.html"  class="button">            CONTACT </a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <img src="./assets/img/profile_picture.png" class="img_profile" alt="imamgine del profilo">
+            <h1>I am <span>Antonio Bellini</span></h1>
+            <p>Welcome to my personal portfolio website. <br/>Here I share all my projects, my skills and also my contacts.</p>
             <br/>
             <a href="contact_page.html" class="button--contact">Contact me &nbsp;<i class="fa fa-paper-plane"></i></a>
+            <br/>
+            <a href="https://www.instagram.com/antonio.bellinii/" target="_blank">
+                <i class="fa fa-instagram social social--ig"></i>
+            </a>
+            <a href="https://github.com/Antonio-Bellini" target="_blank">
+                <i class="fa fa-github social social--github"></i>
+            </a>
         </div>
     </section>
 

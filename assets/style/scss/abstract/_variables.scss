@@ -1,0 +1,37 @@
+/* COLOR PALETTE */
+:root {
+    /* Light theme */
+    --bodyColor-light :        #fff;
+    --secondaryColor-light:    #ccc;
+    --menuBar-light:           #aaa;
+    --title-light:             darkgoldenrod;
+    --mainText-light:          black;
+    --button-hov-light:        red;
+    --button-contact-light:    #0D897B;
+    --secondary-button-light:  #00ACEE;
+    --opacity-light:           #E4E7EB;
+
+    /* Dark theme */
+    --bodyColor-dark :        #656565;
+    --secondaryColor-dark:    rgb(171, 171, 171);
+    --menuBar-dark:           #0095B6;
+    --title-dark:             darkgoldenrod;
+    --main-text-dark:         rgb(255, 255, 255);
+    --button-hov-dark:        red;
+    --button-contact-dark:    #18b9a6;
+    --secondary-button-dark:  #00ACEE;
+    --opacity-dark:           #E4E7EB;
+}
+
+/* GRANDEZZE DEI TESTI */
+:root {
+    --mainTitle: 50px;
+    --mobileTitle: 35px;
+    --mainTextSize: 25px;
+    --secondaryTextSize: 20px;
+    --thirdTextSize: 17px;
+    --radius: 10px;
+    --secondaryRadius: 15px;
+    --transition: 0.5s;
+    --secondaryTransition: 0.3s;
+}

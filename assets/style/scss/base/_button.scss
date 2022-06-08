@@ -1,0 +1,56 @@
+/* STYLE DEI BOTTONI PER LA SCELTA DELLE PAGINE */
+nav {
+    align-items: center;
+    padding: 3%;
+    .fa-solid {
+        display: none;
+    }
+}
+.links {
+    text-align: center;
+    flex: 1;
+    ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 5px 10px;
+        position: relative;
+    }
+    ul li a {
+        text-decoration: none;
+        font-size: var(--thirdTextSize);
+    }
+}
+
+/* STYLE DEGLI ALTRI BOTTONI PRESENTI NELLA PAGINA */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    margin: 10% 5%;
+    font-size: var(--mainTextSize);
+    font-style: italic;
+    color: var(--mainText);
+    cursor: pointer;
+    &:hover {
+        color: var(--button-hov);
+        transition: var(--secondaryTransition);
+    }
+    &--sel {
+        color: var(--button-hov);
+    }
+    &--contact {
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px 15px;
+        margin: 5%;
+        font-size: var(--mainTextSize);
+        font-style: italic;
+        color: var(--mainText);
+        background: var(--secondary-button);
+        cursor: pointer;
+        border-radius: var(--secondaryRadius);
+        &:hover {
+            color: var(--button-hov);
+            transition: var(--secondaryTransition);
+        }
+    }
+}
