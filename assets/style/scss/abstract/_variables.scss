@@ -5,13 +5,13 @@
 /* COLOR PALETTE */
 :root {
     /* Light theme */
-    --bodyColor-light :        rgb(255, 255, 255);
-    --mainColor-light:         #fff;
-    --secondaryColor-light:    rgb(219, 230, 246);
-    --menuBar-light:           #aaa;
+    --bodyColor-light :        #DEF2F1;
+    --mainColor-light:         #FFFFFF;
+    --secondaryColor-light:    #2B7A78;
+    --menuBar-light:           #17252A;
     --title-light:             darkgoldenrod;
-    --mainText-light:          rgb(66, 66, 66);
-    --secondaryText-light:     #fff;
+    --mainText-light:          #FFFFFF;
+    --secondaryText-light:     #000000;
     --buttonHov-light:         red;
     --secondaryButton-light:   #00ACEE;
     --opacity-light:           #E4E7EB;
@@ -20,7 +20,7 @@
     --bodyColor-dark:         #ccc;
     --mainColor-dark:         #ccc;
     --secondaryColor-dark:    rgb(171, 171, 171);
-    --menuBar-dark:           #aaa;
+    --menuBar-dark:           #DEF2F1;
     --title-dark:             darkgoldenrod;
     --mainText-dark:          black;
     --buttonHov-dark:         red;

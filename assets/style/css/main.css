@@ -63,7 +63,6 @@ body {
   width: 80%;
   height: 10%;
   font-size: var(--secondaryTextSize);
-  color: var(--mainText);
   margin: 0 auto;
   margin-top: 5%;
   text-align: center;
@@ -76,12 +75,14 @@ body {
   float: left;
   margin-top: 1.5%;
   margin-left: 5%;
+  color: var(--secondaryText);
 }
 
 .sub_block .projects p {
   display: inline-block;
   margin: 0 auto;
   margin-top: 2%;
+  color: var(--secondaryText);
 }
 
 .sub_block .projects--link {
@@ -97,7 +98,7 @@ body {
 .sub_block .skills_container {
   margin: 0 auto;
   border-radius: var(--radius);
-  background-color: #ccc;
+  background-color: #CCC;
   width: 95%;
 }
 
@@ -146,15 +147,15 @@ body {
 .img_profile {
   width: 400px;
   position: fixed;
-  left: 65%;
-  top: 30%;
+  margin-left: 55%;
+  margin-top: 4%;
   border-radius: 50%;
   -webkit-transition: var(--secondaryTransition) linear;
   transition: var(--secondaryTransition) linear;
 }
 
 .img_profile:hover {
-  top: 28%;
+  margin-top: 3%;
   -webkit-transition: var(--secondaryTransition) linear;
   transition: var(--secondaryTransition) linear;
 }
@@ -170,13 +171,18 @@ body {
 }
 
 .social--ig {
-  margin-left: 7%;
-  color: #833AB4;
+  margin-left: 2%;
+  color: #FFFFFF;
 }
 
 .social--github {
   margin-left: 2%;
   color: black;
+}
+
+.social--twitter {
+  margin-left: 2%;
+  color: #1DA1F2;
 }
 
 /* FOOTER DELLA HOME */
@@ -187,7 +193,17 @@ body {
 
 .footer p {
   color: var(--mainText);
-  font-size: var(--fourthTextSize);
+  font-size: var(--secondaryTextSize);
+}
+
+.footer--about {
+  text-decoration: none;
+  margin-right: 5%;
+  margin-top: 25%;
+}
+
+.footer--about .fa {
+  float: right;
 }
 
 /* FORM DA COMPILARE */
@@ -317,13 +333,13 @@ nav .fa-solid {
 /* COLOR PALETTE */
 :root {
   /* Light theme */
-  --bodyColor-light:        rgb(255, 255, 255);
-  --mainColor-light:         #fff;
-  --secondaryColor-light:    rgb(219, 230, 246);
-  --menuBar-light:           #aaa;
+  --bodyColor-light:        #DEF2F1;
+  --mainColor-light:         #FFFFFF;
+  --secondaryColor-light:    #2B7A78;
+  --menuBar-light:           #17252A;
   --title-light:             darkgoldenrod;
-  --mainText-light:          rgb(66, 66, 66);
-  --secondaryText-light:     #fff;
+  --mainText-light:          #FFFFFF;
+  --secondaryText-light:     #000000;
   --buttonHov-light:         red;
   --secondaryButton-light:   #00ACEE;
   --opacity-light:           #E4E7EB;
@@ -331,7 +347,7 @@ nav .fa-solid {
   --bodyColor-dark:         #ccc;
   --mainColor-dark:         #ccc;
   --secondaryColor-dark:    rgb(171, 171, 171);
-  --menuBar-dark:           #aaa;
+  --menuBar-dark:           #DEF2F1;
   --title-dark:             darkgoldenrod;
   --mainText-dark:          black;
   --buttonHov-dark:         red;
@@ -356,6 +372,7 @@ nav .fa-solid {
 /*************************************
     STYLE DEL SITO VISTO DA MOBILE 
 *************************************/
+/* SMARTPHONE */
 @media (max-width: 700px) {
   /* BOTTONI SCELTA PAGINE */
   nav .fa-solid {
@@ -382,11 +399,10 @@ nav .fa-solid {
   }
   /* BLOCCO IN SOVRIMPRESSIONE */
   .sub_block {
-    height: 85vh;
-    top: 5%;
+    height: 98vh;
   }
   .sub_block h1 {
-    margin-top: 60%;
+    margin-top: 70%;
     text-align: center;
     font-size: var(--mobileTitle);
   }
@@ -394,18 +410,21 @@ nav .fa-solid {
     text-align: center;
     font-size: var(--secondaryTextSize);
   }
-  .sub_block .projects p {
+  .sub_block .projects {
+    margin-left: 10%;
     display: inline-block;
+    height: 50px;
+    margin-top: 20%;
+  }
+  .sub_block .projects p {
     text-align: right;
-    margin-top: 0;
     font-size: var(--fourthTextSize);
   }
   /* IMMAGINE DEL PROFILO */
   .img_profile {
     width: 200px;
     position: fixed;
-    left: 25%;
-    top: 10%;
+    margin-left: 14%;
     border-radius: 50%;
   }
   /* BOTTONE CONTACT ME */
@@ -413,48 +432,52 @@ nav .fa-solid {
     margin-top: 20%;
     margin-left: 20%;
   }
-  /* SOCIAL */
-  .social {
-    margin-top: 10%;
-    margin-left: 27%;
-  }
   /* FOOTER DELLA HOME */
-  .footer {
-    text-align: center;
-  }
   .footer p {
-    margin-top: 0%;
+    margin-top: 30%;
     font-size: var(--fourthTextSize);
+  }
+  .footer--about {
+    margin-top: 150%;
+    text-decoration: none;
+  }
+  .footer--about .fa {
+    float: right;
   }
   /* FORM DA COMPILARE */
   #form {
     margin-top: 2%;
+    margin-left: -120px;
   }
   /* Template per l'invio delle email */
+  .field {
+    margin-bottom: 10%;
+  }
   .field label {
     display: block;
     font-size: var(--secondaryTextSize);
     color: var(--mainText);
   }
   .field input {
-    width: 200px;
     display: block;
+    width: 200px;
+    height: 50px;
+    min-width: 250px;
     font-size: var(--secondaryTextSize);
-    border: 1px solid var(--mainText);
     background-color: var(--opacity);
   }
   #message {
     height: 200px;
-    border: 1px solid var(--mainText);
   }
   /* Bottone per l'invio del messaggio */
   input[type="submit"] {
     display: block;
-    margin: 0 auto;
-    padding: 5px 20px;
+    margin-left: 55%;
+    padding: 5%;
     font-size: var(--secondaryTextSize);
     background-color: var(--secondaryButton);
     color: var(--mainText);
+    border: none;
   }
 }
 

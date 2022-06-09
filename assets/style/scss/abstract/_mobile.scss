@@ -2,6 +2,7 @@
     STYLE DEL SITO VISTO DA MOBILE 
 *************************************/
 
+/* SMARTPHONE */
 @media(max-width: 700px) {
     /* BOTTONI SCELTA PAGINE */
     nav {
@@ -30,10 +31,9 @@
 
     /* BLOCCO IN SOVRIMPRESSIONE */
     .sub_block {
-        height: 85vh;
-        top: 5%;
+        height: 98vh;
         h1 {
-            margin-top: 60%;
+            margin-top: 70%;
             text-align: center;
             font-size: var(--mobileTitle);
         }
@@ -42,10 +42,12 @@
             font-size: var(--secondaryTextSize);
         }
         .projects {
+            margin-left: 10%;
+            display: inline-block;
+            height: 50px;
+            margin-top: 20%;
             p {
-                display: inline-block;
                 text-align: right;
-                margin-top: 0;
                 font-size: var(--fourthTextSize);
             }
         }
@@ -55,8 +57,7 @@
     .img_profile {
         width: 200px;
         position: fixed;
-        left: 25%;
-        top: 10%;
+        margin-left: 14%;
         border-radius: 50%;
     }
 
@@ -68,51 +69,54 @@
         }
     }
 
-    /* SOCIAL */
-    .social {
-        margin-top: 10%;
-        margin-left: 27%;
-    }
-
     /* FOOTER DELLA HOME */
     .footer {
-        text-align: center;
         p {
-            margin-top: 0%;
+            margin-top: 30%;
             font-size: var(--fourthTextSize);
+        }
+        &--about {
+            margin-top: 150%;
+            text-decoration: none;
+            .fa {
+                float: right;
+            }
         }
     }
 
     /* FORM DA COMPILARE */
     #form {
-        margin-top: 2%; 
+        margin-top: 2%;
+        margin-left: -120px;
     }
     /* Template per l'invio delle email */
     .field {
+        margin-bottom: 10%;
         label {
             display: block;
             font-size: var(--secondaryTextSize);
             color: var(--mainText);
         }
         input {
-            width: 200px;
             display: block;
+            width: 200px;
+            height: 50px;
+            min-width: 250px;
             font-size: var(--secondaryTextSize);
-            border: 1px solid var(--mainText);
             background-color: var(--opacity);
         }
     }
     #message {
         height: 200px;
-        border: 1px solid var(--mainText);
     }
     /* Bottone per l'invio del messaggio */
     input[type="submit"] {
         display: block;
-        margin: 0 auto;
-        padding: 5px 20px;
+        margin-left: 55%;
+        padding: 5%;
         font-size: var(--secondaryTextSize);
         background-color: var(--secondaryButton);
         color: var(--mainText);
+        border: none;
     }
 }

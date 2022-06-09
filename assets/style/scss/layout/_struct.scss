@@ -56,7 +56,6 @@ body {
         width: 80%;
         height: 10%;
         font-size: var(--secondaryTextSize);
-        color: var(--mainText);
         margin: 0 auto;
         margin-top: 5%;
         text-align: center;
@@ -66,11 +65,13 @@ body {
             float: left;
             margin-top: 1.5%;
             margin-left: 5%;
+            color: var(--secondaryText);
         }
         p {
             display: inline-block;
             margin: 0 auto;
             margin-top: 2%;
+            color: var(--secondaryText);
         }
         &--link {
             text-decoration: none;
@@ -84,7 +85,7 @@ body {
     .skills_container {
         margin: 0 auto;
         border-radius: var(--radius);
-        background-color: #ccc;
+        background-color: #CCC;
         width: 95%;
         .skills {
             text-align: right;
@@ -126,12 +127,12 @@ body {
 .img_profile {
     width: 400px;
     position: fixed;
-    left: 65%;
-    top: 30%;
+    margin-left: 55%;
+    margin-top: 4%;
     border-radius: 50%;
     transition: var(--secondaryTransition) linear;
     &:hover {
-        top: 28%;
+        margin-top: 3%;
         transition: var(--secondaryTransition) linear;
     }
 }
@@ -144,12 +145,16 @@ body {
         color: var(--buttonHov);
     }
     &--ig {
-        margin-left: 7%;
-        color: #833AB4;
+        margin-left: 2%;
+        color: #FFFFFF;
     }
     &--github {
         margin-left: 2%;
         color: black;
+    }
+    &--twitter {
+        margin-left: 2%;
+        color: #1DA1F2;
     }
 }
 
@@ -159,7 +164,15 @@ body {
     text-align: center;
     p {
         color: var(--mainText);
-        font-size: var(--fourthTextSize);
+        font-size: var(--secondaryTextSize);
+    }
+    &--about {
+        text-decoration: none;
+        margin-right: 5%;
+        margin-top: 25%;
+        .fa {
+            float: right;
+        }
     }
 }
 
