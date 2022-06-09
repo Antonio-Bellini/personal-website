@@ -410,12 +410,12 @@ nav .fa-solid {
   }
   /* BOTTONE CONTACT ME */
   .button--contact {
-    margin-top: 25%;
+    margin-top: 20%;
     margin-left: 20%;
   }
   /* SOCIAL */
   .social {
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 27%;
   }
   /* FOOTER DELLA HOME */
@@ -423,7 +423,7 @@ nav .fa-solid {
     text-align: center;
   }
   .footer p {
-    margin-top: 2%;
+    margin-top: 0%;
     font-size: var(--fourthTextSize);
   }
   /* FORM DA COMPILARE */
