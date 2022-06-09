@@ -47,25 +47,43 @@ body {
   color: var(--mainText);
   font-size: var(--mobileTitle);
   padding-left: 5%;
+  padding-top: 2%;
 }
 
 .sub_block p {
   font-size: var(--secondaryTextSize);
+  color: var(--mainText);
   padding-left: 5%;
 }
 
 .sub_block .projects {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  width: 80%;
+  height: 10%;
   font-size: var(--secondaryTextSize);
   color: var(--mainText);
-  margin-top: 1%;
+  margin: 0 auto;
+  margin-top: 5%;
   text-align: center;
+  background-color: var(--bodyColor);
+  -webkit-box-shadow: 10px 10px 25px var(--opacity);
+          box-shadow: 10px 10px 25px var(--opacity);
+}
+
+.sub_block .projects .fa {
+  float: left;
+  margin-top: 1.5%;
+  margin-left: 5%;
+}
+
+.sub_block .projects p {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 2%;
 }
 
 .sub_block .projects--link {
   text-decoration: none;
+  font-size: var(--mobileTitle);
   color: var(--mainText);
 }
 
@@ -76,14 +94,19 @@ body {
 .sub_block .skills_container {
   margin: 0 auto;
   border-radius: var(--radius);
-  background-color: var(--menuBar);
+  background-color: #ccc;
   width: 95%;
 }
 
 .sub_block .skills_container .skills {
   text-align: right;
-  color: var(--bodyColor);
+  color: var(--secondaryText);
   border-radius: var(--radius);
+}
+
+.sub_block .skills_container .skills--c {
+  width: 20%;
+  background-color: #00599c;
 }
 
 .sub_block .skills_container .skills--html {
@@ -104,6 +127,11 @@ body {
 .sub_block .skills_container .skills--js {
   width: 15%;
   background-color: #F0DB4F;
+}
+
+.sub_block .skills_container .skills--git {
+  width: 15%;
+  background-color: #f1502f;
 }
 
 .sub_block .skills_container .skills--vue {
@@ -146,6 +174,16 @@ body {
 .social--github {
   margin-left: 2%;
   color: black;
+}
+
+.footer {
+  padding-top: 5%;
+  text-align: center;
+}
+
+.footer p {
+  color: var(--mainText);
+  font-size: var(--fourthTextSize);
 }
 
 /* FORM DA COMPILARE */
@@ -274,16 +312,17 @@ nav .fa-solid {
   --menuBar-light:           #aaa;
   --title-light:             darkgoldenrod;
   --mainText-light:          rgb(66, 66, 66);
+  --secondaryText-light:     #fff;
   --button-hov-light:        red;
   --button-contact-light:    #0D897B;
   --secondary-button-light:  #00ACEE;
   --opacity-light:           #E4E7EB;
   /* Dark theme */
-  --bodyColor-dark:        #656565;
+  --bodyColor-dark:        #8e8e8e;
   --secondaryColor-dark:    rgb(171, 171, 171);
-  --menuBar-dark:           #0095B6;
+  --menuBar-dark:           #aaa;
   --title-dark:             darkgoldenrod;
-  --main-text-dark:         rgb(255, 255, 255);
+  --mainText-dark:          rgb(255, 255, 255);
   --button-hov-dark:        red;
   --button-contact-dark:    #18b9a6;
   --secondary-button-dark:  #00ACEE;
@@ -297,6 +336,7 @@ nav .fa-solid {
   --mainTextSize: 25px;
   --secondaryTextSize: 20px;
   --thirdTextSize: 17px;
+  --fourthTextSize: 14px;
   --secondaryRadius: 15px;
   --radius: 10px;
   --transition: 0.5s;
@@ -387,6 +427,7 @@ nav .fa-solid {
     --menuBar:          var(--menuBar-light);
     --title:            var(--title-light);
     --mainText:         var(--mainText-light);
+    --secondaryText:    var(--secondaryText-light);
     --button-hov:       var(--button-hov-light);
     --button-contact:   var(--button-contact-light);
     --secondary-button: var(--secondary-button-light);

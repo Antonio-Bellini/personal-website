@@ -6,17 +6,18 @@
     --menuBar-light:           #aaa;
     --title-light:             darkgoldenrod;
     --mainText-light:          rgb(66, 66, 66);
+    --secondaryText-light:     #fff;
     --button-hov-light:        red;
     --button-contact-light:    #0D897B;
     --secondary-button-light:  #00ACEE;
     --opacity-light:           #E4E7EB;
 
     /* Dark theme */
-    --bodyColor-dark :        #656565;
+    --bodyColor-dark :        #8e8e8e;
     --secondaryColor-dark:    rgb(171, 171, 171);
-    --menuBar-dark:           #0095B6;
+    --menuBar-dark:           #aaa;
     --title-dark:             darkgoldenrod;
-    --main-text-dark:         rgb(255, 255, 255);
+    --mainText-dark:          rgb(255, 255, 255);
     --button-hov-dark:        red;
     --button-contact-dark:    #18b9a6;
     --secondary-button-dark:  #00ACEE;
@@ -30,6 +31,7 @@
     --mainTextSize: 25px;
     --secondaryTextSize: 20px;
     --thirdTextSize: 17px;
+    --fourthTextSize: 14px;
     --secondaryRadius: 15px;
     --radius: 10px;
     --transition: 0.5s;

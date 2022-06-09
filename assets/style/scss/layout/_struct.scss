@@ -41,19 +41,36 @@ body {
         color: var(--mainText);
         font-size: var(--mobileTitle);
         padding-left: 5%;
+        padding-top: 2%;
     }
     p {
         font-size: var(--secondaryTextSize);
+        color: var(--mainText);
         padding-left: 5%;
     }
     .projects {
-        height: max-content;
+        width: 80%;
+        height: 10%;
         font-size: var(--secondaryTextSize);
         color: var(--mainText);
-        margin-top: 1%;
+        margin: 0 auto;
+        margin-top: 5%;
         text-align: center;
+        background-color: var(--bodyColor);
+        box-shadow: 10px 10px 25px var(--opacity);
+        .fa {
+            float: left;
+            margin-top: 1.5%;
+            margin-left: 5%;
+        }
+        p {
+            display: inline-block;
+            margin: 0 auto;
+            margin-top: 2%;
+        }
         &--link {
             text-decoration: none;
+            font-size: var(--mobileTitle);
             color: var(--mainText);
             &:hover {
                 color: var(--button-hov);
@@ -63,12 +80,16 @@ body {
     .skills_container {
         margin: 0 auto;
         border-radius: var(--radius);
-        background-color: var(--menuBar);
+        background-color: #ccc;
         width: 95%;
         .skills {
             text-align: right;
-            color: var(--bodyColor);
+            color: var(--secondaryText);
             border-radius: var(--radius);
+            &--c {
+                width: 20%;
+                background-color: #00599c;
+            }
             &--html {
                 width: 40%;
                 background-color: #e34c26;
@@ -85,13 +106,16 @@ body {
                 width: 15%;
                 background-color: #F0DB4F;
             }
+            &--git {
+                width: 15%;
+                background-color: #f1502f;
+            }
             &--vue {
                 width: 1%;
                 background-color: #42b883;
             }
         }
-    }
-    
+    } 
 }
 
 /* IMMAGINE DEL PROFILO */
@@ -122,6 +146,15 @@ body {
     &--github {
         margin-left: 2%;
         color: black;
+    }
+}
+
+.footer {
+    padding-top: 5%;
+    text-align: center;
+    p {
+        color: var(--mainText);
+        font-size: var(--fourthTextSize);
     }
 }
 
