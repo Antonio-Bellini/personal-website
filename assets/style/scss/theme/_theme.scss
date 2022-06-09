@@ -1,16 +1,19 @@
-/* STYLE PER LA DARK O LIGHT MODE IN BASE ALLE IMPOSTAZIONI DI SISTEMA */
+/************************************************************************** 
+    STYLE PER LA DARK O LIGHT MODE IN BASE ALLE IMPOSTAZIONI DI SISTEMA 
+**************************************************************************/
 
 /* DARK MODE */
 @media(prefers-color-scheme: dark) {
     :root {
         --bodyColor:        var(--bodyColor-dark);
+        --mainColor:        var(--mainColor-dark);
         --secondaryColor:   var(--secondaryColor-dark);
         --menuBar:          var(--menuBar-dark);
         --title:            var(--title-dark);
         --mainText:         var(--mainText-dark);
-        --button-hov:       var(--button-hov-dark);
-        --button-contact:   var(--button-contact-dark);
-        --secondary-button: var(--secondary-button-dark);
+        --buttonHov:        var(--buttonHov-dark);
+        --buttonContact:    var(--buttonContact-dark);
+        --secondaryButton:  var(--secondaryButton-dark);
         --opacity:          var(--opacity-dark);
     }
 }
@@ -19,14 +22,15 @@
 @media(prefers-color-scheme: light) {
     :root {
         --bodyColor:        var(--bodyColor-light);
+        --mainColor:        var(--mainColor-light);
         --secondaryColor:   var(--secondaryColor-light);
         --menuBar:          var(--menuBar-light);
         --title:            var(--title-light);
         --mainText:         var(--mainText-light);
         --secondaryText:    var(--secondaryText-light);
-        --button-hov:       var(--button-hov-light);
-        --button-contact:   var(--button-contact-light);
-        --secondary-button: var(--secondary-button-light);
+        --buttonHov:        var(--buttonHov-light);
+        --buttonContact:    var(--buttonContact-light);
+        --secondaryButton:  var(--secondaryButton-light);
         --opacity:          var(--opacity-light);
     }
 }

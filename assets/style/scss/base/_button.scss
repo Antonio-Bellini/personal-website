@@ -1,3 +1,8 @@
+/***********************************************
+    STILE DEI VARI BOTTONI PRESENTI NEL SITO
+***********************************************/
+
+
 /* STYLE DEI BOTTONI PER LA SCELTA DELLE PAGINE */
 nav {
     align-items: center;
@@ -31,11 +36,11 @@ nav {
     color: var(--mainText);
     cursor: pointer;
     &:hover {
-        color: var(--button-hov);
+        color: var(--buttonHov);
         transition: var(--secondaryTransition);
     }
     &--sel {
-        color: var(--button-hov);
+        color: var(--buttonHov);
     }
     &--contact {
         display: inline-block;
@@ -45,11 +50,11 @@ nav {
         font-size: var(--mainTextSize);
         font-style: italic;
         color: var(--mainText);
-        background: var(--secondary-button);
+        background: var(--secondaryButton);
         cursor: pointer;
         border-radius: var(--secondaryRadius);
         &:hover {
-            color: var(--button-hov);
+            color: var(--buttonHov);
             transition: var(--secondaryTransition);
         }
     }

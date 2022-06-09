@@ -1,26 +1,30 @@
+/******************************************************
+    VARIABILI PER I COLORI E LE GRANDEZZE DEI TESTI
+******************************************************/
+
 /* COLOR PALETTE */
 :root {
     /* Light theme */
     --bodyColor-light :        rgb(255, 255, 255);
+    --mainColor-light:         #fff;
     --secondaryColor-light:    rgb(219, 230, 246);
     --menuBar-light:           #aaa;
     --title-light:             darkgoldenrod;
     --mainText-light:          rgb(66, 66, 66);
     --secondaryText-light:     #fff;
-    --button-hov-light:        red;
-    --button-contact-light:    #0D897B;
-    --secondary-button-light:  #00ACEE;
+    --buttonHov-light:         red;
+    --secondaryButton-light:   #00ACEE;
     --opacity-light:           #E4E7EB;
 
     /* Dark theme */
-    --bodyColor-dark :        #8e8e8e;
+    --bodyColor-dark:         #ccc;
+    --mainColor-dark:         #ccc;
     --secondaryColor-dark:    rgb(171, 171, 171);
     --menuBar-dark:           #aaa;
     --title-dark:             darkgoldenrod;
-    --mainText-dark:          rgb(255, 255, 255);
-    --button-hov-dark:        red;
-    --button-contact-dark:    #18b9a6;
-    --secondary-button-dark:  #00ACEE;
+    --mainText-dark:          black;
+    --buttonHov-dark:         red;
+    --secondaryButton-dark:   #00ACEE;
     --opacity-dark:           #E4E7EB;
 }
 

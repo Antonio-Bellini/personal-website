@@ -1,3 +1,6 @@
+/****************************************
+    STRUTTURA PRINCIPALE DEL SITO WEB 
+****************************************/
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap");
 * {
   margin: 0;
@@ -64,7 +67,7 @@ body {
   margin: 0 auto;
   margin-top: 5%;
   text-align: center;
-  background-color: var(--bodyColor);
+  background-color: var(--mainColor);
   -webkit-box-shadow: 10px 10px 25px var(--opacity);
           box-shadow: 10px 10px 25px var(--opacity);
 }
@@ -88,7 +91,7 @@ body {
 }
 
 .sub_block .projects--link:hover {
-  color: var(--button-hov);
+  color: var(--buttonHov);
 }
 
 .sub_block .skills_container {
@@ -163,7 +166,7 @@ body {
 }
 
 .social:hover {
-  color: var(--button-hov);
+  color: var(--buttonHov);
 }
 
 .social--ig {
@@ -176,6 +179,7 @@ body {
   color: black;
 }
 
+/* FOOTER DELLA HOME */
 .footer {
   padding-top: 5%;
   text-align: center;
@@ -220,19 +224,22 @@ body {
 /* Bottone per l'invio del messaggio */
 input[type="submit"] {
   display: block;
-  margin-left: 49%;
+  margin: 0 auto;
   padding: 5px 20px;
   font-size: var(--secondaryTextSize);
-  background-color: var(--button-contact);
+  background-color: var(--secondaryButton);
   color: var(--mainText);
 }
 
 #button:hover {
-  color: var(--button-hov);
+  color: var(--buttonHov);
   -webkit-transition: var(--secondaryTransition);
   transition: var(--secondaryTransition);
 }
 
+/***********************************************
+    STILE DEI VARI BOTTONI PRESENTI NEL SITO
+***********************************************/
 /* STYLE DEI BOTTONI PER LA SCELTA DELLE PAGINE */
 nav {
   -webkit-box-align: center;
@@ -276,13 +283,13 @@ nav .fa-solid {
 }
 
 .button:hover {
-  color: var(--button-hov);
+  color: var(--buttonHov);
   -webkit-transition: var(--secondaryTransition);
   transition: var(--secondaryTransition);
 }
 
 .button--sel {
-  color: var(--button-hov);
+  color: var(--buttonHov);
 }
 
 .button--contact {
@@ -293,39 +300,42 @@ nav .fa-solid {
   font-size: var(--mainTextSize);
   font-style: italic;
   color: var(--mainText);
-  background: var(--secondary-button);
+  background: var(--secondaryButton);
   cursor: pointer;
   border-radius: var(--secondaryRadius);
 }
 
 .button--contact:hover {
-  color: var(--button-hov);
+  color: var(--buttonHov);
   -webkit-transition: var(--secondaryTransition);
   transition: var(--secondaryTransition);
 }
 
+/******************************************************
+    VARIABILI PER I COLORI E LE GRANDEZZE DEI TESTI
+******************************************************/
 /* COLOR PALETTE */
 :root {
   /* Light theme */
   --bodyColor-light:        rgb(255, 255, 255);
+  --mainColor-light:         #fff;
   --secondaryColor-light:    rgb(219, 230, 246);
   --menuBar-light:           #aaa;
   --title-light:             darkgoldenrod;
   --mainText-light:          rgb(66, 66, 66);
   --secondaryText-light:     #fff;
-  --button-hov-light:        red;
-  --button-contact-light:    #0D897B;
-  --secondary-button-light:  #00ACEE;
+  --buttonHov-light:         red;
+  --secondaryButton-light:   #00ACEE;
   --opacity-light:           #E4E7EB;
   /* Dark theme */
-  --bodyColor-dark:        #8e8e8e;
+  --bodyColor-dark:         #ccc;
+  --mainColor-dark:         #ccc;
   --secondaryColor-dark:    rgb(171, 171, 171);
   --menuBar-dark:           #aaa;
   --title-dark:             darkgoldenrod;
-  --mainText-dark:          rgb(255, 255, 255);
-  --button-hov-dark:        red;
-  --button-contact-dark:    #18b9a6;
-  --secondary-button-dark:  #00ACEE;
+  --mainText-dark:          black;
+  --buttonHov-dark:         red;
+  --secondaryButton-dark:   #00ACEE;
   --opacity-dark:           #E4E7EB;
 }
 
@@ -343,7 +353,9 @@ nav .fa-solid {
   --secondaryTransition: 0.3s;
 }
 
-/* STYLE DEL SITO VISTO DA MOBILE */
+/*************************************
+    STYLE DEL SITO VISTO DA MOBILE 
+*************************************/
 @media (max-width: 700px) {
   /* BOTTONI SCELTA PAGINE */
   nav .fa-solid {
@@ -371,7 +383,6 @@ nav .fa-solid {
   /* BLOCCO IN SOVRIMPRESSIONE */
   .sub_block {
     height: 85vh;
-    position: fixed;
     top: 5%;
   }
   .sub_block h1 {
@@ -383,6 +394,12 @@ nav .fa-solid {
     text-align: center;
     font-size: var(--secondaryTextSize);
   }
+  .sub_block .projects p {
+    display: inline-block;
+    text-align: right;
+    margin-top: 0;
+    font-size: var(--fourthTextSize);
+  }
   /* IMMAGINE DEL PROFILO */
   .img_profile {
     width: 200px;
@@ -393,28 +410,69 @@ nav .fa-solid {
   }
   /* BOTTONE CONTACT ME */
   .button--contact {
-    margin-top: 30%;
+    margin-top: 25%;
     margin-left: 20%;
   }
   /* SOCIAL */
   .social {
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 27%;
+  }
+  /* FOOTER DELLA HOME */
+  .footer {
+    text-align: center;
+  }
+  .footer p {
+    margin-top: 2%;
+    font-size: var(--fourthTextSize);
+  }
+  /* FORM DA COMPILARE */
+  #form {
+    margin-top: 2%;
+  }
+  /* Template per l'invio delle email */
+  .field label {
+    display: block;
+    font-size: var(--secondaryTextSize);
+    color: var(--mainText);
+  }
+  .field input {
+    width: 200px;
+    display: block;
+    font-size: var(--secondaryTextSize);
+    border: 1px solid var(--mainText);
+    background-color: var(--opacity);
+  }
+  #message {
+    height: 200px;
+    border: 1px solid var(--mainText);
+  }
+  /* Bottone per l'invio del messaggio */
+  input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: var(--secondaryTextSize);
+    background-color: var(--secondaryButton);
+    color: var(--mainText);
   }
 }
 
-/* STYLE PER LA DARK O LIGHT MODE IN BASE ALLE IMPOSTAZIONI DI SISTEMA */
+/************************************************************************** 
+    STYLE PER LA DARK O LIGHT MODE IN BASE ALLE IMPOSTAZIONI DI SISTEMA 
+**************************************************************************/
 /* DARK MODE */
 @media (prefers-color-scheme: dark) {
   :root {
     --bodyColor:        var(--bodyColor-dark);
+    --mainColor:        var(--mainColor-dark);
     --secondaryColor:   var(--secondaryColor-dark);
     --menuBar:          var(--menuBar-dark);
     --title:            var(--title-dark);
     --mainText:         var(--mainText-dark);
-    --button-hov:       var(--button-hov-dark);
-    --button-contact:   var(--button-contact-dark);
-    --secondary-button: var(--secondary-button-dark);
+    --buttonHov:        var(--buttonHov-dark);
+    --buttonContact:    var(--buttonContact-dark);
+    --secondaryButton:  var(--secondaryButton-dark);
     --opacity:          var(--opacity-dark);
   }
 }
@@ -423,14 +481,15 @@ nav .fa-solid {
 @media (prefers-color-scheme: light) {
   :root {
     --bodyColor:        var(--bodyColor-light);
+    --mainColor:        var(--mainColor-light);
     --secondaryColor:   var(--secondaryColor-light);
     --menuBar:          var(--menuBar-light);
     --title:            var(--title-light);
     --mainText:         var(--mainText-light);
     --secondaryText:    var(--secondaryText-light);
-    --button-hov:       var(--button-hov-light);
-    --button-contact:   var(--button-contact-light);
-    --secondary-button: var(--secondary-button-light);
+    --buttonHov:        var(--buttonHov-light);
+    --buttonContact:    var(--buttonContact-light);
+    --secondaryButton:  var(--secondaryButton-light);
     --opacity:          var(--opacity-light);
   }
 }

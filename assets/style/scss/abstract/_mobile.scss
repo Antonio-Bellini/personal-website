@@ -1,4 +1,6 @@
-/* STYLE DEL SITO VISTO DA MOBILE */
+/*************************************
+    STYLE DEL SITO VISTO DA MOBILE 
+*************************************/
 
 @media(max-width: 700px) {
     /* BOTTONI SCELTA PAGINE */
@@ -29,7 +31,6 @@
     /* BLOCCO IN SOVRIMPRESSIONE */
     .sub_block {
         height: 85vh;
-        position: fixed;
         top: 5%;
         h1 {
             margin-top: 60%;
@@ -39,6 +40,14 @@
         p {
             text-align: center;
             font-size: var(--secondaryTextSize);
+        }
+        .projects {
+            p {
+                display: inline-block;
+                text-align: right;
+                margin-top: 0;
+                font-size: var(--fourthTextSize);
+            }
         }
     }
 
@@ -54,14 +63,56 @@
     /* BOTTONE CONTACT ME */
     .button {
         &--contact {
-            margin-top: 30%;
+            margin-top: 25%;
             margin-left: 20%;
         }
     }
 
     /* SOCIAL */
     .social {
-        margin-top: 20%;
+        margin-top: 15%;
         margin-left: 27%;
+    }
+
+    /* FOOTER DELLA HOME */
+    .footer {
+        text-align: center;
+        p {
+            margin-top: 2%;
+            font-size: var(--fourthTextSize);
+        }
+    }
+
+    /* FORM DA COMPILARE */
+    #form {
+        margin-top: 2%; 
+    }
+    /* Template per l'invio delle email */
+    .field {
+        label {
+            display: block;
+            font-size: var(--secondaryTextSize);
+            color: var(--mainText);
+        }
+        input {
+            width: 200px;
+            display: block;
+            font-size: var(--secondaryTextSize);
+            border: 1px solid var(--mainText);
+            background-color: var(--opacity);
+        }
+    }
+    #message {
+        height: 200px;
+        border: 1px solid var(--mainText);
+    }
+    /* Bottone per l'invio del messaggio */
+    input[type="submit"] {
+        display: block;
+        margin: 0 auto;
+        padding: 5px 20px;
+        font-size: var(--secondaryTextSize);
+        background-color: var(--secondaryButton);
+        color: var(--mainText);
     }
 }
