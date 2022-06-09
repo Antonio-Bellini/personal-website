@@ -31,8 +31,11 @@ body {
         color: var(--title);
     }
     h1 {
+        color: var(--mainText);
         font-size: var(--mainTitle);
-        padding: 5%;
+        padding-top: 8%;
+        padding-left: 5%;
+        padding-bottom: 2%;
     }
     p {
         font-size: var(--secondaryTextSize);
@@ -45,22 +48,28 @@ body {
     width: 400px;
     position: fixed;
     left: 65%;
-    top: 28%;
+    top: 30%;
     border-radius: 50%;
+    transition: var(--secondaryTransition) linear;
+    &:hover {
+        top: 28%;
+        transition: var(--secondaryTransition) linear;
+    }
 }
 
 /* SOCIAL */
 .social {
     text-decoration: none;
     font-size: var(--mainTextSize);
-    margin-left: 5%;
     &:hover {
         color: var(--button-hov);
     }
     &--ig {
+        margin-left: 7%;
         color: #833AB4;
     }
     &--github {
+        margin-left: 2%;
         color: black;
     }
 }
