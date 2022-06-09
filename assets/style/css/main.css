@@ -7,7 +7,7 @@
 
 /* COLORE DI SFONDO */
 body {
-  background-color: var(--bodyColor);
+  background: var(--bodyColor);
 }
 
 /* CORPO PRINCIPALE DELLA PAGINA */
@@ -43,9 +43,72 @@ body {
   padding-bottom: 2%;
 }
 
+.sub_block h2 {
+  color: var(--mainText);
+  font-size: var(--mobileTitle);
+  padding-left: 5%;
+}
+
 .sub_block p {
   font-size: var(--secondaryTextSize);
   padding-left: 5%;
+}
+
+.sub_block .projects {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-size: var(--secondaryTextSize);
+  color: var(--mainText);
+  margin-top: 1%;
+  text-align: center;
+}
+
+.sub_block .projects--link {
+  text-decoration: none;
+  color: var(--mainText);
+}
+
+.sub_block .projects--link:hover {
+  color: var(--button-hov);
+}
+
+.sub_block .skills_container {
+  margin: 0 auto;
+  border-radius: var(--radius);
+  background-color: var(--menuBar);
+  width: 95%;
+}
+
+.sub_block .skills_container .skills {
+  text-align: right;
+  color: var(--bodyColor);
+  border-radius: var(--radius);
+}
+
+.sub_block .skills_container .skills--html {
+  width: 40%;
+  background-color: #e34c26;
+}
+
+.sub_block .skills_container .skills--css {
+  width: 35%;
+  background-color: #2965f1;
+}
+
+.sub_block .skills_container .skills--scss {
+  width: 38%;
+  background-color: #f57b79;
+}
+
+.sub_block .skills_container .skills--js {
+  width: 15%;
+  background-color: #F0DB4F;
+}
+
+.sub_block .skills_container .skills--vue {
+  width: 1%;
+  background-color: #42b883;
 }
 
 /* IMMAGINE DEL PROFILO */
@@ -206,7 +269,7 @@ nav .fa-solid {
 /* COLOR PALETTE */
 :root {
   /* Light theme */
-  --bodyColor-light:        #fff;
+  --bodyColor-light:        rgb(255, 255, 255);
   --secondaryColor-light:    rgb(219, 230, 246);
   --menuBar-light:           #aaa;
   --title-light:             darkgoldenrod;
@@ -234,8 +297,8 @@ nav .fa-solid {
   --mainTextSize: 25px;
   --secondaryTextSize: 20px;
   --thirdTextSize: 17px;
-  --radius: 10px;
   --secondaryRadius: 15px;
+  --radius: 10px;
   --transition: 0.5s;
   --secondaryTransition: 0.3s;
 }

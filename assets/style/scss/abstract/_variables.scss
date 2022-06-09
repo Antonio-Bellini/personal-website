@@ -1,7 +1,7 @@
 /* COLOR PALETTE */
 :root {
     /* Light theme */
-    --bodyColor-light :        #fff;
+    --bodyColor-light :        rgb(255, 255, 255);
     --secondaryColor-light:    rgb(219, 230, 246);
     --menuBar-light:           #aaa;
     --title-light:             darkgoldenrod;
@@ -30,8 +30,8 @@
     --mainTextSize: 25px;
     --secondaryTextSize: 20px;
     --thirdTextSize: 17px;
-    --radius: 10px;
     --secondaryRadius: 15px;
+    --radius: 10px;
     --transition: 0.5s;
     --secondaryTransition: 0.3s;
 }

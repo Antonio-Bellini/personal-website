@@ -8,7 +8,7 @@
 
 /* COLORE DI SFONDO */
 body {
-    background-color: var(--bodyColor);
+    background: var(--bodyColor);
 }
 
 /* CORPO PRINCIPALE DELLA PAGINA */
@@ -37,10 +37,61 @@ body {
         padding-left: 5%;
         padding-bottom: 2%;
     }
+    h2 {
+        color: var(--mainText);
+        font-size: var(--mobileTitle);
+        padding-left: 5%;
+    }
     p {
         font-size: var(--secondaryTextSize);
         padding-left: 5%;
     }
+    .projects {
+        height: max-content;
+        font-size: var(--secondaryTextSize);
+        color: var(--mainText);
+        margin-top: 1%;
+        text-align: center;
+        &--link {
+            text-decoration: none;
+            color: var(--mainText);
+            &:hover {
+                color: var(--button-hov);
+            }
+        }
+    }
+    .skills_container {
+        margin: 0 auto;
+        border-radius: var(--radius);
+        background-color: var(--menuBar);
+        width: 95%;
+        .skills {
+            text-align: right;
+            color: var(--bodyColor);
+            border-radius: var(--radius);
+            &--html {
+                width: 40%;
+                background-color: #e34c26;
+            }
+            &--css {
+                width: 35%;
+                background-color: #2965f1;
+            }
+            &--scss {
+                width: 38%;
+                background-color: #f57b79;
+            }
+            &--js {
+                width: 15%;
+                background-color: #F0DB4F;
+            }
+            &--vue {
+                width: 1%;
+                background-color: #42b883;
+            }
+        }
+    }
+    
 }
 
 /* IMMAGINE DEL PROFILO */
