@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <!--Sezione principale della pagina-->
-    <section class="block">
+    <section>
         <div class="sub_block">
+            <!--Bottoni delle pagine in alto-->
             <nav>
                 <div class="links" id="navLinks">
                     <i class="fa-solid fa-close" onclick="hideMenu()"></i>
@@ -27,36 +27,44 @@
                 </div>
                 <i class="fa-solid fa-bars" onclick="showMenu()"></i>
             </nav>
-            <h2>My projects</h2>
 
-            <!--Progetto 1-->
-            <div class="projects">
-                <a href="https://github.com/RespirAVO/SitoWeb" class="fa fa-github projects--link" target="_blank"></a>
-                <p>
-                   RespirAVO website
-                </p>
-            </div>
+            <div class="main">
+                <div class="main--projects--projectsText">
+                    <h2>My projects</h2>
+                </div>
 
-            <!--Progetto 2-->
-            <div class="projects">
-                <a href="#" class="fa fa-github projects--link" target="_blank"></a>
-                <p>
-                    Work in progress
-                </p>
-            </div>
+                <!--Progetto 1-->
+                <div class="main--projects">
+                    <a href="https://github.com/RespirAVO/SitoWeb" class="fa fa-github main--projects--projectsLink" target="_blank"></a>
+                    <p>
+                        RespirAVO website
+                    </p>
+                </div>
 
-            <!--Progetto 3-->
-            <div class="projects">
-                <a href="#" class="fa fa-github projects--link" target="_blank"></a>
-                <p>
-                    Work in progress
-                </p>
+                <!--Progetto 2-->
+                <div class="main--projects">
+                    <a href="#" class="fa fa-github main--projects--projectsLink" target="_blank"></a>
+                    <p>
+                        Work in progress
+                    </p>
+                </div>
+
+                <!--Progetto 3-->
+                <div class="main--projects">
+                    <a href="#" class="fa fa-github main--projects--projectsLink" target="_blank"></a>
+                    <p>
+                        Work in progress
+                    </p>
+                </div>
+                <br/>
+                <br/>
+                <br/>
             </div>
         </div>
     </section>
 
 
-    <!--Javascript per il menu da mobile-->
+    <!--Menu da mobile-->
     <script>
         var links = document.getElementById("navLinks");
 

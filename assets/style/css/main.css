@@ -13,244 +13,293 @@ body {
   background: var(--bodyColor);
 }
 
-/* CORPO PRINCIPALE DELLA PAGINA */
-.block {
-  height: 100%;
-  width: 100%;
-}
-
 /* BLOCCO IN SOVRIMPRESSIONE */
 .sub_block {
-  height: 82vh;
+  /* GRANDEZZA e STILE DEL BLOCCO in SOVRIMPRESSIONE */
+  height: 80%;
   width: 80%;
-  margin-top: 4%;
-  margin-left: 10%;
+  margin: 0 auto;
+  margin-top: 3.5%;
+  margin-bottom: 1%;
   background-color: var(--secondaryColor);
   border-radius: var(--radius);
   -webkit-box-shadow: 10px 10px 25px var(--opacity);
           box-shadow: 10px 10px 25px var(--opacity);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* TESTI e FOTO NEL SITO */
+  /* SOCIAL */
+  /* FOOTER */
 }
 
-.sub_block span {
+.sub_block .main {
+  /* FOTO della HOME */
+  /* HOMEPAGE */
+  /* ABOUT PAGE */
+  /* PROJECTS PAGE */
+  /* SKILLS PAGE */
+  /* CONTACT PAGE */
+}
+
+.sub_block .main h2 {
+  font-size: var(--mobileTitle);
+  color: var(--mainText);
+  padding: 5%;
+}
+
+.sub_block .main p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+}
+
+.sub_block .main .img_profile {
+  width: 400px;
+  position: absolute;
+  left: 65%;
+  margin-top: 2%;
+  border-radius: 50%;
+  -webkit-transition: var(--secondaryTransition) linear;
+  transition: var(--secondaryTransition) linear;
+}
+
+.sub_block .main .img_profile:hover {
+  margin-top: 1%;
+  -webkit-transition: var(--secondaryTransition) linear;
+  transition: var(--secondaryTransition) linear;
+}
+
+.sub_block .main--home {
+  padding: 5%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.sub_block .main--home h1 {
+  color: var(--mainText);
+  font-size: var(--mainTitle);
+  padding: 5%;
+}
+
+.sub_block .main--home h2 {
+  color: var(--mainText);
+  font-size: var(--mobileTitle);
+  padding: 5%;
+}
+
+.sub_block .main--home span {
   color: var(--title);
 }
 
-.sub_block h1 {
-  color: var(--mainText);
-  font-size: var(--mainTitle);
-  padding-top: 8%;
-  padding-left: 5%;
-  padding-bottom: 2%;
-}
-
-.sub_block h2 {
-  color: var(--mainText);
-  font-size: var(--mobileTitle);
-  padding-left: 5%;
-  padding-top: 2%;
-}
-
-.sub_block p {
+.sub_block .main--home p {
   font-size: var(--secondaryTextSize);
   color: var(--mainText);
-  padding-left: 5%;
+  padding: 5%;
 }
 
-.sub_block .projects {
+.sub_block .main--about h2 {
+  padding-bottom: 2%;
+  color: var(--mainColor);
+  font-size: var(--mobileTitle);
+}
+
+.sub_block .main--about p {
+  color: var(--mainColor);
+  font-size: var(--secondaryTextSize);
+}
+
+.sub_block .main--projects {
   width: 80%;
-  height: 10%;
+  text-align: left;
   font-size: var(--secondaryTextSize);
   margin: 0 auto;
-  margin-top: 5%;
-  text-align: center;
+  padding: 2%;
+  margin-top: 2%;
+  padding-bottom: 2%;
   background-color: var(--mainColor);
-  -webkit-box-shadow: 10px 10px 25px var(--opacity);
-          box-shadow: 10px 10px 25px var(--opacity);
+  -webkit-box-shadow: 10px 10px 45px var(--opacity);
+          box-shadow: 10px 10px 45px var(--opacity);
 }
 
-.sub_block .projects .fa {
-  float: left;
-  margin-top: 1.5%;
-  margin-left: 5%;
+.sub_block .main--projects .fa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: var(--mobileTitle);
   color: var(--secondaryText);
 }
 
-.sub_block .projects p {
+.sub_block .main--projects--projectsText h2 {
+  padding: 5%;
+  padding-bottom: 2%;
+  color: var(--mainColor);
+  font-size: var(--mobileTitle);
+}
+
+.sub_block .main--projects--projectsText p {
   display: inline-block;
   margin: 0 auto;
   margin-top: 2%;
   color: var(--secondaryText);
 }
 
-.sub_block .projects--link {
+.sub_block .main--projects--projectsLink {
   text-decoration: none;
   font-size: var(--mobileTitle);
   color: var(--mainText);
 }
 
-.sub_block .projects--link:hover {
+.sub_block .main--projects--projectsLink:hover {
   color: var(--buttonHov);
 }
 
-.sub_block .skills_container {
+.sub_block .main--skillsContainer {
   margin: 0 auto;
   border-radius: var(--radius);
   background-color: #CCC;
   width: 95%;
 }
 
-.sub_block .skills_container .skills {
+.sub_block .main--skillsContainer .skills {
   text-align: right;
-  color: var(--secondaryText);
+  color: var(--skillsTextColor);
   border-radius: var(--radius);
 }
 
-.sub_block .skills_container .skills--c {
+.sub_block .main--skillsContainer .skills--c {
   width: 20%;
   background-color: #00599c;
 }
 
-.sub_block .skills_container .skills--html {
+.sub_block .main--skillsContainer .skills--html {
   width: 40%;
   background-color: #e34c26;
 }
 
-.sub_block .skills_container .skills--css {
+.sub_block .main--skillsContainer .skills--css {
   width: 35%;
   background-color: #2965f1;
 }
 
-.sub_block .skills_container .skills--scss {
+.sub_block .main--skillsContainer .skills--scss {
   width: 38%;
   background-color: #f57b79;
 }
 
-.sub_block .skills_container .skills--js {
+.sub_block .main--skillsContainer .skills--js {
   width: 15%;
   background-color: #F0DB4F;
 }
 
-.sub_block .skills_container .skills--git {
+.sub_block .main--skillsContainer .skills--git {
   width: 15%;
   background-color: #f1502f;
 }
 
-.sub_block .skills_container .skills--vue {
+.sub_block .main--skillsContainer .skills--vue {
   width: 1%;
   background-color: #42b883;
 }
 
-/* IMMAGINE DEL PROFILO */
-.img_profile {
-  width: 400px;
-  position: fixed;
-  margin-left: 55%;
-  margin-top: 4%;
-  border-radius: 50%;
-  -webkit-transition: var(--secondaryTransition) linear;
-  transition: var(--secondaryTransition) linear;
+.sub_block .main--contact {
+  margin-top: 0;
 }
 
-.img_profile:hover {
-  margin-top: 3%;
-  -webkit-transition: var(--secondaryTransition) linear;
-  transition: var(--secondaryTransition) linear;
+.sub_block .main--contact p {
+  padding: 3%;
+  color: var(--mainColor);
 }
 
-/* SOCIAL */
-.social {
-  text-decoration: none;
-  font-size: var(--mainTextSize);
-}
-
-.social:hover {
-  color: var(--buttonHov);
-}
-
-.social--ig {
-  margin-left: 2%;
-  color: #FFFFFF;
-}
-
-.social--github {
-  margin-left: 2%;
-  color: black;
-}
-
-.social--twitter {
-  margin-left: 2%;
-  color: #1DA1F2;
-}
-
-/* FOOTER DELLA HOME */
-.footer {
-  padding-top: 5%;
-  text-align: center;
-}
-
-.footer p {
-  color: var(--mainText);
-  font-size: var(--secondaryTextSize);
-}
-
-.footer--about {
-  text-decoration: none;
-  margin-right: 5%;
-  margin-top: 25%;
-}
-
-.footer--about .fa {
-  float: right;
-}
-
-/* FORM DA COMPILARE */
-#form {
-  margin-top: 2%;
-}
-
-/* Template per l'invio delle email */
-.field {
+.sub_block .main--contact .field {
   padding-left: 35%;
   padding-bottom: 2%;
 }
 
-.field label {
+.sub_block .main--contact .field label {
   display: block;
   padding: 1% 0;
-  font-size: var(--secondaryTextSize);
+  font-size: var(--mainTextSize);
   color: var(--mainText);
 }
 
-.field input {
+.sub_block .main--contact .field input {
   display: block;
   width: 500px;
-  font-size: var(--secondaryTextSize);
+  font-size: var(--mainTextSize);
   border: 1px solid var(--mainText);
   background-color: var(--opacity);
 }
 
-#message {
+.sub_block .main--contact #message {
   height: 200px;
   border: 1px solid var(--mainText);
 }
 
-/* Bottone per l'invio del messaggio */
-input[type="submit"] {
-  display: block;
-  margin: 0 auto;
-  padding: 5px 20px;
-  font-size: var(--secondaryTextSize);
-  background-color: var(--secondaryButton);
-  color: var(--mainText);
+.sub_block .social {
+  text-decoration: none;
+  font-size: var(--mainTextSize);
 }
 
-#button:hover {
+.sub_block .social:hover {
   color: var(--buttonHov);
-  -webkit-transition: var(--secondaryTransition);
-  transition: var(--secondaryTransition);
+}
+
+.sub_block .social--ig {
+  margin-left: 2%;
+  color: #FFFFFF;
+  margin-right: 2%;
+}
+
+.sub_block .social--github {
+  margin-left: 2%;
+  color: black;
+}
+
+.sub_block .social--twitter {
+  margin-left: 2%;
+  color: #1DA1F2;
+}
+
+.sub_block .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* FOOTER PAGINA ABOUT */
+}
+
+.sub_block .footer p {
+  padding-top: 5%;
+  padding-bottom: 1%;
+  color: var(--mainText);
+  font-size: var(--secondaryTextSize);
+}
+
+.sub_block .footer--about {
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sub_block .footer--about p {
+  padding-left: 5%;
+  padding-top: 25%;
+  padding-bottom: 1%;
+  color: var(--mainText);
+  font-size: var(--secondaryTextSize);
+}
+
+.sub_block .footer--about .fa {
+  float: right;
 }
 
 /***********************************************
@@ -309,12 +358,11 @@ nav .fa-solid {
 }
 
 .button--contact {
-  display: inline-block;
   text-decoration: none;
+  display: inline-block;
   padding: 15px 15px;
   margin: 5%;
   font-size: var(--mainTextSize);
-  font-style: italic;
   color: var(--mainText);
   background: var(--secondaryButton);
   cursor: pointer;
@@ -322,6 +370,21 @@ nav .fa-solid {
 }
 
 .button--contact:hover {
+  color: var(--buttonHov);
+  -webkit-transition: var(--secondaryTransition);
+  transition: var(--secondaryTransition);
+}
+
+.button--send {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 20px;
+  font-size: var(--secondaryTextSize);
+  background-color: var(--secondaryButton);
+  color: var(--mainText);
+}
+
+.button--send:hover {
   color: var(--buttonHov);
   -webkit-transition: var(--secondaryTransition);
   transition: var(--secondaryTransition);
@@ -343,6 +406,7 @@ nav .fa-solid {
   --buttonHov-light:         red;
   --secondaryButton-light:   #00ACEE;
   --opacity-light:           #E4E7EB;
+  --skillsTextColor-light:   #FFFFFF;
   /* Dark theme */
   --bodyColor-dark:         #ccc;
   --mainColor-dark:         #ccc;
@@ -353,6 +417,7 @@ nav .fa-solid {
   --buttonHov-dark:         red;
   --secondaryButton-dark:   #00ACEE;
   --opacity-dark:           #E4E7EB;
+  --skillsTextColor-dark:   #FFFFFF;
 }
 
 /* GRANDEZZE DEI TESTI */
@@ -401,48 +466,51 @@ nav .fa-solid {
   .sub_block {
     height: 98vh;
   }
-  .sub_block h1 {
+  .sub_block .main {
+    /* IMMAGINE DEL PROFILO */
+    /* ABOUT PAGE */
+    /* PROJECTS PAGE */
+    /* CONTACT PAGE */
+  }
+  .sub_block .main h1 {
     margin-top: 70%;
     text-align: center;
     font-size: var(--mobileTitle);
   }
-  .sub_block p {
+  .sub_block .main h2 {
+    padding: 5%;
+  }
+  .sub_block .main p {
     text-align: center;
     font-size: var(--secondaryTextSize);
   }
-  .sub_block .projects {
-    margin-left: 10%;
-    display: inline-block;
-    height: 50px;
-    margin-top: 20%;
-  }
-  .sub_block .projects p {
-    text-align: right;
-    font-size: var(--fourthTextSize);
-  }
-  /* IMMAGINE DEL PROFILO */
-  .img_profile {
+  .sub_block .main .img_profile {
     width: 200px;
-    position: fixed;
-    margin-left: 14%;
+    position: absolute;
+    left: 23%;
     border-radius: 50%;
   }
-  /* BOTTONE CONTACT ME */
-  .button--contact {
+  .sub_block .main--about p {
+    padding-top: 5%;
+  }
+  .sub_block .main--projects {
+    margin-left: 10%;
+    display: inline-block;
+    height: 70px;
     margin-top: 20%;
-    margin-left: 20%;
   }
-  /* FOOTER DELLA HOME */
-  .footer p {
-    margin-top: 30%;
-    font-size: var(--fourthTextSize);
+  .sub_block .main--projects--projectsText p {
+    text-align: right;
+    font-size: var(--thirdTextSize);
   }
-  .footer--about {
-    margin-top: 130%;
-    text-decoration: none;
+  .sub_block .main--contact p {
+    font-size: var(--thirdTextSize);
   }
-  .footer--about .fa {
-    float: right;
+  .sub_block .main--contact .field label {
+    font-size: var(--thirdTextSize);
+  }
+  .sub_block .main--contact .field input {
+    width: 100px;
   }
   /* FORM DA COMPILARE */
   #form {
@@ -479,6 +547,26 @@ nav .fa-solid {
     color: var(--mainText);
     border: none;
   }
+  /* BOTTONE CONTACT ME */
+  .button--contact {
+    margin-top: 20%;
+    margin-left: 20%;
+  }
+  /* FOOTER */
+  .footer {
+    /* FOOTER ABOUT PAGE */
+  }
+  .footer p {
+    margin-top: 30%;
+    font-size: var(--fourthTextSize);
+  }
+  .footer--about {
+    margin-top: 130%;
+    text-decoration: none;
+  }
+  .footer--about .fa {
+    float: right;
+  }
 }
 
 /************************************************************************** 
@@ -497,6 +585,7 @@ nav .fa-solid {
     --buttonContact:    var(--buttonContact-dark);
     --secondaryButton:  var(--secondaryButton-dark);
     --opacity:          var(--opacity-dark);
+    --skillsTextColor:  var(--skillsTextColor-dark);
   }
 }
 
@@ -514,5 +603,6 @@ nav .fa-solid {
     --buttonContact:    var(--buttonContact-light);
     --secondaryButton:  var(--secondaryButton-light);
     --opacity:          var(--opacity-light);
+    --skillsTextColor:   var(--skillsTextColor-light);
   }
 }

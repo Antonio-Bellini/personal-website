@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <!--Sezione principale delle pagina-->
-    <section class="block">
+    <section>
         <div class="sub_block">
+            <!--Bottoni delle pagine in alto-->
             <nav>
                 <div class="links" id="navLinks">
                     <i class="fa-solid fa-close" onclick="hideMenu()"></i>
@@ -27,14 +27,18 @@
                 </div>
                 <i class="fa-solid fa-bars" onclick="showMenu()"></i>
             </nav>
-            <h2>What about me</h2>
-            <br/>
-            <p>
-                Hi, my name is Antonio, and I'm a student of computer science at ITIS A.Avogadro, here in Turin.
-                I'm really into programming in general, but mostly about frontend development.
-            </p>
-            <br/>
-            <br/>
+
+            <div class="main">
+                <!--Testo-->
+                <div class="main--about">
+                    <h2>What about me</h2>
+                    <p>
+                        Hi, my name is Antonio, and I'm a student of computer science at ITIS A.Avogadro, here in Turin.
+                        I'm really into programming in general, but mostly about frontend development.
+                    </p>
+                </div>
+            </div>
+            
             <div class="footer--about">
                 <p>
                     Follow me
@@ -47,14 +51,13 @@
                     <a href="https://github.com/Antonio-Bellini" target="_blank">
                         <i class="fa fa-github social social--github"></i>
                     </a>
-                    
                 </p>
             </div>
         </div>
     </section>
 
 
-    <!--Javascript per il menu da mobile-->
+    <!--Menu da mobile-->
     <script>
         var links = document.getElementById("navLinks");
 

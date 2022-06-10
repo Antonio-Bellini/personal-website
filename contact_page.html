@@ -14,6 +14,7 @@
     <!--Sezione principale delle pagina-->
     <section class="block">
         <div class="sub_block">
+            <!--Bottoni delle pagine in alto-->
             <nav>
                 <div class="links" id="navLinks">
                     <i class="fa-solid fa-close" onclick="hideMenu()"></i>
@@ -27,43 +28,41 @@
                 </div>
                 <i class="fa-solid fa-bars" onclick="showMenu()"></i>
             </nav>
-            <h2>Contact me</h2>
-            <!--Sezione del form da compilare per l'invio di email-->
-            <form id="form">
-                <div class="field">
-                    <label for="from_name">What's your name?</label>
-                    <input type="text" name="from_name" id="from_name">
-                </div>
-
-                <div class="field">
-                    <label for="message">Message:</label>
-                    <input type="text" name="message" id="message">
-                </div>
-      
-                <input type="submit" id="button" value="Invia">
-            </form>
-
-            <script 
-                type="text/javascript"
-                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-            </script>
-            <script 
-                type="text/javascript">
-                emailjs.init('jvGoTYpkj0UZmUsFi')
-            </script>
-
-            <br/>
-            <br/>
-            <br/>
             
-            <p>
-                *Rember to write also your email in the message field
-            </p>
+            <div class="main">
+                <h2>Contact me</h2>
+
+                <!--Sezione del form da compilare per l'invio di email-->
+                <form class="main--contact" id="form">
+                    <div class="field">
+                        <label for="from_name">What's your name?</label>
+                        <input type="text" name="from_name" id="from_name">
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message:</label>
+                        <input type="text" name="message" id="message">
+                    </div>
+        
+                    <input type="submit" class="button--send" id="button" value="Invia">
+                    <p>
+                        *Rember to write also your email in the message field
+                    </p>
+                </form>
+            </div>
         </div>
     </section>
 
 
     <!--Script per l'invio di email e per il menu da mobile-->
+    <script 
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script 
+        type="text/javascript">
+        emailjs.init('jvGoTYpkj0UZmUsFi')
+    </script>
     <script>
         var links = document.getElementById("navLinks");
         // Funzione per nascondere il menu

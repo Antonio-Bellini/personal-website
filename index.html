@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <!--Sezione principale della pagina-->
-    <section class="block">
+    <section>
         <div class="sub_block">
+            <!--Bottoni delle pagine in alto-->
             <nav>
                 <div class="links" id="navLinks">
                     <i class="fa-solid fa-close" onclick="hideMenu()"></i>
@@ -27,14 +27,21 @@
                 </div>
                 <i class="fa-solid fa-bars" onclick="showMenu()"></i>
             </nav>
-            <img src="./assets/img/profile_picture.png" class="img_profile" alt="immagine del profilo">
-            <h1>I am <span>Antonio Bellini</span></h1>
-            <p>
-                Welcome to my personal portfolio website where I share all my projects,<br/> my skills and also my contacts.
-            </p>
-            <br/>
-            <a href="contact_page.html" class="button--contact">Contact me &nbsp;<i class="fa fa-paper-plane"></i></a>
-            <br/>
+            
+            <div class="main">
+                <img src="./assets/img/profile_picture.png" class="img_profile" alt="immagine del profilo">
+
+                <!--Testo principale-->
+                <div class="main--home">
+                    <h1>I am <span>Antonio Bellini</span></h1>
+                    <p>
+                        Welcome to my personal portfolio website where I share all my projects, my skills and also my contacts.
+                    </p>
+                    <a href="contact_page.html" class="button--contact">Contact me &nbsp;<i class="fa fa-paper-plane"></i></a>
+                </div>
+            </div>
+
+            <!--Footer della home-->
             <div class="footer">
                 <p>CC by Antonio Bellini &copy;</p>
             </div>
@@ -42,19 +49,17 @@
     </section>
 
 
-    <!--Javascript per il menu da mobile-->
+    <!--Menu da mobile-->
     <script>
         var links = document.getElementById("navLinks");
-
+        // Nasconde il menu
         function hideMenu() {
             links.style.right = "-200px";
         }
-
+        // Mostra il menu
         function showMenu() {
             links.style.right = "0";
         }
     </script>
-
-    <script type="module" src="./assets/js/theme.js"></script>
 </body>
 </html>

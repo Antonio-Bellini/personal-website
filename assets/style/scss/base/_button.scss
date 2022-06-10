@@ -43,16 +43,27 @@ nav {
         color: var(--buttonHov);
     }
     &--contact {
-        display: inline-block;
         text-decoration: none;
+        display: inline-block;
         padding: 15px 15px;
         margin: 5%;
         font-size: var(--mainTextSize);
-        font-style: italic;
         color: var(--mainText);
         background: var(--secondaryButton);
         cursor: pointer;
         border-radius: var(--secondaryRadius);
+        &:hover {
+            color: var(--buttonHov);
+            transition: var(--secondaryTransition);
+        }
+    }
+    &--send {
+        display: block;
+        margin: 0 auto;
+        padding: 5px 20px;
+        font-size: var(--secondaryTextSize);
+        background-color: var(--secondaryButton);
+        color: var(--mainText);
         &:hover {
             color: var(--buttonHov);
             transition: var(--secondaryTransition);
