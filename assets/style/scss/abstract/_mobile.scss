@@ -87,43 +87,36 @@
                     }
                 }
             }
-        }
-    }
 
-    /* FORM DA COMPILARE */
-    #form {
-        margin-top: 2%;
-        margin-left: -120px;
-    }
-    /* Template per l'invio delle email */
-    .field {
-        margin-bottom: 10%;
-        label {
-            display: block;
-            font-size: var(--secondaryTextSize);
-            color: var(--mainText);
+            /* CONTACT PAGE */
+            &--contact {
+                margin-top: 2%;
+                margin-left: -120px;
+                p {
+                    font-size: var(--fourthTextSize);
+                    padding-left: 30%;
+                }
+                .field {
+                    margin-bottom: 10%;
+                    label {
+                        display: block;
+                        font-size: var(--secondaryTextSize);
+                        color: var(--mainText);
+                    }
+                    input {
+                        display: block;
+                        width: 200px;
+                        height: 50px;
+                        min-width: 250px;
+                        font-size: var(--secondaryTextSize);
+                        background-color: var(--opacity);
+                    }
+                }
+                #message {
+                    height: 200px;
+                }
+            }
         }
-        input {
-            display: block;
-            width: 200px;
-            height: 50px;
-            min-width: 250px;
-            font-size: var(--secondaryTextSize);
-            background-color: var(--opacity);
-        }
-    }
-    #message {
-        height: 200px;
-    }
-    /* Bottone per l'invio del messaggio */
-    input[type="submit"] {
-        display: block;
-        margin-left: 55%;
-        padding: 5%;
-        font-size: var(--secondaryTextSize);
-        background-color: var(--secondaryButton);
-        color: var(--mainText);
-        border: none;
     }
 
     /* BOTTONE CONTACT ME */
@@ -131,6 +124,9 @@
         &--contact {
             margin-top: 20%;
             margin-left: 20%;
+        }
+        &--send {
+            margin-left: 55%;
         }
     }
 

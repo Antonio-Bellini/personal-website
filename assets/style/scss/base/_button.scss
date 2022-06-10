@@ -64,6 +64,7 @@ nav {
         font-size: var(--secondaryTextSize);
         background-color: var(--secondaryButton);
         color: var(--mainText);
+        border: none;
         &:hover {
             color: var(--buttonHov);
             transition: var(--secondaryTransition);

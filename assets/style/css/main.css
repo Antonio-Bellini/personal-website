@@ -382,6 +382,7 @@ nav .fa-solid {
   font-size: var(--secondaryTextSize);
   background-color: var(--secondaryButton);
   color: var(--mainText);
+  border: none;
 }
 
 .button--send:hover {
@@ -471,6 +472,7 @@ nav .fa-solid {
     /* ABOUT PAGE */
     /* PROJECTS PAGE */
     /* CONTACT PAGE */
+    /* CONTACT PAGE */
   }
   .sub_block .main h1 {
     margin-top: 70%;
@@ -512,21 +514,23 @@ nav .fa-solid {
   .sub_block .main--contact .field input {
     width: 100px;
   }
-  /* FORM DA COMPILARE */
-  #form {
+  .sub_block .main--contact {
     margin-top: 2%;
     margin-left: -120px;
   }
-  /* Template per l'invio delle email */
-  .field {
+  .sub_block .main--contact p {
+    font-size: var(--fourthTextSize);
+    padding-left: 30%;
+  }
+  .sub_block .main--contact .field {
     margin-bottom: 10%;
   }
-  .field label {
+  .sub_block .main--contact .field label {
     display: block;
     font-size: var(--secondaryTextSize);
     color: var(--mainText);
   }
-  .field input {
+  .sub_block .main--contact .field input {
     display: block;
     width: 200px;
     height: 50px;
@@ -534,23 +538,16 @@ nav .fa-solid {
     font-size: var(--secondaryTextSize);
     background-color: var(--opacity);
   }
-  #message {
+  .sub_block .main--contact #message {
     height: 200px;
-  }
-  /* Bottone per l'invio del messaggio */
-  input[type="submit"] {
-    display: block;
-    margin-left: 55%;
-    padding: 5%;
-    font-size: var(--secondaryTextSize);
-    background-color: var(--secondaryButton);
-    color: var(--mainText);
-    border: none;
   }
   /* BOTTONE CONTACT ME */
   .button--contact {
     margin-top: 20%;
     margin-left: 20%;
+  }
+  .button--send {
+    margin-left: 55%;
   }
   /* FOOTER */
   .footer {
