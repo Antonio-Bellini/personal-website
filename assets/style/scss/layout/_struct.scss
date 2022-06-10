@@ -37,7 +37,25 @@ body {
         p {
            display: flex;
            justify-content: center;
-           color: black; 
+        }
+        /* HOMEPAGE */
+        &--home {
+            padding: 5%;
+            width: fit-content;
+            h1 {
+                color: var(--mainText);
+                font-size: var(--mainTitle);
+                padding: 5%;
+            }
+            span {
+                color: var(--title);
+            }
+            p {
+                font-size: var(--secondaryTextSize);
+                color: var(--mainText);
+                padding: 5%;
+                padding-top: 2%;
+            }
         }
         /* FOTO della HOME */
         .img_profile {
@@ -52,46 +70,19 @@ body {
                 transition: var(--secondaryTransition) linear;
             }
         }
-    
-        /* HOMEPAGE */
-        &--home {
-            padding: 5%;
-            width: fit-content;
-            h1 {
-                color: var(--mainText);
-                font-size: var(--mainTitle);
-                padding: 5%;
-            }
-            h2 {
-                color: var(--mainText);
-                font-size: var(--mobileTitle);
-                padding: 5%;
-            }
-            span {
-                color: var(--title);
-            }
-            p {
-                font-size: var(--secondaryTextSize);
-                color: var(--mainText);
-                padding: 5%;
-            }
-        }
 
         /* ABOUT PAGE */
         &--about {
-            h2 {
-                padding-bottom: 2%;
-                color: var(--mainColor);
-                font-size: var(--mobileTitle);
-            }
             p {
-                color: var(--mainColor);
                 font-size: var(--secondaryTextSize);
+                color: var(--mainColor);
+                padding-bottom: 25%;
             }
         }
 
         /* PROJECTS PAGE */
         &--projects {
+            /* BLOCCHETTI CON I PROGETTI */
             width: 80%;
             text-align: left;
             font-size: var(--secondaryTextSize);
@@ -101,30 +92,13 @@ body {
             padding-bottom: 2%;
             background-color: var(--mainColor);
             box-shadow: 10px 10px 45px var(--opacity);
+            /* ICONA DI GITHUB NEI BLOCCHETTI */
             .fa {
                 display: flex;
                 justify-content: flex-end;
                 font-size: var(--mobileTitle);
                 color: var(--secondaryText);
-            }
-            &--projectsText {
-                h2 {
-                    padding: 5%;
-                    padding-bottom: 2%;
-                    color: var(--mainColor);
-                    font-size: var(--mobileTitle);
-                }
-                p {
-                    display: inline-block;
-                    margin: 0 auto;
-                    margin-top: 2%;
-                    color: var(--secondaryText);
-                }
-            }
-            &--projectsLink {
                 text-decoration: none;
-                font-size: var(--mobileTitle);
-                color: var(--mainText);
                 &:hover {
                     color: var(--buttonHov);
                 }
@@ -132,42 +106,50 @@ body {
         }
 
         /* SKILLS PAGE */
-        &--skillsContainer {
-            margin: 0 auto;
-            border-radius: var(--radius);
-            background-color: #CCC;
-            width: 95%;
-            .skills {
-                text-align: right;
-                color: var(--skillsTextColor);
+        &--skills {
+            padding-top: 0;
+            padding-bottom: 5%;
+            &--skillsBar {
+                margin: 0 auto;
                 border-radius: var(--radius);
-                &--c {
-                    width: 20%;
-                    background-color: #00599c;
-                }
-                &--html {
-                    width: 40%;
+                background-color: #CCC;
+                width: 95%;
+                .skills {
+                    text-align: right;
+                    color: var(--skillsTextColor);
+                    border-radius: var(--radius);
+                    &--c {
+                        width: 20%;
+                        background-color: #00599c;
+                    }
+                    &--html {
+                        width: 40%;
                         background-color: #e34c26;
-                }
-                &--css {
-                    width: 35%;
-                    background-color: #2965f1;
-                }
-                &--scss {
-                    width: 38%;
-                    background-color: #f57b79;
-                }
-                &--js {
-                    width: 15%;
-                    background-color: #F0DB4F;
-                }
-                &--git {
-                    width: 15%;
-                    background-color: #f1502f;
-                }
-                &--vue {
-                    width: 1%;
-                    background-color: #42b883;
+                    }
+                    &--css {
+                        width: 35%;
+                        background-color: #2965f1;
+                    }
+                    &--scss {
+                        width: 38%;
+                        background-color: #f57b79;
+                    }
+                    &--js {
+                        width: 15%;
+                        background-color: #F0DB4F;
+                    }
+                    &--git {
+                        width: 15%;
+                        background-color: #f1502f;
+                    }
+                    &--java {
+                        width: 1%;
+                        background-color: red;
+                    }
+                    &--vue {
+                        width: 1%;
+                        background-color: #42b883;
+                    }
                 }
             }
         }
@@ -230,8 +212,8 @@ body {
         display: flex;
         justify-content: center;
         p {
-            padding-top: 3%;
-            padding-bottom: 1%;
+            padding-top: 1%;
+            padding-bottom: 3%;
             color: var(--mainText);
             font-size: var(--secondaryTextSize);
         }
@@ -239,10 +221,9 @@ body {
         /* FOOTER PAGINA ABOUT */
         &--about {
             text-decoration: none;
-            justify-content: center;
             p {
                 padding-left: 3%;
-                padding-top: 25%;
+                padding-top: 1%;
                 padding-bottom: 1%;
                 color: var(--mainText);
                 font-size: var(--secondaryTextSize);

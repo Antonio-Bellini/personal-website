@@ -31,19 +31,22 @@
 
     /* BLOCCO IN SOVRIMPRESSIONE */
     .sub_block {
-        height: 98vh;
+        height: 100%;
         .main {
-            h1 {
-                margin-top: 70%;
-                text-align: center;
-                font-size: var(--mobileTitle);
-            }
             h2 {
                 padding: 5%;
             }
             p {
                 text-align: center;
                 font-size: var(--secondaryTextSize);
+            }
+            /* HOMEPAGE */
+            &--home {
+                h1 {
+                    margin-top: 70%;
+                    text-align: center;
+                    font-size: var(--mobileTitle);
+                }
             }
             /* IMMAGINE DEL PROFILO */
             .img_profile {
@@ -53,26 +56,14 @@
                 border-radius: 50%;
             }
 
-            /* ABOUT PAGE */
-            &--about {
-                p {
-                    padding-top: 5%;
-                }
-            }
-
             /* PROJECTS PAGE */
             &--projects {
                 margin-left: 10%;
                 display: inline-block;
                 height: 70px;
                 margin-top: 20%;
-                &--projectsText {
-                    p {
-                        text-align: right;
-                        font-size: var(--thirdTextSize);
-                    }
-                }
             }
+            
             /* CONTACT PAGE */
             &--contact {
                 p {
