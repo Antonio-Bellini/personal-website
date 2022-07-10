@@ -5,41 +5,30 @@
 /* COLOR PALETTE */
 :root {
     /* Light theme */
-    --bodyColor-light :        #DEF2F1;
-    --mainColor-light:         #FFFFFF;
-    --secondaryColor-light:    #2B7A78;
-    --menuBar-light:           #17252A;
-    --title-light:             darkgoldenrod;
-    --mainText-light:          #FFFFFF;
-    --secondaryText-light:     #000000;
-    --buttonHov-light:         red;
-    --secondaryButton-light:   #00ACEE;
-    --opacity-light:           #E4E7EB;
-    --skillsTextColor-light:   #FFFFFF;
+    --bodyColor-light :        #EFEFEF;
+    --mainColor-light:         #000000;
+    --secondaryColor-light:    rgb(102, 102, 102);
+    --thirdColor-light:        #FFFFFF;
+    --opacityColor-light:      #E4E7EB;
 
     /* Dark theme */
     --bodyColor-dark:         #ccc;
-    --mainColor-dark:         #ccc;
+    --mainColor-dark:         #FFFFFF;
     --secondaryColor-dark:    rgb(171, 171, 171);
-    --menuBar-dark:           #DEF2F1;
-    --title-dark:             darkgoldenrod;
-    --mainText-dark:          black;
-    --buttonHov-dark:         red;
-    --secondaryButton-dark:   #00ACEE;
-    --opacity-dark:           #E4E7EB;
-    --skillsTextColor-dark:   #FFFFFF;
+    --opacityColor-dark:      #E4E7EB;
 }
 
 /* GRANDEZZE DEI TESTI */
 :root {
-    --mainTitle: 65px;
-    --mobileTitle: 35px;
-    --mainTextSize: 25px;
+    --mainTitleSize: 65px;
+    --mobileTitleSize: 35px;
+    --mainTextSize: 35px;
     --secondaryTextSize: 20px;
     --thirdTextSize: 17px;
     --fourthTextSize: 14px;
     --secondaryRadius: 15px;
-    --radius: 10px;
-    --transition: 0.5s;
-    --secondaryTransition: 0.3s;
+    --thirdRadius: 7px;
+    --radiusSize: 10px;
+    --mainTransitionValue: 0.5s;
+    --secondaryTransitionValue: 0.3s;
 }

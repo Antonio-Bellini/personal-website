@@ -8,64 +8,282 @@
     <script src="./assets/js/profilePic.js"></script>
     <link rel="stylesheet" href="./assets/style/css/main.css">
     <link rel="icon"       href="./assets/img/home_page.png" type="x-icon">
-    <title>Homepage</title>
+    <title>Antonio Bellini</title>
 </head>
 
-<body onload="profile()">
+<body>
     <section>
-        <div class="sub_block">
+        <div class="block">
             <!--Bottoni delle pagine in alto-->
             <nav>
                 <div class="links" id="navLinks">
-                    <i class="fa-solid fa-close" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="index.html"         class="button button--sel">HOME    </a></li>
-                        <li><a href="about_page.html"    class="button">            ABOUT   </a></li>
-                        <li><a href="projects_page.html" class="button">            PROJECTS</a></li>
-                        <li><a href="skills_page.html"   class="button">            SKILLS  </a></li>
-                        <li><a href="contact_page.html"  class="button">            CONTACT </a></li>
+                        <p>
+                            Antonio Bellini website
+                        </p>
+                        <li><a href="index.html#home"      class="button">HOME     </a></li>
+                        <li><a href="index.html#portfolio" class="button">PORTFOLIO</a></li>
+                        <li><a href="index.html#skills"    class="button">SKILLS</a></li>
+                        <li><a href="index.html#contact"   class="button">CONTACT  </a></li>
                     </ul>
                 </div>
-                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
             </nav>
             
-            <!--Blocco del testo e della foto-->
-            <div class="main">
-                <!--Foto-->
-                <img src="./assets/img/profile_picture.png" class="img_profile" alt="immagine del profilo">
+            <!--Immagine profilo-->
+            <img class="imgProfile" src="./assets/img/profile_picture.png" alt="profile picture">
+            <!--Homepage del sito-->
+            <div id="home" class="main">
+                <!--Piccola sezione about me-->
+                <h1>I'm Antonio Bellini, student at IIS A. Avogadro in Turin</h1>
+                <p>
+                    I'm a 17 years old guy really passionate about computer science but mostly about web development.
+                    I attend IIS A. Avogadro in Turin.
+                </p>
 
-                <!--Testo principale-->
-                <div class="main--home">
-                    <h1>I am <span>Antonio Bellini</span></h1>
-                    <p>
-                        Welcome to my personal portfolio website where I share all my projects, my skills and also my contacts.
-                    </p>
-                    <!--Bottone contact me-->
-                    <a href="contact_page.html" class="button--contact">Contact me &nbsp;<i class="fa fa-paper-plane"></i></a>
+                <!--Social-->
+                <a href="https://www.instagram.com/antonio.bellinii/" target="_blank"><i class="fa fa-instagram main--social"></i></a>
+                <a href="https://twitter.com/AntonioBellinii" target="_blank"><i class="fa fa-twitter main--social"></i></a>
+                <a href="https://github.com/Antonio-Bellini" target="_blank"><i class="fa fa-github main--social"></i></a>
+            </div>
+
+            <!--Sezione portfolio-->
+            <div id="portfolio" class="main--portfolio">
+                <h1>Portfolio</h1>
+                <p>
+                    Here's some of the works that I've made
+                </p>
+
+                <!--Progetto RespirAVO-->
+                <div class="main--portfolio--works main--portfolio--works--odd">
+                    <a href="https://respiravo.altervista.org" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/respiravoProjects.png" alt="immagine del primo progetto"></a>
+                    <div class="main--portfolio--works--text">
+                        <h3>RespirAVO project website</h3>
+                        <p>
+                            This project was my first full responsive website. Thanks to this project I learn a lot of SCSS, some particular CSS property and also somethings of javascprit: 
+                            in particular the Leaflet library
+                        </p>
+                    </div>
+                </div>
+
+                <!--Progetto -->
+                <div class="main--portfolio--works main--portfolio--works--even">
+                    <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
+                    <div class="main--portfolio--works--text">
+                        <h3>Work in progress</h3>
+                        <p>
+                            Work in progress <br/> work in progress
+                        </p>
+                    </div>
+                </div>
+                
+                <!--Progetto -->
+                <div class="main--portfolio--works main--portfolio--works--odd">
+                    <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
+                    <div class="main--portfolio--works--text">
+                        <h3>Work in progress</h3>
+                        <p>
+                            Work in progress <br/> work in progress
+                        </p>
+                    </div>
+                </div>
+                
+                <!--Progetto -->
+                <div class="main--portfolio--works main--portfolio--works--even">
+                    <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
+                    <div class="main--portfolio--works--text">
+                        <h3>Work in progress</h3>
+                        <p>
+                            Work in progress <br/> work in progress
+                        </p>
+                    </div>
+                </div>
+
+                <!--Bottone per mostrare gli altri risultati-->
+                <div class="showMore">
+                    <button class="showMoreBtn">Show more</button>
+                </div>
+
+                <!--Progetti extra-->
+                <div class="moreWorks">
+                    <!--Progetto -->
+                    <div class="main--portfolio--works main--portfolio--works--odd">
+                        <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
+                        <div class="main--portfolio--works--text">
+                            <h3>Work in progress</h3>
+                            <p>
+                                Work in progress <br/> work in progress
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Progetto -->
+                    <div class="main--portfolio--works main--portfolio--works--even">
+                        <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
+                        <div class="main--portfolio--works--text">
+                            <h3>Work in progress</h3>
+                            <p>
+                                Work in progress <br/> work in progress
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Progetto -->
+                    <div class="main--portfolio--works main--portfolio--works--odd">
+                        <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
+                        <div class="main--portfolio--works--text">
+                            <h3>Work in progress</h3>
+                            <p>
+                                Work in progress <br/> work in progress
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Progetto -->
+                    <div class="main--portfolio--works main--portfolio--works--even">
+                        <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
+                        <div class="main--portfolio--works--text">
+                            <h3>Work in progress</h3>
+                            <p>
+                                Work in progress <br/> work in progress
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!--Footer-->
-            <div class="footer">
-                <p>CC by Antonio Bellini &copy;</p>
-                <br/>
-                <br/>
+            <!--Sezione skills-->
+            <div id="skills" class="main--skills">
+                <h1>My skills</h1>
+                <p>
+                    Here you can find all the technologies or programming language that I know
+                </p>
+                <p class="skillsText" id="html">Html</p>
+                <div class="main--skills--skillsContainer">
+                    <div class="html">45%</div>
+                </div>
+                
+                <p class="skillsText" id="css">CSS</p>
+                <div class="main--skills--skillsContainer">
+                    <div class="css">40%</div>
+                </div>
+
+                <p class="skillsText" id="scss">SCSS</p>
+                <div class="main--skills--skillsContainer">
+                    <div class="scss">40%</div>
+                </div>
+
+                <p class="skillsText" id="js">JS</p>
+                <div class="main--skills--skillsContainer">
+                    <div class="js">20%</div>
+                </div>
+
+                <p class="skillsText" id="c">C</p>
+                <div class="main--skills--skillsContainer">
+                    <div class="c">30%</div>
+                </div>
+
+                <p class="skillsText" id="java">JAVA</p>
+                <div class="main--skills--skillsContainer">
+                    <div class="java">1%</div>
+                </div>
+
+                <p class="skillsText" id="git">GIT</p>
+                <div class="main--skills--skillsContainer">
+                    <div class="git">15%</div>
+                </div>
+            </div>
+
+            <!--Sezione contattami-->
+            <div id="contact" class="main--contact">
+                <h1>Contact me</h1>
+                <p>
+                    Here you can send me an email for everythings
+                </p>
+
+                <form id="form" class="main--contact--emailForm">
+                    <div class="field" id="nameField">
+                        <label for="from_name">Full name</label>
+                        <input 
+                            type="text"
+                            class="personalInfo" 
+                            id="from_name"
+                            placeholder="Name"
+                            required
+                        >
+                    </div>
+                    <div class="field" id="emailField">
+                        <label for="reply_to">Email address</label>
+                        <input 
+                            type="text" 
+                            class="personalInfo"
+                            id="reply_to"
+                            placeholder="Email"
+                            required
+                        >
+                    </div>
+                    <div class="field" id="messageField">
+                        <label for="message">Message</label>
+                        <input 
+                            type="text"
+                            class="message" 
+                            id="message"
+                            placeholder="Message" 
+                            required    
+                        >
+                    </div>
+                  
+                    <input 
+                        type="submit"
+                        class="sendButton" 
+                        id="button" 
+                        value="Send Message"
+                    >
+                </form>
+                  
+                <script 
+                    type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+                </script>
+                <script 
+                    type="text/javascript">
+                    emailjs.init('jvGoTYpkj0UZmUsFi')
+                </script>
+            </div>
+
+            <div class="main--footer">
+                Antonio Bellini personal website<br/>
+                &copy; 2022 - 2023 <br/>
+                CC by Antonio Bellini <br/>
             </div>
         </div>
     </section>
 
 
-    <!--Menu da mobile-->
+    <!--Invio email-->
     <script>
-        var links = document.getElementById("navLinks");
-        // Nasconde il menu
-        function hideMenu() {
-            links.style.right = "-200px";
-        }
-        // Mostra il menu
-        function showMenu() {
-            links.style.right = "0";
-        }
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                btn.value = 'Sending...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_ss3t5tb';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        alert('Sent!');
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
+        });
     </script>
+    
+    <!--Bottone show more che mostra altri progetti-->
+    <script src="./assets/js/showMore.js"></script>
 </body>
 </html>

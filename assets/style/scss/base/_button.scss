@@ -5,15 +5,19 @@
 
 /* STYLE DEI BOTTONI PER LA SCELTA DELLE PAGINE */
 nav {
-    align-items: center;
-    padding: 3%;
-    .fa-solid {
-        display: none;
-    }
+    background-color: var(--thirdColor);
+    padding: 1%;
 }
 .links {
-    text-align: center;
+    text-align: end;
     flex: 1;
+    ul {
+        p {
+            font-size: var(--secondaryTextSize);
+            font-style: bold;
+            float: left;
+        }
+    }
     ul li {
         list-style: none;
         display: inline-block;
@@ -22,52 +26,47 @@ nav {
     }
     ul li a {
         text-decoration: none;
-        font-size: var(--thirdTextSize);
+        font-size: var(--fourthTextSize);
     }
 }
 
-/* STYLE DEGLI ALTRI BOTTONI PRESENTI NELLA PAGINA */
+/* BOTTONI DI COLLEGAEMNTO ALLE PARTI DEL SITO */
 .button {
     display: inline-block;
     text-decoration: none;
-    margin: 10% 5%;
     font-size: var(--mainTextSize);
-    font-style: italic;
-    color: var(--mainText);
+    color: var(--mainColor);
+    cursor: pointer;
+    &--sel {
+        color: var(--mainColor);
+        font-style: italic;
+    }
+}
+
+/* BOTTONE INVIO EMAIL */
+.sendButton {
+    font-size: var(--thirdTextSize);
+    color: var(--secondaryColor);
+    padding: 12px 8px;
+    border-radius: var(--thirdRadius);
+    background-color: var();
+    border: 1px solid var(--secondaryColor);
+    &:hover {
+        color: var(--mainColor);
+    }
+}
+
+/* BOTTONE SHOW MORE */
+.showMoreBtn {
+    margin: 0 auto;
+    border: 1px solid var(--secondaryColor);
+    text-decoration: none;
+    padding: 12px 8px;
+    border-radius: var(--radiusSize);
+    color: var(--secondaryColor);
+    outline: none;
     cursor: pointer;
     &:hover {
-        color: var(--buttonHov);
-        transition: var(--secondaryTransition);
-    }
-    &--sel {
-        color: var(--buttonHov);
-    }
-    &--contact {
-        text-decoration: none;
-        display: inline-block;
-        padding: 15px 15px;
-        margin: 5%;
-        font-size: var(--mainTextSize);
-        color: var(--mainText);
-        background: var(--secondaryButton);
-        cursor: pointer;
-        border-radius: var(--secondaryRadius);
-        &:hover {
-            color: var(--buttonHov);
-            transition: var(--secondaryTransition);
-        }
-    }
-    &--send {
-        display: block;
-        margin: 0 auto;
-        padding: 5px 20px;
-        font-size: var(--secondaryTextSize);
-        background-color: var(--secondaryButton);
-        color: var(--mainText);
-        border: none;
-        &:hover {
-            color: var(--buttonHov);
-            transition: var(--secondaryTransition);
-        }
+        color: var(--mainColor);
     }
 }
