@@ -24,6 +24,7 @@ body {
 .block {
     /* FOTO della HOME */
     .imgProfile {
+        z-index: 1;
         width: 550px;
         padding: 5%;
         margin-left: 2%;
@@ -35,21 +36,15 @@ body {
     }
     /* HOMEPAGE */
     .main {
-        padding: 3%;
+        padding: 10%;
+        margin-top: 5%;
         width: 600px;
         float: right;
-        text-align: start;
+        text-align: center;
         h1 {
             display: block;
             color: var(--mainColor);
             font-size: var(--mainTextSize);
-            margin-top: 5%;
-            padding: 2%;
-        }
-        p {
-            font-size: var(--thirdTextSize);
-            color: var(--secondaryColor);
-            margin-top: 5%;
             padding: 2%;
         }
 
@@ -58,17 +53,50 @@ body {
             font-size: var(--secondaryTextSize);
             color: var(--secondaryColor);
             margin-top: 3%;
-            padding: 2%;
+            padding-right: 2%;
             &:hover {
                 cursor: pointer;
                 color: var(--mainColor);
             }
         }
 
-
-        /* SEZIONE PORTFOLIO (TUTTI I LAVORI) */
-        &--portfolio {
+        /* SEZIONE PER ALCUNI DEI MIGLIORI LAVORI */
+        &--bestWorks {
             margin-top: 10%;
+            height: fit-content;
+            h1 {
+                text-align: center;
+                font-size: var(--mainTextSize);
+            }
+            p {
+                text-align: center;
+                font-size: var(--thirdTextSize);
+                color: var(--secondaryColor);
+            }
+            .work {
+                padding-bottom: 15%;
+                .worksImage {
+                    display: inline-block;
+                    margin-top: 7%;
+                    margin-left: 5%;
+                    width: 50%;
+                    height: 400px;
+                    border-radius: var(--thirdRadius);
+                }
+                .worksText {
+                    display: inline-block;
+                    margin-left: 3%;
+                    margin-top: 0;
+                    width: 30%;
+                    p {
+                        margin-top: 2%;
+                    }
+                }
+            }
+        }
+
+        /* SEZIONE PAGINA PORTFOLIO (TUTTI I LAVORI) */
+        &--portfolio {
             margin-left: .5%;
             padding-bottom: 3%;
             width: 99%;

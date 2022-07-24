@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/af19d86422.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/profilePic.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./assets/style/css/main.css">
     <link rel="icon"       href="./assets/img/home_page.png" type="x-icon">
     <title>Antonio Bellini</title>
@@ -16,13 +16,12 @@
         <div class="block">
             <!--Bottoni delle pagine in alto-->
             <nav>
-                <div class="links" id="navLinks">
+                <div class="links">
                     <ul>
                         <p>
                             Antonio Bellini website
                         </p>
                         <li><a href="index.html#home"      class="button">HOME     </a></li>
-                        <li><a href="index.html#portfolio" class="button">PORTFOLIO</a></li>
                         <li><a href="index.html#skills"    class="button">SKILLS</a></li>
                         <li><a href="index.html#contact"   class="button">CONTACT  </a></li>
                     </ul>
@@ -44,109 +43,36 @@
                 <a href="https://www.instagram.com/antonio.bellinii/" target="_blank"><i class="fa fa-instagram main--social"></i></a>
                 <a href="https://twitter.com/AntonioBellinii" target="_blank"><i class="fa fa-twitter main--social"></i></a>
                 <a href="https://github.com/Antonio-Bellini" target="_blank"><i class="fa fa-github main--social"></i></a>
+            
+                <a class="button--portfolio" href="portfolio.html">Check all my works</a>
             </div>
 
-            <!--Sezione portfolio-->
-            <div id="portfolio" class="main--portfolio">
-                <h1>Portfolio</h1>
+            <!--Sezione per i migliori lavori-->
+            <div class="main--bestWorks">
+                <h1>Some of my best works</h1>
                 <p>
-                    Here's some of the works that I've made
+                    Here you can find some of my best works
                 </p>
 
-                <!--Progetto RespirAVO-->
-                <div class="main--portfolio--works main--portfolio--works--odd">
-                    <a href="https://respiravo.altervista.org" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/respiravoProjects.png" alt="immagine del primo progetto"></a>
-                    <div class="main--portfolio--works--text">
-                        <h3>RespirAVO project website</h3>
+                <!--Work one-->
+                <div class="work">
+                    <img class="worksImage" src="./assets/content/respiravoProjects.png" alt="work one">
+                    <div class="worksText">
+                        <h1>RespirAVO project</h1>
                         <p>
-                            This project was my first full responsive website. Thanks to this project I learn a lot of SCSS, some particular CSS property and also somethings of javascprit: 
-                            in particular the Leaflet library
+                            RespirAVO project was a school project made for sensitize about high level of pollution in our city
                         </p>
                     </div>
                 </div>
 
-                <!--Progetto -->
-                <div class="main--portfolio--works main--portfolio--works--even">
-                    <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
-                    <div class="main--portfolio--works--text">
-                        <h3>Work in progress</h3>
+                <!--Work two-->
+                <div class="work">
+                    <img class="worksImage" src="./assets/content/work.png" alt="work one">
+                    <div class="worksText">
+                        <h1>Work in progress</h1>
                         <p>
-                            Work in progress <br/> work in progress
+                            RespirAVO project was a school project made for sensitize about high level of pollution in our city
                         </p>
-                    </div>
-                </div>
-                
-                <!--Progetto -->
-                <div class="main--portfolio--works main--portfolio--works--odd">
-                    <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
-                    <div class="main--portfolio--works--text">
-                        <h3>Work in progress</h3>
-                        <p>
-                            Work in progress <br/> work in progress
-                        </p>
-                    </div>
-                </div>
-                
-                <!--Progetto -->
-                <div class="main--portfolio--works main--portfolio--works--even">
-                    <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
-                    <div class="main--portfolio--works--text">
-                        <h3>Work in progress</h3>
-                        <p>
-                            Work in progress <br/> work in progress
-                        </p>
-                    </div>
-                </div>
-
-                <!--Bottone per mostrare gli altri risultati-->
-                <div class="showMore">
-                    <button class="showMoreBtn">Show more</button>
-                </div>
-
-                <!--Progetti extra-->
-                <div class="moreWorks">
-                    <!--Progetto -->
-                    <div class="main--portfolio--works main--portfolio--works--odd">
-                        <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
-                        <div class="main--portfolio--works--text">
-                            <h3>Work in progress</h3>
-                            <p>
-                                Work in progress <br/> work in progress
-                            </p>
-                        </div>
-                    </div>
-
-                    <!--Progetto -->
-                    <div class="main--portfolio--works main--portfolio--works--even">
-                        <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
-                        <div class="main--portfolio--works--text">
-                            <h3>Work in progress</h3>
-                            <p>
-                                Work in progress <br/> work in progress
-                            </p>
-                        </div>
-                    </div>
-
-                    <!--Progetto -->
-                    <div class="main--portfolio--works main--portfolio--works--odd">
-                        <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
-                        <div class="main--portfolio--works--text">
-                            <h3>Work in progress</h3>
-                            <p>
-                                Work in progress <br/> work in progress
-                            </p>
-                        </div>
-                    </div>
-
-                    <!--Progetto -->
-                    <div class="main--portfolio--works main--portfolio--works--even">
-                        <a href="https://google.com" target="_blank"><img class="main--portfolio--works--img" src="./assets/content/work.png" alt="immagine del primo progetto"></a>
-                        <div class="main--portfolio--works--text">
-                            <h3>Work in progress</h3>
-                            <p>
-                                Work in progress <br/> work in progress
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -284,9 +210,18 @@
                         alert(JSON.stringify(err));
                     });
         });
-    </script>
-    
-    <!--Bottone show more che mostra altri progetti-->
-    <script src="./assets/js/showMore.js"></script>
+    </script> 
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.main--bestWorks', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('.worksImage',      { delay: 350, origin: 'bottom' });
+        ScrollReveal().reveal('.worksText',       { delay: 400, origin: 'right' });
+    </script>   
 </body>
 </html>

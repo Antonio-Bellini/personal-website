@@ -7,6 +7,9 @@
 nav {
     background-color: var(--thirdColor);
     padding: 1%;
+    width: 99%;
+    position: fixed;
+    z-index: 2;
 }
 .links {
     text-align: end;
@@ -30,7 +33,7 @@ nav {
     }
 }
 
-/* BOTTONI DI COLLEGAEMNTO ALLE PARTI DEL SITO */
+/* BOTTONI DI COLLEGAMENTO ALLE PARTI DEL SITO */
 .button {
     display: inline-block;
     text-decoration: none;
@@ -40,6 +43,17 @@ nav {
     &--sel {
         color: var(--mainColor);
         font-style: italic;
+    }
+    &--portfolio {
+        display: block;
+        border: 1px solid black;
+        padding: 12px 8px;
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 5%;
+        border-radius: var(--radiusSize);
+        text-decoration: none;
+        color: var(--mainColor);
     }
 }
 

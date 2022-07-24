@@ -24,6 +24,7 @@ body {
   /* HOMEPAGE */
 }
 .block .imgProfile {
+  z-index: 1;
   width: 550px;
   padding: 5%;
   margin-left: 2%;
@@ -34,12 +35,14 @@ body {
   transition: var(--mainTransitionValue) linear;
 }
 .block .main {
-  padding: 3%;
+  padding: 10%;
+  margin-top: 5%;
   width: 600px;
   float: right;
-  text-align: start;
+  text-align: center;
   /* SOCIAL NELLA HOME*/
-  /* SEZIONE PORTFOLIO (TUTTI I LAVORI) */
+  /* SEZIONE PER ALCUNI DEI MIGLIORI LAVORI */
+  /* SEZIONE PAGINA PORTFOLIO (TUTTI I LAVORI) */
   /* SEZIONE DELLE SKILLS */
   /* SEZIONE CONTATTAMI */
   /* SEZIONE DEL FOOTER DEL SITO */
@@ -48,27 +51,54 @@ body {
   display: block;
   color: var(--mainColor);
   font-size: var(--mainTextSize);
-  margin-top: 5%;
-  padding: 2%;
-}
-.block .main p {
-  font-size: var(--thirdTextSize);
-  color: var(--secondaryColor);
-  margin-top: 5%;
   padding: 2%;
 }
 .block .main--social {
   font-size: var(--secondaryTextSize);
   color: var(--secondaryColor);
   margin-top: 3%;
-  padding: 2%;
+  padding-right: 2%;
 }
 .block .main--social:hover {
   cursor: pointer;
   color: var(--mainColor);
 }
-.block .main--portfolio {
+.block .main--bestWorks {
   margin-top: 10%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.block .main--bestWorks h1 {
+  text-align: center;
+  font-size: var(--mainTextSize);
+}
+.block .main--bestWorks p {
+  text-align: center;
+  font-size: var(--thirdTextSize);
+  color: var(--secondaryColor);
+}
+.block .main--bestWorks .work {
+  padding-bottom: 15%;
+}
+.block .main--bestWorks .work .worksImage {
+  display: inline-block;
+  margin-top: 7%;
+  margin-left: 5%;
+  width: 50%;
+  height: 400px;
+  border-radius: var(--thirdRadius);
+}
+.block .main--bestWorks .work .worksText {
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 0;
+  width: 30%;
+}
+.block .main--bestWorks .work .worksText p {
+  margin-top: 2%;
+}
+.block .main--portfolio {
   margin-left: 0.5%;
   padding-bottom: 3%;
   width: 99%;
@@ -296,6 +326,9 @@ body {
 nav {
   background-color: var(--thirdColor);
   padding: 1%;
+  width: 99%;
+  position: fixed;
+  z-index: 2;
 }
 
 .links {
@@ -318,7 +351,7 @@ nav {
   font-size: var(--fourthTextSize);
 }
 
-/* BOTTONI DI COLLEGAEMNTO ALLE PARTI DEL SITO */
+/* BOTTONI DI COLLEGAMENTO ALLE PARTI DEL SITO */
 .button {
   display: inline-block;
   text-decoration: none;
@@ -329,6 +362,19 @@ nav {
 .button--sel {
   color: var(--mainColor);
   font-style: italic;
+}
+.button--portfolio {
+  display: block;
+  border: 1px solid black;
+  padding: 12px 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 5%;
+  border-radius: var(--radiusSize);
+  text-decoration: none;
+  color: var(--mainColor);
 }
 
 /* BOTTONE INVIO EMAIL */
@@ -381,7 +427,7 @@ nav {
 :root {
   --mainTitleSize: 65px;
   --mobileTitleSize: 35px;
-  --mainTextSize: 35px;
+  --mainTextSize: 30px;
   --secondaryTextSize: 20px;
   --thirdTextSize: 17px;
   --fourthTextSize: 14px;
