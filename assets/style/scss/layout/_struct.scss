@@ -22,6 +22,10 @@ body {
 
 /* BLOCCO DELLA PAGINA */
 .block {
+    a {
+        text-decoration: none;
+        color: var(--mainColor);
+    }
     /* FOTO della HOME */
     .imgProfile {
         z-index: 1;
@@ -75,9 +79,8 @@ body {
                 padding-bottom: 10%;
             }
             .work {
-                padding-bottom: 15%;
+                padding-bottom: 10%;
                 .worksImage {
-                    display: inline-block;
                     margin-top: 7%;
                     margin-left: 5%;
                     width: 850px;
@@ -87,7 +90,6 @@ body {
                 .worksText {
                     display: inline-block;
                     margin-left: 5%;
-                    margin-top: 0;
                     width: fit-content;
                     h1 {
                         padding: 2%;
@@ -278,7 +280,7 @@ body {
 
         /* SEZIONE CONTATTAMI */
         &--contact {
-            margin-top: 10%;
+            margin-top: 15%;
             margin-left: 1%;
             padding-bottom: 1%;
             width: 98%;

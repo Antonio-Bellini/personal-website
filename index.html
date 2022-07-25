@@ -33,7 +33,7 @@
             <!--Homepage del sito-->
             <div id="home" class="main">
                 <!--Piccola sezione about me-->
-                <h1>I'm Antonio Bellini, student at IIS A. Avogadro in Turin</h1>
+                <h1>I'm Antonio Bellini, student at <a href="https://www.itisavogadro.org/" target="_blank">IIS A. Avogadro</a> in Turin</h1>
                 <p>
                     I'm a 17 years old guy really passionate about computer science but mostly about web development.
                     I attend IIS A. Avogadro in Turin.
@@ -49,14 +49,11 @@
 
             <!--Sezione per i migliori lavori-->
             <div class="main--bestWorks">
-                <h1>Some of my best works</h1>
-                <p>
-                    Here you can find some of my best works
-                </p>
+                <h1 id="main--bestWorks--title">Some of my best works</h1>
 
                 <!--Work one-->
                 <div class="work">
-                    <img class="worksImage" src="./assets/content/respiravoProjects.png" alt="work one">
+                    <img id="worksImageOne" class="worksImage" src="./assets/content/respiravoProjects.png" alt="work one">
                     <div class="worksText">
                         <h1>RespirAVO project</h1>
                         <p>
@@ -67,7 +64,18 @@
 
                 <!--Work two-->
                 <div class="work">
-                    <img class="worksImage" src="./assets/content/work.png" alt="work one">
+                    <img id="worksImageTwo" class="worksImage" src="./assets/content/work.png" alt="work one">
+                    <div class="worksText">
+                        <h1>Name of the project</h1>
+                        <p>
+                            Short description of the project 
+                        </p>
+                    </div>
+                </div>
+
+                <!--Work three-->
+                <div class="work">
+                    <img id="worksImageThree" class="worksImage" src="./assets/content/work.png" alt="work one">
                     <div class="worksText">
                         <h1>Name of the project</h1>
                         <p>
@@ -79,43 +87,57 @@
 
             <!--Sezione skills-->
             <div id="skills" class="main--skills">
-                <h1>My skills</h1>
-                <p>
+                <h1 id="main--skills--title">My skills</h1>
+                <p id="main--skills--paragraph">
                     Here you can find all the technologies or programming language that I know
                 </p>
-                <p class="skillsText" id="html">Html</p>
-                <div class="main--skills--skillsContainer">
-                    <div class="html">45%</div>
+                <div id="html">
+                    <p class="skillsText" id="html">Html</p>
+                    <div class="main--skills--skillsContainer">
+                        <div class="html">45%</div>
+                    </div>
                 </div>
                 
-                <p class="skillsText" id="css">CSS</p>
-                <div class="main--skills--skillsContainer">
-                    <div class="css">40%</div>
+                <div id="css">
+                    <p class="skillsText" id="css">CSS</p>
+                    <div class="main--skills--skillsContainer">
+                        <div class="css">40%</div>
+                    </div>
                 </div>
 
-                <p class="skillsText" id="scss">SCSS</p>
-                <div class="main--skills--skillsContainer">
-                    <div class="scss">40%</div>
+                <div id="scss">
+                    <p class="skillsText" id="scss">SCSS</p>
+                    <div class="main--skills--skillsContainer">
+                        <div class="scss">40%</div>
+                    </div>
                 </div>
 
-                <p class="skillsText" id="js">JS</p>
-                <div class="main--skills--skillsContainer">
-                    <div class="js">20%</div>
+                <div id="js">
+                    <p class="skillsText" id="js">JS</p>
+                    <div class="main--skills--skillsContainer">
+                        <div class="js">20%</div>
+                    </div>
                 </div>
 
-                <p class="skillsText" id="c">C</p>
-                <div class="main--skills--skillsContainer">
-                    <div class="c">30%</div>
+                <div id="c">
+                    <p class="skillsText" id="c">C</p>
+                    <div class="main--skills--skillsContainer">
+                        <div class="c">30%</div>
+                    </div>
                 </div>
 
-                <p class="skillsText" id="java">JAVA</p>
-                <div class="main--skills--skillsContainer">
-                    <div class="java">1%</div>
+                <div id="java">
+                    <p class="skillsText" id="java">JAVA</p>
+                    <div class="main--skills--skillsContainer">
+                        <div class="java">1%</div>
+                    </div>
                 </div>
 
-                <p class="skillsText" id="git">GIT</p>
-                <div class="main--skills--skillsContainer">
-                    <div class="git">15%</div>
+                <div id="git">
+                    <p class="skillsText" id="git">GIT</p>
+                    <div class="main--skills--skillsContainer">
+                        <div class="git">15%</div>
+                    </div>
                 </div>
             </div>
 
@@ -214,14 +236,28 @@
     <script>
         ScrollReveal({
             reset: true,
-            distance: '60px',
-            duration: 2500,
-            delay: 400
+            duration: 2000,
+            delay: 400,
+            distance: '200px'
         });
 
-        ScrollReveal().reveal('.main--bestWorks', { delay: 300, origin: 'left' });
-        ScrollReveal().reveal('.worksImage',      { delay: 350, origin: 'bottom' });
-        ScrollReveal().reveal('.worksText',       { delay: 400, origin: 'right' });
+        // Scrolling animation dei migliori lavori
+        ScrollReveal().reveal('#main--bestWorks--title', { delay: 300, origin: 'left'   });
+        ScrollReveal().reveal('#worksImageOne',          { delay: 350, origin: 'bottom' });
+        ScrollReveal().reveal('#worksImageTwo',          { delay: 350, origin: 'bottom' });
+        ScrollReveal().reveal('#worksImageThree',        { delay: 350, origin: 'bottom' });
+        ScrollReveal().reveal('.worksText',              { delay: 400, origin: 'right'  });
+
+        // Scrolling animation delle skills
+        ScrollReveal().reveal('#main--skills--title',     { delay: 300, origin: 'top'  });
+        ScrollReveal().reveal('#main--skills--paragraph', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('#html',                    { delay: 450, origin: 'left'  });
+        ScrollReveal().reveal('#css',                     { delay: 500, origin: 'left'  });
+        ScrollReveal().reveal('#scss',                    { delay: 550, origin: 'left'  });
+        ScrollReveal().reveal('#js',                      { delay: 600, origin: 'left'  });
+        ScrollReveal().reveal('#c',                       { delay: 650, origin: 'left'  });
+        ScrollReveal().reveal('#java',                    { delay: 700, origin: 'left'  });
+        ScrollReveal().reveal('#git',                     { delay: 750, origin: 'left'  });
     </script>   
 </body>
 </html>

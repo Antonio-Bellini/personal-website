@@ -55,6 +55,11 @@ nav {
         border-radius: var(--radiusSize);
         text-decoration: none;
         color: var(--mainColor);
+        transition: var(--secondaryTransitionValue) linear;
+        &:hover {
+            opacity: .5;
+            transition: var(--secondaryTransitionValue) linear;
+        }
     }
 }
 

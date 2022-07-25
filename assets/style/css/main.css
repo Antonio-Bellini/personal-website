@@ -23,6 +23,10 @@ body {
   /* FOTO della HOME */
   /* HOMEPAGE */
 }
+.block a {
+  text-decoration: none;
+  color: var(--mainColor);
+}
 .block .imgProfile {
   z-index: 1;
   width: 550px;
@@ -80,10 +84,9 @@ body {
   padding-bottom: 10%;
 }
 .block .main--bestWorks .work {
-  padding-bottom: 15%;
+  padding-bottom: 10%;
 }
 .block .main--bestWorks .work .worksImage {
-  display: inline-block;
   margin-top: 7%;
   margin-left: 5%;
   width: 850px;
@@ -93,7 +96,6 @@ body {
 .block .main--bestWorks .work .worksText {
   display: inline-block;
   margin-left: 5%;
-  margin-top: 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -276,7 +278,7 @@ body {
   background-color: #F1502F;
 }
 .block .main--contact {
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: 1%;
   padding-bottom: 1%;
   width: 98%;
@@ -385,6 +387,11 @@ nav {
   border-radius: var(--radiusSize);
   text-decoration: none;
   color: var(--mainColor);
+  transition: var(--secondaryTransitionValue) linear;
+}
+.button--portfolio:hover {
+  opacity: 0.5;
+  transition: var(--secondaryTransitionValue) linear;
 }
 
 /* BOTTONE INVIO EMAIL */
