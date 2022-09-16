@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <div class="app--home">
-      <h1>{{ homeTitleOne }} <br> {{ homeTitleTwo}} <br> {{ homeTitleThree}}</h1>
+      <h1>{{ homeTitleOne }} {{ homeTitleTwo}} <br> {{ homeTitleThree}}</h1>
     </div>
 
     <div class="app--home--main">
