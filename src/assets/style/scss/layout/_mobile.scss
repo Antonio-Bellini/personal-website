@@ -1,0 +1,451 @@
+@import '../abstract/variables';
+
+/* SMARTPHONE */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /*Menu da mobile*/
+    @include hamburger-menu;
+    .navMenu {
+        top: 8vh;
+    }
+
+    /*Sito*/
+    .app {
+        /*Homepage con testo*/
+        &--home {
+            h1 {
+                font-size: var(--secondaryTitleSize);
+            }
+            /*Resto del sito*/
+            &--main {
+                /*Lavori*/
+                &--works {
+                    width: 100vw;
+                    margin: 0;
+                    padding: 0;
+                    @include horizontal-alignment-column;
+                    .workBlock {
+                        width: 100%;
+                        height: 250px;
+                        margin: 0 0 10% 0;
+                        .workSubtitle {
+                            margin: 15% 0 0 0;
+                            font-size: var(--fourthTextSize);
+                            width: 400px;
+                        }
+                        .workButton {
+                            margin: 23vh 0 0 0;
+                        }
+                    }
+                }
+
+                /*Form dell'email*/
+                &--contact.show {
+                    h2 {
+                        margin-top: 5%;
+                        font-size: var(--secondaryTextSize);
+                    }                        
+                    p {
+                        font-size: var(--fourthTextSize);
+                    }
+                    .emailForm {
+                        margin: 5% auto;
+                        width: 70%;
+                        input[type=text], [type=email], textarea {
+                            width: 100%;
+                            box-sizing: border-box;
+                            resize: vertical;
+                            margin-bottom: 3%;
+                            padding: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*Pagina about*/
+        &--about {
+            &--main {
+                margin: 5vh auto;
+                /*Sezione testo e foto*/
+                &--info {
+                    @include horizontal-alignment-columnRev;
+                    .profileImgContainer {
+                        width: 250px;
+                        height: 230px;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    p {
+                        display: block;
+                        margin: 4% auto;
+                        width: 100%;
+                    }
+                }
+
+                /*Skills*/
+                &--skills--one, &--skills--two {
+                    @include horizontal-alignment-column;
+                    .block {
+                        width: 95%;
+                    }
+                }
+            }
+        }
+
+        /*Footer*/
+        &--footer {
+            h3 {
+                font-size: var(--secondaryTextSize);
+                text-align: center;
+                margin: 0;
+                margin-bottom: 5%;
+            }
+            p {
+                margin-left: 5%;
+                display: inline-block;
+                text-align: center;
+                a {
+                    font-size: var(--fourthTextSize);
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* TABLET */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /*Menu da mobile*/
+    @include hamburger-menu;
+    .navMenu {
+        top: 6vh;
+    }
+
+    /*Sito*/
+    .app {
+        /*Homepage con testo*/
+        &--home {
+            h1 {
+                font-size: var(--mainTitleSize);
+            }
+            /*Resto del sito*/
+            &--main {
+                /*Lavori*/
+                &--works {
+                    width: 100vw;
+                    margin: 0;
+                    padding: 0;
+                    @include horizontal-alignment-column;
+                    .workBlock {
+                        width: 75%;
+                        height: 250px;
+                        margin: auto;
+                        margin-bottom: 3%;
+                        .workTitle {
+                            border: 1px solid white;
+                            width: 575px;
+                            position: absolute;
+                            text-align: center;
+                        }
+                        .workSubtitle {
+                            border: 1px solid white;
+                            margin: 9% 0 0 0;
+                            font-size: var(--fourthTextSize);
+                            width: 575px;
+                        }
+                        .workButton {
+                            margin: 23% auto;
+                        }
+                    }
+                }
+                
+                /*Form dell'email*/
+                &--contact.show {
+                    h2 {
+                        margin-top: 5%;
+                        font-size: var(--mainTextSize);
+                    }
+                    p {
+                        font-size: var(--thirdTextSize);
+                    }
+                    .emailForm {
+                        margin: 5% auto;
+                        width: 70%;
+                        input[type=text], [type=email], textarea {
+                            width: 100%;
+                            box-sizing: border-box;
+                            resize: vertical;
+                            margin-bottom: 3%;
+                            padding: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        /*Pagina about*/
+        &--about {
+            &--main {
+                margin: 5vh auto;
+                /*Sezione foto e testo*/
+                &--info {
+                    @include horizontal-alignment-columnRev;
+                    .profileImgContainer {
+                        width: 300px;
+                        height: 280px;
+                        display: block;
+                        margin: 3% auto;
+                    }
+                    p {
+                        display: block;
+                        margin: 2% auto;
+                        width: 100%;
+                    }
+                }
+
+                /*Skills*/
+                &--skills--one, &--skills--two {
+                    @include horizontal-alignment-column;
+                    .block {
+                        width: 95%;
+                        .progressBar {
+                            margin: 5% auto;
+                        }
+                    }
+
+                }
+            }
+        }
+    
+        /*Footer*/
+        &--footer {
+            h3 {
+                font-size: var(--mainTextSize);
+            }
+            p {    
+                a {
+                    font-size: var(--fourthTextSize);
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* MEDIE DIMENSIONI DELLO SCHERMO (TABLET GRANDI) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /*Menu da mobile*/
+    @include hamburger-menu;
+    .navMenu {
+        top: 5vh
+    }
+
+    /*Sito*/
+    .app {
+        /*Homepage*/
+        &--home {
+            /*Resto del sito*/
+            &--main {
+                /*Lavori*/
+                &--works{
+                    @include horizontal-alignment-column;
+                    .workBlock {
+                        width: 670px;
+                        margin: auto;
+                        margin-bottom: 3%;
+                        .workTitle {
+                            margin: 2% auto;
+                        }
+                        .workSubtitle {
+                            margin: 10% auto;
+                        }
+                        .workButton {
+                            margin: 22% auto;
+                        }
+                    }
+                }
+
+                /*Form dell'email*/
+                &--contact.show {
+                    h2 {
+                        margin-top: 5%;
+                        font-size: var(--mainTextSize);
+                    }    
+                    p {
+                        font-size: var(--thirdTextSize);
+                    }        
+                    .emailForm {
+                        margin: 5% auto;
+                        width: 50%;
+                        label {
+                            font-size: var(--thirdTextSize);
+                            text-align: start;
+                            padding: 0 0 2px 5px;
+                        } 
+                        input[type=text], [type=email], textarea {
+                            width: 100%;
+                            box-sizing: border-box;
+                            resize: vertical;
+                            margin-bottom: 3%;
+                            padding: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* MEDIO-GRANDI DIMENSIONI DELLO SCHERMO (PC) */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {    
+    /*Sito*/
+    .app {
+        /*Homepage*/
+        &--home {
+            h1 {
+                font-size: var(--bigTitleSize);
+            }
+            /*Resto del sito*/
+            &--main {
+                /*Lavori*/
+                &--works {
+                    .workBlock {
+                        width: 670px;
+                        .workSubtitle {
+                            width: 445px;
+                        }
+                        .workButton {
+                            margin: 15% auto;
+                        }
+                    }
+                }
+
+                /*Form dell'email*/
+                &--contact.show {
+                    .emailForm {
+                        margin: 5% auto;
+                        width: 40%;
+                        label {
+                            text-align: start;
+                            padding: 0 0 2px 5px;
+                        }             
+                        input[type=text], [type=email], textarea {
+                            width: 100%;
+                            box-sizing: border-box;
+                            resize: vertical;
+                            margin-bottom: 3%;
+                            padding: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*Pagina about*/
+        &--about {
+            /*Resto del sito e titolo*/
+            &--main {
+                h4 {
+                    font-size: var(--titleSize);
+                }
+
+                /*Skills*/                
+                .block {
+                    margin: 2%;
+                    width: 300px;
+                }
+            }            
+        }
+    }
+}
+
+@media only screen and (min-width: 2441px) {
+    /*Sito*/
+    .app {
+        /*Homepage*/
+        &--home {
+            h1 {
+                font-size: var(--bigTitleSize);
+            }
+            /*Resto del sito*/
+            &--main {
+                /*Lavori*/
+                &--works {
+                    .workBlock {
+                        width: 750px;
+                        height: 400px;
+                        .workTitle {
+                            font-size: var(--titleSize);
+                        }
+                        .workSubtitle {
+                            width: 750px;
+                            font-size: var(--mainTextSize);
+                        }
+                        .workButton {
+                            font-size: var(--mainTextSize);
+                            margin: 11.5% auto;
+                        }
+                    }
+                }
+
+                /*Form email*/
+                &--contact.show {
+                    h2 {
+                        margin-top: 5%;
+                        font-size: var(--titleSize);
+                    }
+                    p {
+                        font-size: var(--mainTextSize);
+                    }
+                    .emailForm {
+                        margin: 3% auto;
+                        width: 40%;
+                        label {
+                            font-size: var(--mainTextSize);
+                            text-align: start;
+                            padding: 0 0 2px 5px;
+                        }
+                        input[type=text], [type=email] {
+                            height: 50px;
+                            &::placeholder {
+                                font-size: var(--secondaryTextSize);
+                            }
+                        }
+                        input[type=text], [type=email], textarea {
+                            width: 100%;
+                            box-sizing: border-box;
+                            resize: vertical;
+                            margin-bottom: 3%;
+                            padding: 12px;
+                            font-size: var(--secondaryTextSize);
+                        }
+                        input[type=submit] {
+                            font-size: var(--secondaryTitleSize);
+                        }
+                     }
+                }
+            }
+        }
+        
+        /*Footer*/
+        &--footer {
+            h3 {
+                font-size: var(--titleSize);
+                .showEmailForm {
+                    font-size: var(--secondaryTitleSize);
+                }
+            }
+            p {
+                a {
+                    font-size: var(--mainTextSize);
+                }
+            }
+        }
+    }
+}

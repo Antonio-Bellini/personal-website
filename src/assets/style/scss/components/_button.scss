@@ -1,0 +1,95 @@
+@import '../abstract/variables';
+
+li {
+    list-style: none;
+}
+
+/* BOTTONI NAV */
+.navHamburger {
+    display: none;
+}
+.workBtn, .aboutBtn {
+    text-decoration: none;
+    color: var(--mainColor);
+    font-size: var(--secondaryTextSize);
+}
+.logoBtn {
+    text-decoration: none;
+    color: var(--mainColor);
+    font-size: 2rem;
+}
+.navBar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    min-height: 70px;
+    @include nav-menu-alignment;
+    padding: 0 24px;
+    background: var(--thirdColor);
+    .navMenu {
+        @include nav-menu-alignment;
+        gap: 60px;
+        .navLink {
+            transition: var(--mainTransitionValue) ease-in-out;
+        }
+    }
+}
+
+/* BOTTONE PER MOSTRARE IL FORM DELLE EMAIL */
+.showEmailForm {
+    text-decoration: none;
+    border: 1px solid var(--thirdColor);
+    padding: 12px 8px;
+    margin: 2% 0 1% 0;
+    background: var(--mainColor);
+    color: var(--thirdColor);
+    font-size: var(--thirdTextSize);
+    float: right;
+    border-radius: var(--radiusSize);
+    transition: var(--thirdTransitionValue) ease-in-out;
+    &:hover, &:focus {
+        translate: 0 -3px;
+        transition: var(--thirdTransitionValue) ease-in-out;
+        border-bottom: 4px solid var(--thirdColor);
+    }
+}
+/* BOTTONE PER L'INVIO DELL'EMAIL */
+input[type=submit] {
+    display: block;
+    margin: auto;
+    border: 1px solid var(--thirdColor);
+    background: var(--mainColor);
+    color: var(--thirdColor);
+    width: 150px;
+    padding: 12px 8px;
+    font-size: var(--fourthTextSize);
+    border-radius: var(--radiusSize);
+    &:hover, &:focus {
+        translate: 0 -3px;
+        transition: var(--thirdTransitionValue) ease-in-out;
+        border-bottom: 4px solid var(--thirdColor);
+    }
+}
+
+/* BOTTONE PER VISITARE IL LAVORO PRESENTATO */
+.workButton {
+    border: 1px solid var(--mainColor);
+    padding: 15px 10px;
+    position: absolute;
+    margin: 12% 0 0 0;
+    border-radius: var(--radiusSize);
+    background: none;
+    color: var(--mainColor);
+    font-size: var(--thirdTextSize);
+    filter: opacity(0);
+    @include central-alignment;
+    text-decoration: none;
+    &:hover, &:focus {
+        translate: 0 -3px;
+        transition: var(--secondaryTransitionValue);
+        border-bottom: 4px solid var(--mainColor);
+    }
+    &.disabled {
+        pointer-events: none;
+    }
+}

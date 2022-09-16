@@ -1,0 +1,18 @@
+@import '../abstract/variables';
+
+.app {
+    &--footer {
+        padding-bottom: 3%;
+        max-width: 100%;
+        p {
+            margin-left: 8%;
+            a {
+                text-decoration: none;
+                padding: 12px 8px;
+                margin-bottom: 5%;
+                color: var(--thirdColor);
+                font-size: var(--secondaryTextSize);
+            }
+        }
+    }
+}

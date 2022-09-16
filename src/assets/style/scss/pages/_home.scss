@@ -1,0 +1,75 @@
+@import '../abstract/variables';
+@import '../abstract/mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    /* HOMEPAGE */
+    &--home {
+        height: 100vh;
+        color: var(--thirdColor);
+        text-align: center;
+        @include horizontal-alignment-column;
+        /* RESTO DEL SITO */
+        &--main {
+            height: fit-content;
+            /* LAVORI */
+            &--works {
+                @include horizontal-alignment-row;
+                padding-bottom: 5%;
+                .workBlock {
+                    margin: 1%;
+                    width: 600px;
+                    height: 300px;
+                    overflow: hidden;
+                    border-radius: var(--secondaryRadius);
+                    @include horizontal-alignment-row;
+                    .workImage {
+                        transition: var(--secondaryTransitionValue);
+                        width: 100%;
+                    }
+                    .workTitle {
+                        position: absolute;
+                        font-size: var(--mainTextSize);
+                        color: var(--mainColor);
+                        filter: opacity(0);
+                        z-index: 10;
+                        margin-top: 1%;    
+                        &#workOne {
+                            color: rgb(15, 136, 0);
+                        }
+                        &#workTwo {
+                            color: white;
+                        }
+                    }
+                    .workSubtitle {
+                        position: absolute;
+                        width: 600px;
+                        font-size: var(--thirdTextSize);
+                        letter-spacing: 3px;
+                        color: var(--mainColor);
+                        margin: 5% 0 0 0;
+                        text-align: center;
+                        filter: opacity(0);
+                        z-index: 10;
+                    }
+                    &:hover, &:focus {
+                        .workImage {
+                            transition: var(--secondaryTransitionValue);
+                            scale: 1.1;
+                            filter: brightness(0.5);
+                        }
+                        .workTitle, .workSubtitle, .workButton {
+                            transition: var(--secondaryTransitionValue);
+                            filter: opacity(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

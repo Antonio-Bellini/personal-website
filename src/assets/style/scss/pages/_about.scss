@@ -1,0 +1,82 @@
+@import '../abstract/variables';
+
+.app {
+    &--about {
+        &--main {
+            margin: 15vh 0 0 0;
+            &--info {
+                @include horizontal-alignment-row;
+                .profileImgContainer {
+                    width: 350px;
+                    height: 330px;
+                    margin: 2% 5% 2% 5%;
+                    overflow: hidden;
+                    .profileImg {
+                        width: 100%;
+                        height: 100%;
+                        transition: var(--mainTransitionValue);            
+                        &:hover, &:focus {
+                            transition: var(--mainTransitionValue);
+                            scale: 1.1;
+                        }
+                    }
+                }
+            }
+
+            /* SKILLS */
+            &--skills--one {
+                margin: 1vh 0 0 0;
+                @include skills-style;
+                .progressBar {
+                    #htmlBar {
+                        background: #E34C26;
+                        width: 55%;
+                        @include progress-bar;
+                    }
+                    #cssBar {
+                        background: #264DE4;
+                        color: var(--mainColor);
+                        width: 40%;
+                        @include progress-bar;
+                    }
+                    #scssBar {
+                        background: #CD6799;
+                        width: 42%;
+                        @include progress-bar;
+                    }
+                    #jsBar {
+                        background: #F0DB4F;
+                        width: 10%;
+                        @include progress-bar;
+                    }
+                    #vueBar {
+                        background: #41B883;
+                        width: 20%;
+                        @include progress-bar;
+                    }
+                }
+            }
+            &--skills--two {
+                @include skills-style;
+                .progressBar {
+                    #cBar {
+                        background: #04407E;
+                        color: var(--mainColor);
+                        width: 25%;
+                        @include progress-bar;
+                    }
+                    #javaBar {
+                        background: #D0A384;
+                        width: 1%;
+                        @include progress-bar;
+                    }
+                    #gitBar {
+                        background: #F1502F;
+                        width: 15%;
+                        @include progress-bar;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+/* COLOR PALETTE */
+:root {
+    /* Light theme */
+    --mainColor-light:         #D2D2D2;
+    --secondaryColor-light:    #000000;
+    --thirdColor-light:        #1A1A19;
+    --fourthColor-light:       #727068;
+    --fifthColor:              #373635;
+    --opacityColor-light:      #7f887f;
+
+    /* Dark theme */
+    --mainColor-dark:          #D2D2D2;
+    --secondaryColor-dark:     #000000;
+    --thirdColor-dark:         #1A1A19;
+    --fourthColor-dark:        #727068;
+    --fifthColor--dark:        #373635;
+    --opacityColor-dark:       #7f887f;
+}
+
+/* GRANDEZZE DEI TESTI */
+:root {
+    --bigTitleSize: 75px;
+    --mainTitleSize: 60px;
+
+    --titleSize: 45px; 
+    --secondaryTitleSize: 35px;
+    --mainTextSize: 30px;
+    --secondaryTextSize: 20px;
+    --thirdTextSize: 17px;
+    --fourthTextSize: 16px;
+
+    --radiusSize: 10px;
+    --secondaryRadius: 15px;
+    --thirdRadius: 7px;
+    --fourthRadius: 30px;
+
+    --mainTransitionValue: 0.5s;
+    --secondaryTransitionValue: 0.3s;
+    --thirdTransitionValue: 0.2s;
+}
