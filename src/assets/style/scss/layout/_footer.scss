@@ -2,14 +2,14 @@
 
 .app {
     &--footer {
-        padding-bottom: 3%;
+        padding: 0 0 3% 0;
         max-width: 100%;
         p {
-            margin-left: 8%;
+            margin: 0 0 0 8%;
             a {
                 text-decoration: none;
                 padding: 12px 8px;
-                margin-bottom: 5%;
+                margin: 0 0 5% 0;
                 color: var(--thirdColor);
                 font-size: var(--secondaryTextSize);
             }

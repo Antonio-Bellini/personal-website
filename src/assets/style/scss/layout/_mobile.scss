@@ -23,19 +23,7 @@
                     margin: 0;
                     padding: 0;
                     @include horizontal-alignment-column;
-                    .workBlock {
-                        width: 100%;
-                        height: 250px;
-                        margin: 0 0 10% 0;
-                        .workSubtitle {
-                            margin: 15% 0 0 0;
-                            font-size: var(--fourthTextSize);
-                            width: 400px;
-                        }
-                        .workButton {
-                            margin: 23vh 0 0 0;
-                        }
-                    }
+                    border: 1px solid red;
                 }
 
                 /*Form dell'email*/
@@ -138,27 +126,6 @@
                     margin: 0;
                     padding: 0;
                     @include horizontal-alignment-column;
-                    .workBlock {
-                        width: 75%;
-                        height: 250px;
-                        margin: auto;
-                        margin-bottom: 3%;
-                        .workTitle {
-                            border: 1px solid white;
-                            width: 575px;
-                            position: absolute;
-                            text-align: center;
-                        }
-                        .workSubtitle {
-                            border: 1px solid white;
-                            margin: 9% 0 0 0;
-                            font-size: var(--fourthTextSize);
-                            width: 575px;
-                        }
-                        .workButton {
-                            margin: 23% auto;
-                        }
-                    }
                 }
                 
                 /*Form dell'email*/
@@ -253,20 +220,6 @@
                 /*Lavori*/
                 &--works{
                     @include horizontal-alignment-column;
-                    .workBlock {
-                        width: 670px;
-                        margin: auto;
-                        margin-bottom: 3%;
-                        .workTitle {
-                            margin: 2% auto;
-                        }
-                        .workSubtitle {
-                            margin: 10% auto;
-                        }
-                        .workButton {
-                            margin: 22% auto;
-                        }
-                    }
                 }
 
                 /*Form dell'email*/
@@ -313,19 +266,6 @@
             }
             /*Resto del sito*/
             &--main {
-                /*Lavori*/
-                &--works {
-                    .workBlock {
-                        width: 670px;
-                        .workSubtitle {
-                            width: 445px;
-                        }
-                        .workButton {
-                            margin: 15% auto;
-                        }
-                    }
-                }
-
                 /*Form dell'email*/
                 &--contact.show {
                     .emailForm {
@@ -375,24 +315,6 @@
             }
             /*Resto del sito*/
             &--main {
-                /*Lavori*/
-                &--works {
-                    .workBlock {
-                        width: 750px;
-                        height: 400px;
-                        .workTitle {
-                            font-size: var(--titleSize);
-                        }
-                        .workSubtitle {
-                            width: 750px;
-                            font-size: var(--mainTextSize);
-                        }
-                        .workButton {
-                            font-size: var(--mainTextSize);
-                            margin: 11.5% auto;
-                        }
-                    }
-                }
 
                 /*Form email*/
                 &--contact.show {

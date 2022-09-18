@@ -73,23 +73,24 @@ input[type=submit] {
 
 /* BOTTONE PER VISITARE IL LAVORO PRESENTATO */
 .workButton {
-    border: 1px solid var(--mainColor);
-    padding: 15px 10px;
-    position: absolute;
-    margin: 12% 0 0 0;
-    border-radius: var(--radiusSize);
-    background: none;
-    color: var(--mainColor);
-    font-size: var(--thirdTextSize);
-    filter: opacity(0);
     @include central-alignment;
+    width: fit-content;
+    border-radius: var(--radiusSize);
+    border: 1px solid var(--mainColor);
+    color: var(--mainColor);
+    background: none;
+    font-size: var(--thirdTextSize);
     text-decoration: none;
+    padding: 13px 11px;
+    margin: 10% auto 0 auto;
+    transition: var(--secondaryTransitionValue);
     &:hover, &:focus {
-        translate: 0 -3px;
         transition: var(--secondaryTransitionValue);
-        border-bottom: 4px solid var(--mainColor);
+        translate: 0 -5px;
     }
-    &.disabled {
-        pointer-events: none;
-    }
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
 }

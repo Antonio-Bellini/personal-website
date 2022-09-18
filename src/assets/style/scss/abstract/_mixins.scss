@@ -1,5 +1,6 @@
 @import './variables';
 
+/* MENU DA MOBILE */
 @mixin hamburger-menu {
     /*Hamburger menu*/
     .navHamburger {
@@ -68,8 +69,8 @@
 /* ALLINEAMENTO ORIZZONTALE DI PIU OGGETTI */
 @mixin horizontal-alignment-row {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
 }
 
 /* ALLINEAMENTO AL CENTRO */
@@ -89,9 +90,6 @@
 @mixin shadow-settings {
     box-shadow: 10px 0px 42px 7px rgba(127, 136, 127, 0.64);
 }
-@mixin shadow-settings-two {
-    box-shadow: 0 5px 30px 0px gray;
-}
 
 /* STILE DELLA BARRA DI PROGRESSO DELLE SKILLS */
 @mixin progress-bar {
@@ -99,32 +97,10 @@
     text-align: end;
 }
 
-/* STILE DEI BLOCCHI DELLE SKILLS */
-@mixin skills-style {
-    background: var(--mainColor);
-    @include horizontal-alignment-row;
-    .block {
-        margin: 3%;
-        width: 250px;
-        height: 200px;
-        border-radius: var(--secondaryRadius);
-        @include shadow-settings;
-        background: var(--fifthColor);
-        transition: var(--thirdTransitionValue) linear;
-        .progressBar {
-            width: 98%;
-            margin: 15% 0 0 .5%;
-            color: var(--fifthColor);
-            border-radius: var(--fourthRadius);
-        }
-        .logoImg {
-            width: 100px;
-            height: 100px;
-            @include image-alignment;
-        }
-        &:hover, &:focus {
-            transition: var(--thirdTransitionValue) linear;
-            scale: 1.1;
-        }
-    }
+@mixin work-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

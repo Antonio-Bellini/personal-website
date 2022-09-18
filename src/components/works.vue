@@ -1,40 +1,73 @@
 <template>
     <div class="app--home--main--works">
       <div class="workBlock">
-        <p class="workTitle" id="workOne">{{ workOneTitle }}</p>
-        <p class="workSubtitle">{{ workOneSubtitle }}</p>
-        <img class="workImage" src="../assets/images/content/respiravo_project.png" alt="work one">
-        <a href="https://respiravo.altervista.org/" class="workButton" target="_blank">Visit website</a>
+        <div class="image">
+          <img src="../assets/images/content/respiravo_project.png" alt="work one">
+        </div>
+        <div class="text">
+          <div class="content">
+            <h3 id="workOne">{{ workOneTitle }}</h3>
+            <p>{{ workOneSubtitle }}
+              <a href="https://respiravo.altervista.org/" class="workButton" target="_blank">Visit website</a>
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="workBlock">
-        <p class="workTitle" id="workTwo">{{ workTwoTitle }}</p>
-        <p class="workSubtitle">{{ workTwoSubtitle }}</p>
-        <img class="workImage" src="../assets/images/content/WIP.webp" alt="work two">
-        <a href="#" class="workButton disabled" target="_blank">Visit website</a><br>
+        <div class="image">
+          <img src="../assets/images/content/WIP.webp" alt="work two">
+        </div>
+        <div class="text">
+          <div class="content">
+            <h3 id="workTwo">{{ workTwoTitle }}</h3>
+            <p>{{ workTwoSubtitle }}
+              <a href="#" class="workButton disabled" target="_blank">Visit website</a>
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="workBlock">
-        <p class="workTitle" id="workThree">{{ workThreeTitle }}</p>
-        <p class="workSubtitle">{{ workThreeSubtitle }}</p>
-        <img class="workImage" src="../assets/images/content/WIP.webp" alt="work three">
-        <a href="#" class="workButton disabled" target="_blank">Visit website</a><br>
-      </div>
-    </div>
-
-    <div class="app--home--main--works">
-      <div class="workBlock">
-        <p class="workTitle" id="workThree">{{ workThreeTitle }}</p>
-        <p class="workSubtitle">{{ workThreeSubtitle }}</p>
-        <img class="workImage" src="../assets/images/content/WIP.webp" alt="work three">
-        <a href="#" class="workButton disabled" target="_blank">Visit website</a><br>
+        <div class="image">
+          <img src="../assets/images/content/WIP.webp" alt="work three">
+        </div>
+        <div class="text">
+          <div class="content">
+            <h3 id="workThree">{{ temporaryName }}</h3>
+            <p>{{ temporaryDescription }}
+              <a href="#" class="workButton disabled" target="_blank">Visit website</a>
+            </p>
+          </div>
+        </div>
       </div>
 
       <div class="workBlock">
-        <p class="workTitle" id="workThree">{{ workThreeTitle }}</p>
-        <p class="workSubtitle">{{ workThreeSubtitle }}</p>
-        <img class="workImage" src="../assets/images/content/WIP.webp" alt="work three">
-        <a href="#" class="workButton disabled" target="_blank">Visit website</a><br>
+        <div class="image">
+          <img src="../assets/images/content/WIP.webp" alt="work four">
+        </div>
+        <div class="text">
+          <div class="content">
+            <h3 id="workFour">{{ temporaryName }}</h3>
+            <p>{{ temporaryDescription }}
+              <a href="#" class="workButton disabled" target="_blank">Visit website</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="workBlock">
+        <div class="image">
+          <img src="../assets/images/content/WIP.webp" alt="work five">
+        </div>
+        <div class="text">
+          <div class="content">
+            <h3 id="workFive">{{ temporaryName }}</h3>
+            <p>{{ temporaryDescription }}
+              <a href="#" class="workButton disabled" target="_blank">Visit website</a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 </template>
@@ -50,11 +83,8 @@ export default {
       workTwoTitle: 'Aroma Chat',
       workTwoSubtitle: 'Aroma Chat is a web app, made by a group of student,that allowed the user who loggins to comunicate with other, user online, and in different text channels. For now is still work in progress.',
 
-      workThreeTitle: 'Work in progress',
-      workThreeSubtitle: 'New project coming soon',
-
       temporaryName: 'Work in Progress',
-      temporaryDescription: 'Work in progress! Something cool is coming! Check later on'
+      temporaryDescription: 'New project coming soon'
     }
   }
 }

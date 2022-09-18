@@ -73,6 +73,7 @@
   --thirdTransitionValue: 0.2s;
 }
 
+/* MENU DA MOBILE */
 /* ALLINEAMENTO DEL NAV MENU */
 /* ALLINEAMENTO VERTICALE DI PIU OGGETTI */
 /* ALLINEAMENTO VERTICALE DI PIU OGGETTI AL CONTRARIO */
@@ -81,7 +82,6 @@
 /* ALLINEAMENTO PER LE IMMAGINI */
 /* IMPOSTAZIONI DELLE OMBRE */
 /* STILE DELLA BARRA DI PROGRESSO DELLE SKILLS */
-/* STILE DEI BLOCCHI DELLE SKILLS */
 /* COLOR PALETTE */
 :root {
   /* Light theme */
@@ -292,27 +292,30 @@ input[type=submit]:hover, input[type=submit]:focus {
 
 /* BOTTONE PER VISITARE IL LAVORO PRESENTATO */
 .workButton {
-  border: 1px solid var(--mainColor);
-  padding: 15px 10px;
-  position: absolute;
-  margin: 12% 0 0 0;
-  border-radius: var(--radiusSize);
-  background: none;
-  color: var(--mainColor);
-  font-size: var(--thirdTextSize);
-  filter: opacity(0);
   display: flex;
   justify-content: center;
   align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: var(--radiusSize);
+  border: 1px solid var(--mainColor);
+  color: var(--mainColor);
+  background: none;
+  font-size: var(--thirdTextSize);
   text-decoration: none;
+  padding: 13px 11px;
+  margin: 10% auto 0 auto;
+  transition: var(--secondaryTransitionValue);
 }
 .workButton:hover, .workButton:focus {
-  translate: 0 -3px;
   transition: var(--secondaryTransitionValue);
-  border-bottom: 4px solid var(--mainColor);
+  translate: 0 -5px;
 }
-.workButton.disabled {
+
+.disabled {
   pointer-events: none;
+  cursor: default;
 }
 
 /* COLOR PALETTE */
@@ -389,6 +392,7 @@ input[type=submit]:hover, input[type=submit]:focus {
   --thirdTransitionValue: 0.2s;
 }
 
+/* MENU DA MOBILE */
 /* ALLINEAMENTO DEL NAV MENU */
 /* ALLINEAMENTO VERTICALE DI PIU OGGETTI */
 /* ALLINEAMENTO VERTICALE DI PIU OGGETTI AL CONTRARIO */
@@ -397,7 +401,6 @@ input[type=submit]:hover, input[type=submit]:focus {
 /* ALLINEAMENTO PER LE IMMAGINI */
 /* IMPOSTAZIONI DELLE OMBRE */
 /* STILE DELLA BARRA DI PROGRESSO DELLE SKILLS */
-/* STILE DEI BLOCCHI DELLE SKILLS */
 * {
   margin: 0;
   padding: 0;
@@ -429,58 +432,90 @@ html {
   /* LAVORI */
 }
 .app--home--main--works {
+  max-width: 100vw;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  padding-bottom: 5%;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  position: relative;
 }
 .app--home--main--works .workBlock {
-  margin: 1%;
-  width: 600px;
-  height: 300px;
+  position: relative;
+  width: 700px;
+  height: 400px;
+  margin: 2% auto;
   overflow: hidden;
-  border-radius: var(--secondaryRadius);
+  border-radius: var(--fourthRadius);
+}
+.app--home--main--works .workBlock .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.app--home--main--works .workBlock .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app--home--main--works .workBlock .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  align-items: center;
 }
-.app--home--main--works .workBlock .workImage {
-  transition: var(--secondaryTransitionValue);
-  width: 100%;
-}
-.app--home--main--works .workBlock .workTitle {
+.app--home--main--works .workBlock .text:before {
   position: absolute;
-  font-size: var(--mainTextSize);
-  color: var(--mainColor);
-  filter: opacity(0);
-  z-index: 10;
-  margin-top: 1%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: var(--thirdColor);
+  transform: scaleX(0);
+  transition: transform var(--mainTransitionValue) ease-in-out;
+  transform-origin: left;
 }
-.app--home--main--works .workBlock .workTitle#workOne {
+.app--home--main--works .workBlock .text .content {
+  position: relative;
+  padding: 30px;
+  z-index: 1;
+  transition: var(--mainTransitionValue);
+  transform: translateX(-700px);
+  color: var(--mainColor);
+}
+.app--home--main--works .workBlock .text .content h3 {
+  color: var(--mainColor);
+  font-size: var(--secondaryTitleSize);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 1000;
+  padding: auto auto 5% auto;
+}
+.app--home--main--works .workBlock .text .content h3#workOne {
   color: rgb(15, 136, 0);
 }
-.app--home--main--works .workBlock .workTitle#workTwo {
-  color: white;
-}
-.app--home--main--works .workBlock .workSubtitle {
-  position: absolute;
-  width: 600px;
-  font-size: var(--thirdTextSize);
-  letter-spacing: 3px;
-  color: var(--mainColor);
-  margin: 5% 0 0 0;
+.app--home--main--works .workBlock .text .content p {
+  font-size: var(--secondaryTextSize);
   text-align: center;
-  filter: opacity(0);
-  z-index: 10;
+  line-height: 1.5em;
 }
-.app--home--main--works .workBlock:hover .workImage, .app--home--main--works .workBlock:focus .workImage {
-  transition: var(--secondaryTransitionValue);
-  scale: 1.1;
-  filter: brightness(0.5);
+.app--home--main--works .workBlock:hover .text .content {
+  transform: translateX(0px);
+  transition-delay: var(--secondaryTransitionValue);
 }
-.app--home--main--works .workBlock:hover .workTitle, .app--home--main--works .workBlock:hover .workSubtitle, .app--home--main--works .workBlock:hover .workButton, .app--home--main--works .workBlock:focus .workTitle, .app--home--main--works .workBlock:focus .workSubtitle, .app--home--main--works .workBlock:focus .workButton {
-  transition: var(--secondaryTransitionValue);
-  filter: opacity(1);
+.app--home--main--works .workBlock:hover .text:before {
+  transform: scaleX(1);
+  transition: transform var(--mainTransitionValue) ease-in-out;
+  transform-origin: left;
 }
 
 /* COLOR PALETTE */
@@ -524,13 +559,13 @@ html {
   /* PAGINA ABOUT */
 }
 .app--about--main {
-  margin: 15vh 0 0 0;
+  margin: 5vh auto;
   /* SKILLS */
 }
 .app--about--main--info {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
 }
 .app--about--main--info .profileImgContainer {
   width: 350px;
@@ -547,14 +582,14 @@ html {
   transition: var(--mainTransitionValue);
   scale: 1.1;
 }
-.app--about--main--skills--one {
-  margin: 1vh 0 0 0;
-  background: var(--mainColor);
+.app--about--main--skills {
+  margin: 1vh auto;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  background: var(--mainColor);
 }
-.app--about--main--skills--one .block {
+.app--about--main--skills .block {
   margin: 3%;
   width: 250px;
   height: 200px;
@@ -563,102 +598,71 @@ html {
   background: var(--fifthColor);
   transition: var(--thirdTransitionValue) linear;
 }
-.app--about--main--skills--one .block .progressBar {
+.app--about--main--skills .block .progressBar {
   width: 98%;
   margin: 15% 0 0 0.5%;
   color: var(--fifthColor);
   border-radius: var(--fourthRadius);
 }
-.app--about--main--skills--one .block .logoImg {
-  width: 100px;
-  height: 100px;
-  display: block;
-  margin: 0 auto;
-}
-.app--about--main--skills--one .block:hover, .app--about--main--skills--one .block:focus {
-  transition: var(--thirdTransitionValue) linear;
-  scale: 1.1;
-}
-.app--about--main--skills--one .progressBar #htmlBar {
+.app--about--main--skills .block .progressBar #htmlBar {
   background: #E34C26;
   width: 55%;
   border-radius: var(--fourthRadius);
   text-align: end;
 }
-.app--about--main--skills--one .progressBar #cssBar {
+.app--about--main--skills .block .progressBar #cssBar {
   background: #264DE4;
   color: var(--mainColor);
   width: 40%;
   border-radius: var(--fourthRadius);
   text-align: end;
 }
-.app--about--main--skills--one .progressBar #scssBar {
+.app--about--main--skills .block .progressBar #scssBar {
   background: #CD6799;
   width: 42%;
   border-radius: var(--fourthRadius);
   text-align: end;
 }
-.app--about--main--skills--one .progressBar #jsBar {
+.app--about--main--skills .block .progressBar #jsBar {
   background: #F0DB4F;
   width: 10%;
   border-radius: var(--fourthRadius);
   text-align: end;
 }
-.app--about--main--skills--one .progressBar #vueBar {
+.app--about--main--skills .block .progressBar #vueBar {
   background: #41B883;
   width: 20%;
   border-radius: var(--fourthRadius);
   text-align: end;
 }
-.app--about--main--skills--two {
-  background: var(--mainColor);
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-.app--about--main--skills--two .block {
-  margin: 3%;
-  width: 250px;
-  height: 200px;
-  border-radius: var(--secondaryRadius);
-  box-shadow: 10px 0px 42px 7px rgba(127, 136, 127, 0.64);
-  background: var(--fifthColor);
-  transition: var(--thirdTransitionValue) linear;
-}
-.app--about--main--skills--two .block .progressBar {
-  width: 98%;
-  margin: 15% 0 0 0.5%;
-  color: var(--fifthColor);
-  border-radius: var(--fourthRadius);
-}
-.app--about--main--skills--two .block .logoImg {
-  width: 100px;
-  height: 100px;
-  display: block;
-  margin: 0 auto;
-}
-.app--about--main--skills--two .block:hover, .app--about--main--skills--two .block:focus {
-  transition: var(--thirdTransitionValue) linear;
-  scale: 1.1;
-}
-.app--about--main--skills--two .progressBar #cBar {
+.app--about--main--skills .block .progressBar #cBar {
   background: #04407E;
   color: var(--mainColor);
   width: 25%;
   border-radius: var(--fourthRadius);
   text-align: end;
 }
-.app--about--main--skills--two .progressBar #javaBar {
-  background: #D0A384;
+.app--about--main--skills .block .progressBar #javaBar {
+  background: #ED1D25;
   width: 1%;
   border-radius: var(--fourthRadius);
   text-align: end;
 }
-.app--about--main--skills--two .progressBar #gitBar {
+.app--about--main--skills .block .progressBar #gitBar {
   background: #F1502F;
-  width: 15%;
+  width: 5%;
   border-radius: var(--fourthRadius);
   text-align: end;
+}
+.app--about--main--skills .block .logoImg {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.app--about--main--skills .block:hover, .app--about--main--skills .block:focus {
+  transition: var(--thirdTransitionValue) linear;
+  scale: 1.1;
 }
 
 /* COLOR PALETTE */
@@ -699,16 +703,16 @@ html {
 }
 
 .app--footer {
-  padding-bottom: 3%;
+  padding: 0 0 3% 0;
   max-width: 100%;
 }
 .app--footer p {
-  margin-left: 8%;
+  margin: 0 0 0 8%;
 }
 .app--footer p a {
   text-decoration: none;
   padding: 12px 8px;
-  margin-bottom: 5%;
+  margin: 0 0 5% 0;
   color: var(--thirdColor);
   font-size: var(--secondaryTextSize);
 }
@@ -816,8 +820,7 @@ html {
 
 /* SMARTPHONE */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /*Menu da mobile*/
-  /*Hamburger menu*/
+  /*Menu da mobile*/ /*Hamburger menu*/
   .navHamburger {
     display: block;
   }
@@ -882,19 +885,7 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
-  .app--home--main--works .workBlock {
-    width: 100%;
-    height: 250px;
-    margin: 0 0 10% 0;
-  }
-  .app--home--main--works .workBlock .workSubtitle {
-    margin: 15% 0 0 0;
-    font-size: var(--fourthTextSize);
-    width: 400px;
-  }
-  .app--home--main--works .workBlock .workButton {
-    margin: 23vh 0 0 0;
+    border: 1px solid red;
   }
   .app--home--main--contact.show h2 {
     margin-top: 5%;
@@ -1028,27 +1019,6 @@ html {
     justify-content: center;
     flex-direction: column;
   }
-  .app--home--main--works .workBlock {
-    width: 75%;
-    height: 250px;
-    margin: auto;
-    margin-bottom: 3%;
-  }
-  .app--home--main--works .workBlock .workTitle {
-    border: 1px solid white;
-    width: 575px;
-    position: absolute;
-    text-align: center;
-  }
-  .app--home--main--works .workBlock .workSubtitle {
-    border: 1px solid white;
-    margin: 9% 0 0 0;
-    font-size: var(--fourthTextSize);
-    width: 575px;
-  }
-  .app--home--main--works .workBlock .workButton {
-    margin: 23% auto;
-  }
   .app--home--main--contact.show h2 {
     margin-top: 5%;
     font-size: var(--mainTextSize);
@@ -1168,20 +1138,6 @@ html {
     justify-content: center;
     flex-direction: column;
   }
-  .app--home--main--works .workBlock {
-    width: 670px;
-    margin: auto;
-    margin-bottom: 3%;
-  }
-  .app--home--main--works .workBlock .workTitle {
-    margin: 2% auto;
-  }
-  .app--home--main--works .workBlock .workSubtitle {
-    margin: 10% auto;
-  }
-  .app--home--main--works .workBlock .workButton {
-    margin: 22% auto;
-  }
   .app--home--main--contact.show h2 {
     margin-top: 5%;
     font-size: var(--mainTextSize);
@@ -1220,17 +1176,7 @@ html {
     font-size: var(--bigTitleSize);
   }
   .app--home--main {
-    /*Lavori*/
     /*Form dell'email*/
-  }
-  .app--home--main--works .workBlock {
-    width: 670px;
-  }
-  .app--home--main--works .workBlock .workSubtitle {
-    width: 445px;
-  }
-  .app--home--main--works .workBlock .workButton {
-    margin: 15% auto;
   }
   .app--home--main--contact.show .emailForm {
     margin: 5% auto;
@@ -1274,23 +1220,7 @@ html {
     font-size: var(--bigTitleSize);
   }
   .app--home--main {
-    /*Lavori*/
     /*Form email*/
-  }
-  .app--home--main--works .workBlock {
-    width: 750px;
-    height: 400px;
-  }
-  .app--home--main--works .workBlock .workTitle {
-    font-size: var(--titleSize);
-  }
-  .app--home--main--works .workBlock .workSubtitle {
-    width: 750px;
-    font-size: var(--mainTextSize);
-  }
-  .app--home--main--works .workBlock .workButton {
-    font-size: var(--mainTextSize);
-    margin: 11.5% auto;
   }
   .app--home--main--contact.show h2 {
     margin-top: 5%;

@@ -25,53 +25,70 @@ html {
             height: fit-content;
             /* LAVORI */
             &--works {
+                max-width: 100vw;
                 @include horizontal-alignment-row;
-                padding-bottom: 5%;
+                position: relative;
                 .workBlock {
-                    margin: 1%;
-                    width: 600px;
-                    height: 300px;
+                    position: relative;
+                    width: 700px;
+                    height: 400px;
+                    margin: 2% auto;
                     overflow: hidden;
-                    border-radius: var(--secondaryRadius);
-                    @include horizontal-alignment-row;
-                    .workImage {
-                        transition: var(--secondaryTransitionValue);
-                        width: 100%;
-                    }
-                    .workTitle {
-                        position: absolute;
-                        font-size: var(--mainTextSize);
-                        color: var(--mainColor);
-                        filter: opacity(0);
-                        z-index: 10;
-                        margin-top: 1%;    
-                        &#workOne {
-                            color: rgb(15, 136, 0);
-                        }
-                        &#workTwo {
-                            color: white;
+                    border-radius: var(--fourthRadius);
+                    .image {
+                        @include work-block;
+                        img {
+                            @include work-block;
+                            object-fit: cover;
                         }
                     }
-                    .workSubtitle {
-                        position: absolute;
-                        width: 600px;
-                        font-size: var(--thirdTextSize);
-                        letter-spacing: 3px;
-                        color: var(--mainColor);
-                        margin: 5% 0 0 0;
-                        text-align: center;
-                        filter: opacity(0);
-                        z-index: 10;
-                    }
-                    &:hover, &:focus {
-                        .workImage {
-                            transition: var(--secondaryTransitionValue);
-                            scale: 1.1;
-                            filter: brightness(0.5);
+                    .text {
+                        @include work-block;
+                        @include central-alignment;
+                        &:before {
+                            @include work-block;
+                            content: '';
+                            background: var(--thirdColor);
+                            transform: scaleX(0);
+                            transition: transform var(--mainTransitionValue) ease-in-out;
+                            transform-origin: left;
                         }
-                        .workTitle, .workSubtitle, .workButton {
-                            transition: var(--secondaryTransitionValue);
-                            filter: opacity(1);
+                        .content {
+                            position: relative;
+                            padding: 30px;
+                            z-index: 1;
+                            transition: var(--mainTransitionValue);
+                            transform: translateX(-700px);
+                            color: var(--mainColor);
+                            h3 {
+                                color: var(--mainColor);
+                                font-size: var(--secondaryTitleSize);
+                                text-transform: uppercase;
+                                text-align: center;
+                                font-weight: 1000;
+                                padding: auto auto 5% auto;
+                                &#workOne {
+                                    color: rgb(15, 136, 0);
+                                }
+                            }
+                            p {
+                                font-size: var(--secondaryTextSize);
+                                text-align: center;
+                                line-height: 1.5em;
+                            }
+                        }
+                    }
+                    &:hover {
+                        .text {
+                            .content {
+                                transform: translateX(0px);
+                                transition-delay: var(--secondaryTransitionValue);
+                            }
+                        }
+                        .text:before {
+                            transform: scaleX(1);
+                            transition: transform var(--mainTransitionValue) ease-in-out;
+                            transform-origin: left;
                         }
                     }
                 }
