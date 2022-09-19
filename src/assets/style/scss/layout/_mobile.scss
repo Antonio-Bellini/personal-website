@@ -23,7 +23,13 @@
                     margin: 0;
                     padding: 0;
                     @include horizontal-alignment-column;
-                    border: 1px solid red;
+                    .workBlock {
+                        width: 96%;
+                        margin: 2%;
+                        .image {
+                            width: 100%;
+                        }
+                    }
                 }
 
                 /*Form dell'email*/
@@ -126,6 +132,13 @@
                     margin: 0;
                     padding: 0;
                     @include horizontal-alignment-column;
+                    .workBlock {
+                        width: 96%;
+                        margin: 2%;
+                        .image {
+                            width: 100%;
+                        }
+                    }
                 }
                 
                 /*Form dell'email*/

@@ -885,7 +885,13 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid red;
+  }
+  .app--home--main--works .workBlock {
+    width: 96%;
+    margin: 2%;
+  }
+  .app--home--main--works .workBlock .image {
+    width: 100%;
   }
   .app--home--main--contact.show h2 {
     margin-top: 5%;
@@ -1018,6 +1024,13 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+  .app--home--main--works .workBlock {
+    width: 96%;
+    margin: 2%;
+  }
+  .app--home--main--works .workBlock .image {
+    width: 100%;
   }
   .app--home--main--contact.show h2 {
     margin-top: 5%;
