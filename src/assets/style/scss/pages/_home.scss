@@ -8,7 +8,7 @@
 }
 
 html {
-    max-width: 100%;
+    max-width: 100vw;
     overflow-x: hidden;
 }
 
@@ -16,7 +16,8 @@ html {
     /* HOMEPAGE */
     &--home {
         height: 100vh;
-        width: 100%;
+        width: 100vw;
+        max-width: 100vw;
         color: var(--thirdColor);
         text-align: center;
         @include horizontal-alignment-column;
@@ -31,6 +32,7 @@ html {
                 .workBlock {
                     position: relative;
                     width: 700px;
+                    max-width: 96%;
                     height: 400px;
                     margin: 2% auto;
                     overflow: hidden;
@@ -39,6 +41,7 @@ html {
                         @include work-block;
                         img {
                             @include work-block;
+                            max-width: 100%;
                             object-fit: cover;
                         }
                     }
