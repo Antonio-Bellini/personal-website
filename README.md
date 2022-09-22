@@ -1,4 +1,5 @@
-# website
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c5f8584-b598-44fc-b41e-cdd6a58ede7c/deploy-status)](https://app.netlify.com/sites/belliniantonio/deploys)
+# Personal website
 
 ## Project setup
 ```
