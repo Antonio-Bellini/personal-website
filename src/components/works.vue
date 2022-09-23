@@ -1,72 +1,56 @@
 <template>
-    <div class="app--home--main--works">
-      <div class="workBlock">
-        <div class="image">
-          <img src="../assets/images/content/respiravo_project.webp" alt="work one">
-        </div>
-        <div class="text">
-          <div class="content">
-            <h3 id="workOne">{{ workOneTitle }}</h3>
-            <p>{{ workOneSubtitle }}
-              <a href="https://respiravo.altervista.org/" class="workButton" target="_blank">Visit website</a>
-            </p>
-          </div>
+    <div class="home__works-container">
+      <div class="home__works-container-image">
+        <img src="../assets/images/content/respiravo_project.webp" alt="work one">
+      </div>
+      <div class="home__works-container-info">
+        <div class="home__works-container-info-text">
+          <h3 id="workOne">{{ workOneTitle }}</h3>
+          <p>{{ workOneSubtitle }}
+            <a href="https://respiravo.altervista.org/" class="workButton" target="_blank">Visit website</a>
+          </p>
         </div>
       </div>
+    </div>
 
-      <div class="workBlock">
-        <div class="image">
-          <img src="../assets/images/content/WIP.webp" alt="work two">
-        </div>
-        <div class="text">
-          <div class="content">
-            <h3 id="workTwo">{{ workTwoTitle }}</h3>
-            <p>{{ workTwoSubtitle }}
-              <a href="#" class="workButton disabled" target="_blank">Visit website</a>
-            </p>
-          </div>
+    <div class="home__works-container">
+      <div class="home__works-container-image">
+        <img src="../assets/images/content/WIP.webp" alt="work two">
+      </div>
+      <div class="home__works-container-info">
+        <div class="home__works-container-info-text">
+          <h3 id="workTwo">{{ workTwoTitle }}</h3>
+          <p>{{ workTwoSubtitle }}
+            <a href="#" class="workButton disabled" target="_blank">Visit website</a>
+          </p>
         </div>
       </div>
+    </div>
 
-      <div class="workBlock">
-        <div class="image">
-          <img src="../assets/images/content/WIP.webp" alt="work three">
-        </div>
-        <div class="text">
-          <div class="content">
-            <h3 id="workThree">{{ temporaryName }}</h3>
-            <p>{{ temporaryDescription }}
-              <a href="#" class="workButton disabled" target="_blank">Visit website</a>
-            </p>
-          </div>
+    <div class="home__works-container">
+      <div class="home__works-container-image">
+        <img src="../assets/images/content/WIP.webp" alt="work three">
+      </div>
+      <div class="home__works-container-info">
+        <div class="home__works-container-info-text">
+          <h3 id="workThree">{{ temporaryName }}</h3>
+          <p>{{ temporaryDescription }}
+            <a href="#" class="workButton disabled" target="_blank">Visit website</a>
+          </p>
         </div>
       </div>
+    </div>
 
-      <div class="workBlock">
-        <div class="image">
-          <img src="../assets/images/content/WIP.webp" alt="work four">
-        </div>
-        <div class="text">
-          <div class="content">
-            <h3 id="workFour">{{ temporaryName }}</h3>
-            <p>{{ temporaryDescription }}
-              <a href="#" class="workButton disabled" target="_blank">Visit website</a>
-            </p>
-          </div>
-        </div>
+    <div class="home__works-container">
+      <div class="home__works-container-image">
+        <img src="../assets/images/content/WIP.webp" alt="work four">
       </div>
-
-      <div class="workBlock">
-        <div class="image">
-          <img src="../assets/images/content/WIP.webp" alt="work five">
-        </div>
-        <div class="text">
-          <div class="content">
-            <h3 id="workFive">{{ temporaryName }}</h3>
-            <p>{{ temporaryDescription }}
-              <a href="#" class="workButton disabled" target="_blank">Visit website</a>
-            </p>
-          </div>
+      <div class="home__works-container-info">
+        <div class="home__works-container-info-text">
+          <h3 id="workFour">{{ temporaryName }}</h3>
+          <p>{{ temporaryDescription }}
+            <a href="#" class="workButton disabled" target="_blank">Visit website</a>
+          </p>
         </div>
       </div>
     </div>

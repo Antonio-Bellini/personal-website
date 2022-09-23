@@ -1,13 +1,13 @@
 <template>
-  <div class="app">
-    <div class="app--home">
+  <section class="home">
+    <div class="home__title">
       <h1>{{ homeTitleOne }} <br> {{ homeTitleTwo}} <br> {{ homeTitleThree}}</h1>
     </div>
 
-    <div class="app--home--main">
+    <div class="home__works">
       <Works />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

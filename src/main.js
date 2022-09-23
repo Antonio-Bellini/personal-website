@@ -24,7 +24,7 @@ document.querySelectorAll('.navLink').forEach(link => link.addEventListener('cli
 // Variabile form nascosto
 const showForm = document.querySelector('.showEmailForm')
 // Variabile bottone
-const emailForm = document.querySelector('.app--home--main--contact')
+const emailForm = document.querySelector('.app__emailForm')
 
 showForm.addEventListener('click', (event) => {
   emailForm.classList.toggle('show')

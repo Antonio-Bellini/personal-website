@@ -1,100 +1,85 @@
 @import '../abstract/variables';
 
-.app {
-    /* PAGINA ABOUT */
-    &--about {
-        &--main {
-            margin: 5vh auto;
-            &--info {
-                @include horizontal-alignment-row;
-                .profileImgContainer {
-                    width: 350px;
-                    height: 330px;
-                    margin: 2% 5% 2% 5%;
-                    overflow: hidden;
-                    .profileImg {
-                        width: 100%;
-                        height: 100%;
-                        transition: var(--mainTransitionValue);            
-                        &:hover, &:focus {
-                            transition: var(--mainTransitionValue);
-                            scale: 1.1;
-                        }
-                    }
-                }
-            }
-
-            /* SKILLS */
-            &--skills {
-                margin: 1vh auto;
-                @include horizontal-alignment-row;
-                background: var(--mainColor);
-                .block {
-                    margin: 3%;
-                    width: 250px;
-                    height: 200px;
-                    border-radius: var(--secondaryRadius);
-                    @include shadow-settings;
-                    background: var(--fifthColor);
-                    transition: var(--thirdTransitionValue) linear;
-                    .progressBar {
-                        width: 98%;
-                        margin: 15% 0 0 .5%;
-                        color: var(--fifthColor);
-                        border-radius: var(--fourthRadius);
-                        #htmlBar {
-                            background: #E34C26;
-                            width: 55%;
-                            @include progress-bar;
-                        }
-                        #cssBar {
-                            background: #264DE4;
-                            color: var(--mainColor);
-                            width: 40%;
-                            @include progress-bar;
-                        }
-                        #scssBar {
-                            background: #CD6799;
-                            width: 42%;
-                            @include progress-bar;
-                        }
-                        #jsBar {
-                            background: #F0DB4F;
-                            width: 10%;
-                            @include progress-bar;
-                        }
-                        #vueBar {
-                            background: #41B883;
-                            width: 20%;
-                            @include progress-bar;
-                        }
-                        #cBar {
-                            background: #04407E;
-                            color: var(--mainColor);
-                            width: 25%;
-                            @include progress-bar;
-                        }
-                        #javaBar {
-                            background: #ED1D25;
-                            width: 1%;
-                            @include progress-bar;
-                        }
-                        #gitBar {
-                            background: #F1502F;
-                            width: 5%;
-                            @include progress-bar;
-                        }
-                    }
-                    .logoImg {
-                        width: 100px;
-                        height: 100px;
-                        @include image-alignment;
-                    }
+/*Pagina about del sito*/
+.about {
+    &__info {
+        margin: 5vh auto;
+        &-text {
+            @include horizontal-alignment-row;
+            border: 1px solid black;
+            &-image {
+                width: 350px;
+                height: 330px;
+                margin: 2% 5% 2% 5%;
+                overflow: hidden;
+                .profileImage {
+                    width: 100%;
+                    height: 100%;
+                    transition: var(--mainTransitionValue);            
                     &:hover, &:focus {
-                        transition: var(--thirdTransitionValue) linear;
+                        transition: var(--mainTransitionValue);
                         scale: 1.1;
                     }
                 }
+            }
+        }
+    }
+
+    /* SKILLS */
+    &__skills {
+        margin: 1vh auto;
+        @include horizontal-alignment-row;
+        background: var(--mainColor);
+        &-container {
+            margin: 3%;
+            width: 250px;
+            height: 200px;
+            border-radius: var(--secondaryRadius);
+            @include shadow-settings;
+            background: var(--fifthColor);
+            transition: var(--thirdTransitionValue) linear;
+            &-progressBar {
+                border-radius: var(--radiusSize);
+                display: flex;
+                justify-content: space-evenly;
+                margin: 20% 0 0 0;
+                .progressLevel {
+                    border-right: 2px solid var(--mainColor);
+                    width: 100px;
+                    height: 20px;
+                    background: var(--mainColor);
+                }
+                #first {
+                    border-top-left-radius: var(--radiusSize);
+                    border-bottom-left-radius: var(--radiusSize);
+                    background: var(--thirdColor);
+                }
+                #second {
+                    background: var(--thirdColor);
+                }
+                #third {
+                    border: none;
+                    border-top-right-radius: var(--radiusSize);
+                    border-bottom-right-radius: var(--radiusSize);
+                    background: var(--thirdColor);
+                }
+            }
+            #levelIndicator {
+                text-align: center;
+                margin: 2% 0 0 0;
+            }
+            &-image {
+                width: 100px;
+                height: 100px;
+                @include image-alignment;
+                .image {
+                    margin: 1vh 0 0 0;
+                    width: 100%;
+                }
+            }
+            &:hover, &:focus {
+                transition: var(--thirdTransitionValue) linear;
+                scale: 1.1;
             }
         }
     }

@@ -1,5 +1,5 @@
 <template>
-    <div class="app--footer">
+    <div class="home__footer">
         <h3>{{ footerTitle }} <button class="showEmailForm">Get in Touch!</button></h3>
         <p>
             <a class="github social" href="https://github.com/Antonio-Bellini" target="_blank">

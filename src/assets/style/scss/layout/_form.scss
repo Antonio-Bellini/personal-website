@@ -1,33 +1,29 @@
 @import '../abstract/variables';
 
 .app {
-    &--home {
-        &--main {
-            &--contact {
-                display: none;
-            }
-            &--contact.show {
+    &__emailForm {
+        display: none;
+    }
+    &__emailForm.show {
+        display: block;
+        width: 100%;
+        margin: 0 0 2% 0;
+        .app__emailForm__form {
+            width: 40%;
+            border-radius: var(--radiusSize);
+            display: block;
+            margin: auto;
+            text-align: center;
+            label {
                 display: block;
-                width: 100%;
-                margin: 0 0 2% 0;
-                .emailForm {
-                    width: 40%;
-                    border-radius: var(--radiusSize);
-                    display: block;
-                    margin: auto;
-                    text-align: center;
-                    label {
-                        display: block;
-                        text-align: center;
-                    }
-                    input[type=text], [type=email], textarea {
-                        width: 40%;
-                        box-sizing: border-box;
-                        resize: vertical;
-                        margin-bottom: 3%;
-                        padding: 12px;
-                    }
-                }
+                text-align: center;
+            }
+            input[type=text], [type=email], textarea {
+                width: 40%;
+                box-sizing: border-box;
+                resize: vertical;
+                margin-bottom: 3%;
+                padding: 12px;
             }
         }
     }
