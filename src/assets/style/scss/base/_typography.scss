@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import '../abstract/variables';
 
 body {
     font-family: 'Nanum Myeongjo', serif;
@@ -60,12 +61,12 @@ h5 {
 /*Testo nella pagina about*/
 .about__info-text {
     p {
-        width: 60%;
+        width: 70vw;
         color: var(--secondaryColor);
         font-size: var(--secondaryTextSize);
         text-align: start;
         padding: 2%;
-        margin: 2%;
+        margin: 1%;
         a {
             color: var(--secondaryColor);
             text-decoration: underline;
