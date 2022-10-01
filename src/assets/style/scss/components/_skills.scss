@@ -1,0 +1,36 @@
+.about {
+    &__skills {
+        margin: 1vh auto;
+        @include horizontal-alignment-row;
+        background: var(--mainColor);
+        &-container {
+            margin: 3%;
+            width: 250px;
+            height: 200px;
+            border-radius: var(--secondaryRadius);
+            @include shadow-settings;
+            background: var(--fifthColor);
+            transition: var(--thirdTransitionValue) linear;
+            &-progressBar {
+                border-radius: var(--radiusSize);
+                display: flex;
+                justify-content: space-evenly;
+                margin: 25% 0 0 0;
+                height: 20px; 
+            }
+            &-image {
+                width: 100px;
+                height: 100px;
+                @include image-alignment;
+                .image {
+                    margin: 1vh 0 0 0;
+                    width: 100%;
+                }
+            }
+            &:hover, &:focus {
+                transition: var(--thirdTransitionValue) linear;
+                scale: 1.1;
+            }
+        }
+    }
+}

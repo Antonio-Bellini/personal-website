@@ -1,17 +1,3 @@
-@import '../abstract/variables';
-@import '../abstract/mixins';
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    max-width: 100vw;
-    overflow-x: hidden;
-}
-
 /*Homepage del sito*/
 .home {
     &__title {
@@ -22,59 +8,5 @@ html {
         color: var(--thirdColor);
         text-align: center;
         @include horizontal-alignment-column;
-    }
-    /* LAVORI */
-    &__works {
-        max-width: 100vw;
-        @include horizontal-alignment-row;
-        position: relative;
-        &-container {
-            position: relative;
-            width: 700px;
-            max-width: 96%;
-            height: 400px;
-            margin: 2% auto;
-            overflow: hidden;
-            border-radius: var(--fourthRadius);
-            &-image {
-                @include work-block;
-                img {
-                    @include work-block;
-                    max-width: 100%;
-                    object-fit: cover;
-                }
-            }
-            &-info {
-                @include work-block;
-                @include central-alignment;
-                &:before {
-                    @include work-block;
-                    content: '';
-                    background: var(--thirdColor);
-                    transform: scaleX(0);
-                    transition: transform var(--mainTransitionValue) ease-in-out;
-                    transform-origin: left;
-                }
-                &-text {
-                    position: relative;
-                    padding: 30px;
-                    z-index: 1;
-                    transition: var(--mainTransitionValue);
-                    transform: translateX(-700px);
-                    color: var(--mainColor);
-                }
-            }
-            &:hover {
-                .home__works-container-info:before {
-                    transform: scaleX(1);
-                    transition: transform var(--mainTransitionValue) ease-in-out;
-                    transform-origin: left;
-                }
-                .home__works-container-info-text {
-                    transform: translateX(0px);
-                    transition-delay: var(--secondaryTransitionValue);
-                }
-            }
-        }
     }
 }

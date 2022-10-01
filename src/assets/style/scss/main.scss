@@ -2,8 +2,12 @@
 @import './abstract/mixins';
 
 @import './base/typography';
+@import './base/reset';
 
 @import './components/button';
+@import './components/skills.scss';
+@import './components/skillsLevel';
+@import './components/works';
 
 @import './pages/home';
 @import './pages/about';

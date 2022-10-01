@@ -1,12 +1,9 @@
-@import '../abstract/variables';
-
 /*Pagina about del sito*/
 .about {
     &__info {
         margin: 5vh auto;
         &-text {
             @include horizontal-alignment-row;
-            border: 1px solid black;
             &-image {
                 width: 350px;
                 height: 330px;
@@ -21,65 +18,6 @@
                         scale: 1.1;
                     }
                 }
-            }
-        }
-    }
-
-    /* SKILLS */
-    &__skills {
-        margin: 1vh auto;
-        @include horizontal-alignment-row;
-        background: var(--mainColor);
-        &-container {
-            margin: 3%;
-            width: 250px;
-            height: 200px;
-            border-radius: var(--secondaryRadius);
-            @include shadow-settings;
-            background: var(--fifthColor);
-            transition: var(--thirdTransitionValue) linear;
-            &-progressBar {
-                border-radius: var(--radiusSize);
-                display: flex;
-                justify-content: space-evenly;
-                margin: 20% 0 0 0;
-                .progressLevel {
-                    border-right: 2px solid var(--mainColor);
-                    width: 100px;
-                    height: 20px;
-                    background: var(--mainColor);
-                }
-                #first {
-                    border-top-left-radius: var(--radiusSize);
-                    border-bottom-left-radius: var(--radiusSize);
-                    background: var(--thirdColor);
-                }
-                #second {
-                    background: var(--thirdColor);
-                }
-                #third {
-                    border: none;
-                    border-top-right-radius: var(--radiusSize);
-                    border-bottom-right-radius: var(--radiusSize);
-                    background: var(--thirdColor);
-                }
-            }
-            #levelIndicator {
-                text-align: center;
-                margin: 2% 0 0 0;
-            }
-            &-image {
-                width: 100px;
-                height: 100px;
-                @include image-alignment;
-                .image {
-                    margin: 1vh 0 0 0;
-                    width: 100%;
-                }
-            }
-            &:hover, &:focus {
-                transition: var(--thirdTransitionValue) linear;
-                scale: 1.1;
             }
         }
     }

@@ -1,20 +1,12 @@
 /* COLOR PALETTE */
 :root {
-    /* Light theme */
-    --mainColor-light:         #D2D2D2;
-    --secondaryColor-light:    #000000;
-    --thirdColor-light:        #1A1A19;
-    --fourthColor-light:       #727068;
-    --fifthColor:              #373635;
-    --opacityColor-light:      #7f887f;
-
-    /* Dark theme */
-    --mainColor-dark:          #D2D2D2;
-    --secondaryColor-dark:     #000000;
-    --thirdColor-dark:         #1A1A19;
-    --fourthColor-dark:        #727068;
-    --fifthColor--dark:        #373635;
-    --opacityColor-dark:       #7f887f;
+    --mainColor-light:     #D2D2D2;
+    --black:               #000000;
+    --secondaryColor-light:#1A1A19;
+    --thirdColor-light:    #727068;
+    --fourthColor:         #373635;
+    --anchorTagColor:      #4169E1;
+    --opacity-light:       #7f887f;
 }
 
 /* GRANDEZZE DEI TESTI */

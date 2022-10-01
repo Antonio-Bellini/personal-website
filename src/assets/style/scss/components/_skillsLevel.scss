@@ -1,0 +1,46 @@
+.about__skills-container-progressBar {
+    &-level {
+        width: 100%;
+        border-radius: var(--radiusSize);
+        #html {
+            background: #E34C26;
+            width: 45%;
+            border-radius: var(--radiusSize);
+        }
+        #css {
+            background: #264DE4;
+            width: 40%;
+            border-radius: var(--radiusSize);
+        }
+        #scss {
+            background: #CC6699;
+            width: 42%;
+            border-radius: var(--radiusSize);
+        }
+        #js {
+            background: #F0DB4F;
+            width: 10%;
+            border-radius: var(--radiusSize);
+        }
+        #vue {
+            background: #42B883;
+            width: 20%;
+            border-radius: var(--radiusSize);
+        }
+        #c {
+            background: #165CAA;
+            width: 20%;
+            border-radius: var(--radiusSize);
+        }
+        #java {
+            Background: #ED1D25;
+            width: 2%;
+            border-radius: var(--radiusSize);
+        }
+        #git {
+            background: #F1502F;
+            width: 5%;
+            border-radius: var(--radiusSize);
+        }
+    }
+}

@@ -1,5 +1,3 @@
-@import '../abstract/variables';
-
 li {
     list-style: none;
 }
@@ -25,7 +23,7 @@ li {
     min-height: 70px;
     @include nav-menu-alignment;
     padding: 0 24px;
-    background: var(--thirdColor);
+    background: var(--secondaryColor);
     .navMenu {
         @include nav-menu-alignment;
         gap: 60px;
@@ -38,11 +36,11 @@ li {
 /* BOTTONE PER MOSTRARE IL FORM DELLE EMAIL */
 .showEmailForm {
     text-decoration: none;
-    border: 1px solid var(--thirdColor);
+    border: 1px solid var(--secondaryColor);
     padding: 12px 8px;
     margin: 2% 0 1% 0;
     background: var(--mainColor);
-    color: var(--thirdColor);
+    color: var(--secondaryColor);
     font-size: var(--thirdTextSize);
     float: right;
     border-radius: var(--radiusSize);
@@ -50,16 +48,16 @@ li {
     &:hover, &:focus {
         translate: 0 -3px;
         transition: var(--thirdTransitionValue) ease-in-out;
-        border-bottom: 4px solid var(--thirdColor);
+        border-bottom: 4px solid var(--secondaryColor);
     }
 }
 /* BOTTONE PER L'INVIO DELL'EMAIL */
 input[type=submit] {
     display: block;
     margin: auto;
-    border: 1px solid var(--thirdColor);
+    border: 1px solid var(--secondaryColor);
     background: var(--mainColor);
-    color: var(--thirdColor);
+    color: var(--secondaryColor);
     width: 150px;
     padding: 12px 8px;
     font-size: var(--fourthTextSize);
@@ -67,7 +65,7 @@ input[type=submit] {
     &:hover, &:focus {
         translate: 0 -3px;
         transition: var(--thirdTransitionValue) ease-in-out;
-        border-bottom: 4px solid var(--thirdColor);
+        border-bottom: 4px solid var(--secondaryColor);
     }
 }
 

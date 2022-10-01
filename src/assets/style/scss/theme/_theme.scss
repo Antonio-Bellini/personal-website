@@ -1,16 +1,10 @@
-/* DARK MODE */
-@media(prefers-color-scheme: dark) {
-
-}
-
-/* LIGHT */
 @media(prefers-color-scheme: light) {
     :root {
         --mainColor:        var(--mainColor-light);
         --secondaryColor:   var(--secondaryColor-light);
         --thirdColor:       var(--thirdColor-light);
         --fourthColor:      var(--fourthColor-light);
-        --fifthColor:      var(--fifthColor-light);
+        --fifthColor:       var(--fifthColor-light);
         --opacityColor:     var(--opacityColor-light);
     }
 }

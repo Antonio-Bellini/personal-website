@@ -6,11 +6,10 @@
         <img class="image" src="../assets/images/icon/html.webp" alt="html logo" id="htmlLogo">
       </div>
       <div class="about__skills-container-progressBar">
-        <span class="progressLevel" id="first"></span>
-        <span class="progressLevel" id="second"></span>
-        <span class="progressLevel" id="third"></span>
+        <div class="about__skills-container-progressBar-level">
+            <div id="html">&nbsp;</div>
+        </div>
       </div>
-      <p id="levelIndicator">{{ level }}</p>
     </div>
 
     <div class="about__skills-container" id="css">
@@ -18,11 +17,10 @@
         <img class="image" src="../assets/images/icon/css.webp" alt="css logo" id="cssLogo">
       </div>
       <div class="about__skills-container-progressBar">
-        <span class="progressLevel" id="first"></span>
-        <span class="progressLevel" id="second"></span>
-        <span class="progressLevel" id="third"></span>
+        <div class="about__skills-container-progressBar-level">
+          <div id="css">&nbsp;</div>
+        </div>
       </div>
-      <p id="levelIndicator">{{ level }}</p>
     </div>
 
     <div class="about__skills-container" id="scss">
@@ -30,11 +28,10 @@
         <img class="image" src="../assets/images/icon/scss.webp" alt="scss logo" id="scssLogo">
       </div>
       <div class="about__skills-container-progressBar">
-        <span class="progressLevel" id="first"></span>
-        <span class="progressLevel" id="second"></span>
-        <span class="progressLevel" id="third"></span>
+        <div class="about__skills-container-progressBar-level">
+          <div id="scss">&nbsp;</div>
+        </div>
       </div>
-      <p id="levelIndicator">{{ level }}</p>
     </div>
 
     <div class="about__skills-container" id="js">
@@ -42,11 +39,10 @@
         <img class="image" src="../assets/images/icon/js.webp" alt="js logo" id="jsLogo">
       </div>
       <div class="about__skills-container-progressBar">
-        <span class="progressLevel" id="first"></span>
-        <span class="progressLevel" id="second"></span>
-        <span class="progressLevel" id="third"></span>
+        <div class="about__skills-container-progressBar-level">
+          <div id="js">&nbsp;</div>
+        </div>
       </div>
-      <p id="levelIndicator">{{ level }}</p>
     </div>
 
     <div class="about__skills-container" id="vue">
@@ -54,11 +50,10 @@
         <img class="image" src="../assets/images/icon/vue.webp" alt="vue.js logo" id="vueLogo">
       </div>
       <div class="about__skills-container-progressBar">
-        <span class="progressLevel" id="first"></span>
-        <span class="progressLevel" id="second"></span>
-        <span class="progressLevel" id="third"></span>
+        <div class="about__skills-container-progressBar-level">
+          <div id="vue">&nbsp;</div>
+        </div>
       </div>
-      <p id="levelIndicator">{{ level }}</p>
     </div>
 
     <div class="about__skills-container" id="c">
@@ -66,11 +61,10 @@
         <img class="image" src="../assets/images/icon/c.webp" alt="c logo" id="cLogo">
       </div>
       <div class="about__skills-container-progressBar">
-        <span class="progressLevel" id="first"></span>
-        <span class="progressLevel" id="second"></span>
-        <span class="progressLevel" id="third"></span>
+        <div class="about__skills-container-progressBar-level">
+          <div id="c">&nbsp;</div>
+        </div>
       </div>
-      <p id="levelIndicator">{{ level }}</p>
     </div>
 
     <div class="about__skills-container" id="java">
@@ -78,11 +72,10 @@
         <img class="image" src="../assets/images/icon/java.webp" alt="Java logo" id="javaLogo">
       </div>
       <div class="about__skills-container-progressBar">
-        <span class="progressLevel" id="first"></span>
-        <span class="progressLevel" id="second"></span>
-        <span class="progressLevel" id="third"></span>
+        <div class="about__skills-container-progressBar-level">
+          <div id="java">&nbsp;</div>
+        </div>
       </div>
-      <p id="levelIndicator">{{ level }}</p>
     </div>
 
     <div class="about__skills-container" id="git">
@@ -90,11 +83,10 @@
         <img class="image" src="../assets/images/icon/git.webp" alt="Git logo" id="gitLogo">
       </div>
       <div class="about__skills-container-progressBar">
-        <span class="progressLevel" id="first"></span>
-        <span class="progressLevel" id="second"></span>
-        <span class="progressLevel" id="third"></span>
+        <div class="about__skills-container-progressBar-level">
+          <div id="git">&nbsp;</div>
+        </div>
       </div>
-      <p id="levelIndicator">{{ level }}</p>
     </div>
   </div>
 </template>
@@ -103,27 +95,15 @@
 export default {
   name: 'skills_block',
   data () {
-    let level = ''
-
-    switch (this.level) {
-      case 0:
-        level = 'Zero knowledge'
-        break
-
-      case 1:
-        level = 'Base knowledge'
-        break
-
-      case 2:
-        level = 'Intermediate knowledge'
-        break
-
-      case 3:
-        level = 'High knowledge'
-        break
-    }
     return {
-      level: level
+      htmlProgress: '45%',
+      cssProgress: '40%',
+      scssProgress: '42%',
+      jsProgress: '10%',
+      vueProgress: '20%',
+      cProgress: '20%',
+      javaProgress: '2%',
+      gitProgress: '5%'
     }
   }
 }
