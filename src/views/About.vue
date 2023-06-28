@@ -23,7 +23,7 @@ export default {
   data () {
     return {
       aboutTitle: 'What about me?',
-      aboutText: 'Hi! My name is Antonio, I\'m 17, and I\'m really passionate about web development.',
+      aboutText: 'Hi! My name is Antonio, I\'m 18, and I\'m really passionate about web development.',
       aboutTextTwo: 'Currently I attend IIS A. Avogadro here in Turin, and I\'m a computer science student.',
       aboutTextThree: 'I really like to learn new technologies for improving my knowledge.',
       workingFor: 'Currently working for:'
